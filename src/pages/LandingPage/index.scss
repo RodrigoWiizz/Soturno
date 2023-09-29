@@ -1,0 +1,27 @@
+@import '../../components/variaveis/';
+
+
+// As configurações de cor, altura , largura e padding do body estão no global.css
+
+body {
+    background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+    background-size: 55% 100%, 55% 70%; // Largura em % da primeira imagem é 55%.
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $cor-do-contorno;
+}
+
+header {
+
+}
+
+main {
+
+    
+
+}

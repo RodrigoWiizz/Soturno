@@ -1,0 +1,12 @@
+body {
+  background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+  background-size: 55% 100%, 55% 70%;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9e9e9e;
+}/*# sourceMappingURL=index.css.map */

@@ -7,10 +7,8 @@ body {
     background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
     background-repeat: no-repeat;
     background-position: right top, left bottom;
-    background-size: 55% 100%, 55% 70%; // Largura em % da primeira imagem é 55%.
+    background-size: 750px 100%, 750px 70%; // Largura em % da primeira imagem é 55%.
 }
-
-// Comentado pois está dando problemas na opacidade do background-image
 
 section {
     padding: 20px;
@@ -96,6 +94,13 @@ section {
 }
 
 @media (max-width: 1000px) {
+
+    body {
+        background-image: url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 100% 100%;
+    }
 
     section {
 

@@ -1,83 +1,109 @@
+body {
+  background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+  background-size: 55% 100%, 55% 70%;
+}
+
 section {
   padding: 20px;
   width: 100%;
   height: 100%;
   border: 1px solid #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-header {
+section header {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header figure {
+section header figure {
   width: 365px;
   height: auto;
   gap: 20px;
   display: flex;
   align-items: center;
 }
-header figure img {
+section header figure a {
+  text-decoration: none;
+}
+section header figure img {
   width: 100%;
   height: 100%;
 }
-header figure .titulo-logo {
+section header figure .titulo-logo {
   display: flex;
   align-items: center;
   font: 6.4rem "Almendra Display";
   color: #9e9e9e;
 }
-header nav {
+section header nav {
   width: auto;
   display: flex;
   gap: 50px;
 }
-header nav a {
+section header nav a {
   text-decoration: none;
   color: #9e9e9e;
   font: 3.6rem "Almendra Display";
 }
-header nav a:hover {
+section header nav a:hover {
   text-decoration: underline;
   color: white;
 }
+section main {
+  margin-top: 8%;
+  height: auto;
+  width: 73.3%;
+}
+section main p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #9e9e9e;
+  font: 3.6rem "Almendra Display";
+}
 
 @media (max-width: 1000px) {
-  header {
+  section header {
     flex-direction: column-reverse;
   }
-  header figure {
+  section header figure {
     flex-direction: column;
     gap: 0px;
     margin-top: 20px;
   }
-  header figure img {
+  section header figure img {
     width: 135px;
     height: 130px;
   }
-  header figure .titulo-logo {
+  section header figure .titulo-logo {
     margin: 0px;
   }
-  header nav {
+  section header nav {
     width: 100%;
     gap: 20px;
     justify-content: space-around;
   }
 }
 @media (max-width: 530px) {
-  header figure a {
-    text-decoration: none;
-  }
-  header figure a img {
+  section header figure img {
     width: 100px;
     height: 100px;
   }
-  header figure a .titulo-logo {
+  section header figure .titulo-logo {
     font: 3rem "Almendra Display";
   }
-  header nav a {
+  section header nav a {
+    font: 1.6rem "Almendra Display";
+  }
+  section main p {
     font: 1.6rem "Almendra Display";
   }
 }/*# sourceMappingURL=index.css.map */

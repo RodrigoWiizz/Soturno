@@ -3,12 +3,12 @@
 
 // As configurações de cor, altura , largura e padding do body estão no global.css
 
-// body {
-//     background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
-//     background-repeat: no-repeat;
-//     background-position: right top, left bottom;
-//     background-size: 55% 100%, 55% 70%; // Largura em % da primeira imagem é 55%.
-// }
+body {
+    background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+    background-size: 55% 100%, 55% 70%; // Largura em % da primeira imagem é 55%.
+}
 
 // Comentado pois está dando problemas na opacidade do background-image
 
@@ -17,114 +17,152 @@ section {
     width: 100%;
     height: 100%;
     border: 1px solid $cor-do-objetos;
-}
-
-header {
-    width: 100%;
-    height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
-    figure {
-        width: 365px;
-        height: auto;
-        gap: 20px;
-        display: flex;
-        align-items: center;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .titulo-logo {
-            display: flex;
-            align-items: center;
-            font: $almendra-64;
-            color: $cor-do-objetos;
-        }
-    }
-
-    nav {
-        width: auto;
-        display: flex;
-        gap: 50px;
-
-
-        a {
-            text-decoration: none;
-            color: $cor-do-objetos;
-            font: $almendra-36;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: white
-        }
-
-    }
-
-}
-
-main {}
-
-@media (max-width: 1000px) {
 
     header {
-        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         figure {
-            flex-direction: column;
-            gap: 0px;
-            margin-top: 20px;
+            width: 365px;
+            height: auto;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+            }
 
             img {
-                width: 135px;
-                height: 130px;
+                width: 100%;
+                height: 100%;
             }
 
             .titulo-logo {
-                margin: 0px;
+                display: flex;
+                align-items: center;
+                font: $almendra-64;
+                color: $cor-do-objetos;
             }
+
+
         }
 
         nav {
+            width: auto;
+            display: flex;
+            gap: 50px;
+
+
+            a {
+                text-decoration: none;
+                color: $cor-do-objetos;
+                font: $almendra-36;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: white
+            }
+
+        }
+
+    }
+
+    main {
+        margin-top: 8%;
+        height: auto;
+        width: 73.30%;
+
+        p {
+            display: flex;
+            align-items: center;
             width: 100%;
-            gap: 20px;
-            justify-content: space-around;
+            height: 100%;
+            text-align: center;
+            color: $cor-do-objetos;
+            font: $almendra-32;
+        }
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    section {
+
+        header {
+            flex-direction: column-reverse;
+
+            figure {
+                flex-direction: column;
+                gap: 0px;
+                margin-top: 20px;
+
+                img {
+                    width: 135px;
+                    height: 130px;
+                }
+
+                .titulo-logo {
+                    margin: 0px;
+                }
+            }
+
+            nav {
+                width: 100%;
+                gap: 20px;
+                justify-content: space-around;
+            }
         }
     }
 }
 
 @media (max-width: 530px) {
 
-    header {
+    section {
 
-        figure {
+        header {
 
-            a {
-                text-decoration: none;
+            figure {
 
                 img {
                     width: 100px;
                     height: 100px;
                 }
-    
+
                 .titulo-logo {
                     font: $almendra-30;
                 }
+
+            }
+
+            nav {
+
+
+                a {
+                    font: $almendra-16;
+                }
+
             }
         }
 
-        nav {
-            
-            
-            a {
-                font: $almendra-16;
-            }
+        main {
+        
 
+        p {
+            font: $almendra-20;
         }
+
     }
 
+    }
 }

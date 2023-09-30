@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top, center bottom;
   background-size: 100% auto;
-  height: 400vh;
+  height: auto;
 }
 
 section {
@@ -57,6 +57,7 @@ section header nav a:hover {
   color: white;
 }
 section main {
+  margin-top: 40px;
   width: 90%;
   height: 100%;
 }
@@ -67,4 +68,42 @@ section main pre {
   height: 100%;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+  section header {
+    flex-direction: column-reverse;
+  }
+  section header figure {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 20px;
+  }
+  section header figure img {
+    width: 135px;
+    height: 130px;
+  }
+  section header figure .titulo-logo {
+    margin: 0px;
+  }
+  section header nav {
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 530px) {
+  section header figure img {
+    width: 100px;
+    height: 100px;
+  }
+  section header figure .titulo-logo {
+    font: 3rem "Almendra Display";
+  }
+  section header nav a {
+    font: 1.6rem "Almendra Display";
+  }
+  section main pre {
+    font: 1.6rem "Almendra Display";
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -27,18 +27,3 @@ body {
     background-color: #101010;
 }
 
-@media (max-width: 1000px) {
-
-    body {
-        height: 120vh;
-    }
-
-}
-
-@media (max-width: 530px) {
-
-    body {
-        height: 100vh;
-    }
-
-}

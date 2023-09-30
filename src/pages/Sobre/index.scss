@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: center top, center bottom;
     background-size: 100% auto;
-    height: 400vh;
+    height: auto;
 }
 
 section {
@@ -73,6 +73,7 @@ section {
     }
 
     main {
+        margin-top: 40px;
         width: 90%;
         height: 100%;
 
@@ -85,4 +86,76 @@ section {
             word-wrap: break-word;
         }
     }
+}
+
+@media (max-width: 1000px) {
+
+
+    section {
+
+        header {
+            flex-direction: column-reverse;
+
+            figure {
+                flex-direction: column;
+                gap: 0px;
+                margin-top: 20px;
+
+                img {
+                    width: 135px;
+                    height: 130px;
+                }
+
+                .titulo-logo {
+                    margin: 0px;
+                }
+            }
+
+            nav {
+                width: 100%;
+                gap: 20px;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    section {
+
+        header {
+
+            figure {
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .titulo-logo {
+                    font: $almendra-30;
+                }
+
+            }
+
+            nav {
+
+
+                a {
+                    font: $almendra-16;
+                }
+
+            }
+        }
+
+        main {
+            pre {
+                font: $almendra-20;
+            }
+        }
+
+    }
+
+    
 }

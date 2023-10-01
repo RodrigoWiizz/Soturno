@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
 
+@font-face {
+    font-family: 'Old English';
+    src: url("../../public/assets/fonts/Old\ English.ttf");
+}
+
 html {
     font-size: 62.5%;
 }

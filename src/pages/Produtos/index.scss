@@ -5,7 +5,18 @@ body {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: auto 100%;
+    position: relative;
+    overflow: hidden;
+
+    .chao-produtos {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 1600px;
+        height: 70%;
+    }
 }
+
 
 section {
     padding: 20px;
@@ -69,6 +80,18 @@ section {
 
         }
 
+    }
+
+}
+
+@media (min-width: 1600px) {
+
+    body {
+
+
+        .chao-produtos {
+            width: 100%;
+        }
     }
 
 }

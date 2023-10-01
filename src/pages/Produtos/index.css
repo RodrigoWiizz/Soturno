@@ -3,6 +3,15 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+}
+body .chao-produtos {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 1600px;
+  height: 70%;
 }
 
 section {
@@ -54,4 +63,10 @@ section header nav a {
 section header nav a:hover {
   text-decoration: underline;
   color: white;
+}
+
+@media (min-width: 1600px) {
+  body .chao-produtos {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */

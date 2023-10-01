@@ -1,0 +1,74 @@
+@import '../../components/variaveis/';
+
+body {
+    background-image: url("../../../public/assets/images/Produtos/background-florvermelha-produtos.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $cor-do-objetos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        figure {
+            width: 365px;
+            height: auto;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .titulo-logo {
+                display: flex;
+                align-items: center;
+                font: $almendra-64;
+                color: $cor-do-objetos;
+            }
+
+
+        }
+
+        nav {
+            width: auto;
+            display: flex;
+            gap: 50px;
+
+
+            a {
+                text-decoration: none;
+                color: $cor-do-objetos;
+                font: $almendra-36;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: white
+            }
+
+        }
+
+    }
+
+}

@@ -32,3 +32,19 @@ body {
     background-color: #101010;
 }
 
+/* A fonte da letra está configurada nos arquivos das paginas pois
+não estou conseguindo configurar a font aqui :) */
+
+button {
+    width: 360px;
+    height: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: #BCBCBC;
+}
+
+button:hover {
+    background-color: #A8A8A8;
+    cursor: pointer;
+}
+

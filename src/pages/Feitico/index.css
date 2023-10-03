@@ -140,7 +140,18 @@ section main .card-feitico button {
   section header nav a {
     font: 1.6rem "Almendra Display";
   }
-  section main p {
-    font: 1.6rem "Almendra Display";
+  section main .card-feitico {
+    width: 100%;
+    height: auto;
+  }
+  section main .card-feitico h1 {
+    font: 3.6rem "Almendra Display";
+  }
+  section main .card-feitico pre {
+    font: 2rem "Almendra Display";
+  }
+  section main .card-feitico button {
+    font: 3rem "Old English";
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -199,13 +199,30 @@ section {
         }
 
         main {
-        
+            
 
-        p {
-            font: $almendra-20;
+            .card-feitico {
+                width: 100%;
+                height: auto;
+
+                h1 {
+                    font: $almendra-36;
+                }
+
+                pre {
+                    font: $almendra-20;
+                }
+
+                // A configuração do botão está em global.css
+                button {
+                    font: $oldEnglish-30;
+                    width: 100%;
+                }
+
+
+            }
+
         }
-
     }
 
-    }
 }

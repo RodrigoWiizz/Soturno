@@ -1,9 +1,9 @@
 body {
   height: auto;
-  background-image: url("../../../public/assets/images/Contato/background-meninaduascaras-contato.png"), url("../../../public/assets/images/Sobre/background-florazul-sobre.png");
+  background-image: url("../../../public/assets/images/CompraFeitico/background-comprafeitico.png");
   background-repeat: no-repeat;
-  background-position: center top, center bottom;
-  background-size: 100% auto;
+  background-size: 60%;
+  background-position: center;
 }
 
 section {
@@ -56,36 +56,78 @@ section header nav a:hover {
   text-decoration: underline;
   color: white;
 }
+section article {
+  width: 90%;
+}
+section article h1 {
+  text-align: center;
+  color: #9e9e9e;
+  font: 6.4rem "Almendra Display";
+  margin: 0;
+}
+section article p {
+  text-align: center;
+  color: #F80000;
+  font: 3.2rem "Almendra Display";
+  margin: 0;
+}
 section main {
   margin-top: 40px;
-  width: 90%;
+  width: 95%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid #9e9e9e;
 }
-section main pre {
-  color: #9e9e9e;
-  font: 3.2rem "Almendra Display";
+section main .comprafeitico-card {
   width: 100%;
   height: 100%;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  position: relative;
 }
-section main h1 {
+section main .comprafeitico-card h1 {
+  margin: 0px;
+  text-align: center;
   color: #9e9e9e;
-  font: 4.8rem "Old English";
+  font: 6.4rem "Almendra Display";
 }
-section main figure {
+section main .comprafeitico-card pre {
+  margin: 0px;
+  text-align: center;
+  color: #9e9e9e;
+  font: 2.8rem "Almendra Display";
+}
+section main .comprafeitico-card img {
+  position: absolute;
+}
+section main .comprafeitico-card .feitico-inferior-esquerdo {
+  left: 5px;
+  bottom: 5px;
+  transform: scale(-1, 1);
+}
+section main .comprafeitico-card .feitico-inferior-direito {
+  right: 5px;
+  bottom: 5px;
+}
+section main .comprafeitico-card .feitico-superior-esquerdo {
+  left: 5px;
+  top: 5px;
+  transform: scale(-1);
+}
+section main .comprafeitico-card .feitico-superior-direito {
+  right: 5px;
+  top: 5px;
+  transform: scale(1, -1);
+}
+section main .comprafeitico-card article {
   width: 100%;
-  height: 10%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
-section main figure img {
-  width: auto;
-  height: 250px;
+section main .comprafeitico-card article h1 {
+  color: #9e9e9e;
+  font: 4.4rem "Almendra Display";
+}
+section main .comprafeitico-card article h2 {
+  color: #9e9e9e;
+  font: 4.4rem "Babylonica";
 }
 
 @media (max-width: 1000px) {
@@ -120,11 +162,5 @@ section main figure img {
   }
   section header nav a {
     font: 1.6rem "Almendra Display";
-  }
-  section main pre {
-    font: 2rem "Almendra Display";
-  }
-  section main h1 {
-    font: 3.6rem "Old English";
   }
 }/*# sourceMappingURL=index.css.map */

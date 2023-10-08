@@ -1,6 +1,6 @@
 @import '../../components/variaveis/';
 
-body{
+body {
     height: auto;
     background-image: url("../../../public/assets/images/CompraFeitico/background-comprafeitico.png");
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ section {
         width: 95%;
         height: auto;
         border: 1px solid $cor-do-objetos;
-        
+
         .comprafeitico-card {
             width: 100%;
             height: 100%;
@@ -114,6 +114,8 @@ section {
                 text-align: center;
                 color: $cor-do-objetos;
                 font: $almendra-28;
+                white-space: pre-wrap;
+                word-wrap: break-word;
             }
 
             img {
@@ -143,22 +145,60 @@ section {
                 transform: scale(1, -1);
             }
 
-            article {
+            .article-texto {
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                gap: 10px;
 
                 h1 {
                     color: $cor-do-objetos;
                     font: $almendra-44;
                 }
-    
-                h2{
-                    color: $cor-do-objetos;
+
+                h2 {
+                    color: white;
                     font: $babylonica-44;
                 }
 
-            }   
+            }
+
+            .article-botao {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    h1 {
+                        color: $cor-do-objetos;
+                        font: $almendra-44;
+                    }
+
+                    h2 {
+                        color: white;
+                        font: $arbutus-36;
+                    }
+
+                }
+
+
+
+                // A configuração do botão está em global.css
+                button {
+                    font: $oldEnglish-48;
+                    height: 70px;
+                    margin-left: 60px;
+                }
+
+            }
         }
     }
 
@@ -192,6 +232,51 @@ section {
                 justify-content: space-around;
             }
         }
+
+        main {
+
+            .comprafeitico-card {
+
+                .article-texto {
+
+                    h1 {
+                        font: $almendra-36;
+                    }
+
+                    h2 {
+                        font: $babylonica-36;
+                    }
+                }
+
+                .article-botao {
+
+
+                    div {
+
+
+                        h1 {
+                            font: $almendra-36;
+                        }
+
+                        h2 {
+                            font: $arbutus-28;
+                        }
+
+                        
+                    }
+
+                    button {
+                        margin-top: 40px;
+                        margin-left: 0px;
+                    }
+                }
+
+            }
+
+            .article-botao {
+                flex-direction: column;
+            }
+        }
     }
 }
 
@@ -223,5 +308,47 @@ section {
 
             }
         }
+
+        main {
+
+            .comprafeitico-card {
+
+                .article-texto {
+                    flex-direction: column;
+
+                    h1 {
+                        font: $almendra-36;
+                    }
+
+                    h2 {
+                        font: $babylonica-36;
+                    }
+                }
+
+                .article-botao {
+
+                    div {
+                        flex-direction: column;
+
+                        h1 {
+                            font: $almendra-36;
+                        }
+
+                        h2 {
+                            font: $arbutus-28;
+                        }
+
+                    }
+
+                    button {
+                        
+                        width: 80%;
+                        font: $oldEnglish-30;
+                    }
+                }
+
+            }
+        }
     }
+
 }

@@ -93,6 +93,8 @@ section main .comprafeitico-card pre {
   text-align: center;
   color: #9e9e9e;
   font: 2.8rem "Almendra Display";
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 section main .comprafeitico-card img {
   position: absolute;
@@ -116,18 +118,46 @@ section main .comprafeitico-card .feitico-superior-direito {
   top: 5px;
   transform: scale(1, -1);
 }
-section main .comprafeitico-card article {
+section main .comprafeitico-card .article-texto {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-section main .comprafeitico-card article h1 {
+section main .comprafeitico-card .article-texto h1 {
   color: #9e9e9e;
   font: 4.4rem "Almendra Display";
 }
-section main .comprafeitico-card article h2 {
-  color: #9e9e9e;
+section main .comprafeitico-card .article-texto h2 {
+  color: white;
   font: 4.4rem "Babylonica";
+}
+section main .comprafeitico-card .article-botao {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section main .comprafeitico-card .article-botao div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+section main .comprafeitico-card .article-botao div h1 {
+  color: #9e9e9e;
+  font: 4.4rem "Almendra Display";
+}
+section main .comprafeitico-card .article-botao div h2 {
+  color: white;
+  font: 3.6rem "Arbutus";
+}
+section main .comprafeitico-card .article-botao button {
+  font: 4.8rem "Old English";
+  height: 70px;
+  margin-left: 60px;
 }
 
 @media (max-width: 1000px) {
@@ -151,6 +181,25 @@ section main .comprafeitico-card article h2 {
     gap: 20px;
     justify-content: space-around;
   }
+  section main .comprafeitico-card .article-texto h1 {
+    font: 3.6rem "Almendra Display";
+  }
+  section main .comprafeitico-card .article-texto h2 {
+    font: 3.6rem "Babylonica";
+  }
+  section main .comprafeitico-card .article-botao div h1 {
+    font: 3.6rem "Almendra Display";
+  }
+  section main .comprafeitico-card .article-botao div h2 {
+    font: 2.8rem "Arbutus";
+  }
+  section main .comprafeitico-card .article-botao button {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  section main .article-botao {
+    flex-direction: column;
+  }
 }
 @media (max-width: 530px) {
   section header figure img {
@@ -162,5 +211,27 @@ section main .comprafeitico-card article h2 {
   }
   section header nav a {
     font: 1.6rem "Almendra Display";
+  }
+  section main .comprafeitico-card .article-texto {
+    flex-direction: column;
+  }
+  section main .comprafeitico-card .article-texto h1 {
+    font: 3.6rem "Almendra Display";
+  }
+  section main .comprafeitico-card .article-texto h2 {
+    font: 3.6rem "Babylonica";
+  }
+  section main .comprafeitico-card .article-botao div {
+    flex-direction: column;
+  }
+  section main .comprafeitico-card .article-botao div h1 {
+    font: 3.6rem "Almendra Display";
+  }
+  section main .comprafeitico-card .article-botao div h2 {
+    font: 2.8rem "Arbutus";
+  }
+  section main .comprafeitico-card .article-botao button {
+    width: 80%;
+    font: 3rem "Old English";
   }
 }/*# sourceMappingURL=index.css.map */

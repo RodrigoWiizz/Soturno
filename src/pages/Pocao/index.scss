@@ -1,5 +1,9 @@
 @import '../../components/variaveis/';
 
+body {
+    height: auto;
+}
+
 section {
     padding: 20px;
     width: 100%;
@@ -64,6 +68,90 @@ section {
 
     }
 
+    h1 {
+        color: $cor-do-objetos;
+        font: $oldEnglish-128;
+        margin: 0;
+        text-align: center;
+    }
+
+    .conteudo-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        main {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                margin: 20px 0px;
+                font: $oldEnglish-48;
+            }
+
+            .pocao-card {
+                width: 100%;
+                min-height: 350px;
+                height: auto;
+                border: 1px solid $cor-do-objetos;
+                position: relative;
+
+                h1 {
+                    color: $cor-do-objetos;
+                    font: $almendra-48;
+                }
+
+                img {
+                    position: absolute;
+                }
+
+                .feitico-inferior-esquerdo {
+                    left: 5px;
+                    bottom: 5px;
+                    transform: scale(-1, 1); // Inverter a imagem(espelhar)
+                }
+
+                .feitico-inferior-direito {
+                    right: 5px;
+                    bottom: 5px;
+                }
+
+                .feitico-superior-esquerdo {
+                    left: 5px;
+                    top: 5px;
+                    transform: scale(-1);
+                }
+
+                .feitico-superior-direito {
+                    right: 5px;
+                    top: 5px;
+                    transform: scale(1, -1);
+                }
+
+                .pocao-conteudo {
+                    display: flex;
+                    flex-direction: row;
+                    border: none;
+
+                    .foto-pocao {
+                        width: 130px;
+                        position: initial;
+                    }
+
+                    p {
+                        margin-left: 20px;
+                        color: $cor-do-objetos;
+                        font: $almendra-28;
+                    }
+                }
+
+            }
+        }
+
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -92,6 +180,21 @@ section {
                 width: 100%;
                 gap: 20px;
                 justify-content: space-around;
+            }
+        }
+
+        .conteudo-card {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            main {
+                width: 100%;
+
+                .pocao-card {
+                    width: 100%;
+                }
+
             }
         }
     }
@@ -125,5 +228,25 @@ section {
 
             }
         }
+
+        .conteudo-card {
+
+            main {
+
+                button {
+                    width: 100%;
+                    font: $oldEnglish-36;
+                }
+
+                .pocao-card {
+
+                    .pocao-conteudo {
+                        flex-direction: column;
+                    }
+                }
+
+            }
+        }
+
     }
 }

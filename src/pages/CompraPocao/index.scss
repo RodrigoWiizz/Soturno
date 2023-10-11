@@ -1,0 +1,161 @@
+@import '../../components/variaveis/';
+
+body {
+    
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $cor-do-objetos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        figure {
+            width: 365px;
+            height: auto;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .titulo-logo {
+                display: flex;
+                align-items: center;
+                font: $almendra-64;
+                color: $cor-do-objetos;
+            }
+
+
+        }
+
+        nav {
+            width: auto;
+            display: flex;
+            gap: 50px;
+
+
+            a {
+                text-decoration: none;
+                color: $cor-do-objetos;
+                font: $almendra-36;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: white
+            }
+
+        }
+
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 60%;
+
+        figure {
+            display: flex;
+            padding: 30px;
+            width: 20%;
+            border: 1px solid $cor-do-objetos;
+        }
+
+        section {
+            padding: 0px;
+            width: 70%;
+            border: none;
+
+            .article-titulo {
+                width: 100%;
+                border: 1px solid $cor-do-objetos;
+                
+                h1 {
+                    text-align: center;
+                    font: $almendra-64;
+                    color: $cor-do-objetos;
+                    margin: 0px;
+                }
+
+            }
+
+            section {
+                padding: 0px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap:40px;
+                
+
+                article{
+                    border: 1px solid $cor-do-objetos;
+                    width: 50%;
+                    height: 90%;
+                    margin-top: 30px;
+
+                }
+
+            }
+
+        }
+    }
+
+    footer {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-titulo {
+            padding: 0px;
+            width: 70%;
+            border: none;
+            display: flex;
+            flex-direction: row;
+
+            .footer-cima{
+            h1 {
+                font: $almendra-44;
+                color: $cor-do-objetos;
+                margin: 0px;
+            }
+
+            h2 {
+                font: $babylonica-44;
+                color: $cor-do-objetos;
+                margin: 0px;
+            }
+
+        }
+
+            .footer-baixo{
+
+            }
+        }
+
+        section {
+            border: none;
+            width: 30%;
+        }
+    }
+}
+

@@ -11,7 +11,7 @@ body .chao-produtos {
   bottom: 0px;
   left: 0px;
   width: 1600px;
-  height: 70%;
+  height: 20%;
 }
 
 section {
@@ -64,9 +64,60 @@ section header nav a:hover {
   text-decoration: underline;
   color: white;
 }
+section section {
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+}
+section section a {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  align-items: end;
+}
+section section a img {
+  height: 100%;
+  width: 100%;
+}
 
 @media (min-width: 1600px) {
   body .chao-produtos {
     width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  section header {
+    flex-direction: column-reverse;
+  }
+  section header figure {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 20px;
+  }
+  section header figure img {
+    width: 135px;
+    height: 130px;
+  }
+  section header figure .titulo-logo {
+    margin: 0px;
+  }
+  section header nav {
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 530px) {
+  section header figure img {
+    width: 100px;
+    height: 100px;
+  }
+  section header figure .titulo-logo {
+    font: 3rem "Almendra Display";
+  }
+  section header nav a {
+    font: 1.6rem "Almendra Display";
   }
 }/*# sourceMappingURL=index.css.map */

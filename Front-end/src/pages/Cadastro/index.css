@@ -78,19 +78,6 @@ section main input {
   border: none;
   border-bottom: 4px solid white;
 }
-section main .email-login {
-  background-image: url("../../../public/assets/images/Login/icon-mago.png");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  padding: 0px 0px 0px 70px;
-}
-section main .senha-login {
-  background-image: url("../../../public/assets/images/Login/icon-cadeado.png");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  padding: 0px 0px 0px 70px;
-  margin-top: 40px;
-}
 section button {
   margin: 40px 0px;
   font: 4.8rem "Old English";
@@ -140,14 +127,6 @@ section button {
   }
   section main input {
     font: 3rem "Almendra Display";
-  }
-  section main .email-login {
-    background-size: auto 80%;
-    background-position: bottom left;
-  }
-  section main .senha-login {
-    background-size: auto 80%;
-    background-position: bottom left;
   }
   section button {
     width: 100%;

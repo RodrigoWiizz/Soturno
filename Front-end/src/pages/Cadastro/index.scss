@@ -92,21 +92,6 @@ section {
             border: none;
             border-bottom: 4px solid white;
         }
-
-        .email-login {
-            background-image: url("../../../public/assets/images/Login/icon-mago.png");
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            padding: 0px 0px 0px 70px;
-        }
-
-        .senha-login {
-            background-image: url("../../../public/assets/images/Login/icon-cadeado.png");
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            padding: 0px 0px 0px 70px;
-            margin-top: 40px;
-        }
         
     }
 
@@ -196,16 +181,6 @@ section {
 
             input {
                 font: $almendra-30;
-            }
-
-            .email-login {
-                background-size: auto 80%;
-                background-position: bottom left;
-            }
-    
-            .senha-login {
-                background-size: auto 80%;
-                background-position: bottom left;
             }
         }
 

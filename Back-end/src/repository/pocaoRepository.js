@@ -7,5 +7,17 @@ export async function cadastrarPocao(pocao){
     const [info] = await con.query(sql, [pocao.nome, pocao.preco, pocao.criador, pocao.imagem, pocao.tipo, pocao.descricao, pocao.ingredientes])
     pocao.id = info.insertId;
 
-    return sql;
+    return pocao;
+}
+
+export async function listarPocao(){
+    const sql = `SELECT * FROM pocoes`
+    const [linhas] = await con.query(sql)
+    return linhas
+}
+
+export async function remover(id){
+    const sql = `DELETE FROM pocoes WHERE idPocoes = ?`
+    const [info] = await con.query(sql, [id])
+    return info.affectedRows
 }

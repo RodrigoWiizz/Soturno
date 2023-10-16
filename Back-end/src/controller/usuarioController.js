@@ -1,12 +1,12 @@
 import { Router } from "express";
-import { cadastrarPocao, listarPocao, listarPocaoPorNome, removerPocao} from "../repository/pocaoRepository.js"
+import { cadastrarUsuario, listarUsuario, listarUsuarioPorNome, removerUsuario} from "../repository/usuarioRepository.js"
 
-const pocaoEndpoints = Router();
+const usuarioEndpoints = Router();
 
-pocaoEndpoints.post('/pocao', async (req, resp) => {
+usuarioEndpoints.post('/usuario', async (req, resp) => {
     try {
-        let pocao = req.body;
-        let r = await cadastrarPocao(pocao);
+        let usuario = req.body;
+        let r = await cadastrarUsuario(usuario);
         resp.status(200).send(r);
     } catch (error) {
         resp.status(400).send({
@@ -15,9 +15,9 @@ pocaoEndpoints.post('/pocao', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.get('/pocao', async (req, resp) => {
+usuarioEndpoints.get('/usuario', async (req, resp) => {
     try {
-        let r = await listarPocao()
+        let r = await listarUsuario()
         resp.send(r)
     } catch (error) {
         resp.status(400).send({
@@ -26,10 +26,10 @@ pocaoEndpoints.get('/pocao', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.get('/pocao/buscar/', async (req, resp) => {
+usuarioEndpoints.get('/usuario/buscar/', async (req, resp) => {
     try {
         let nome = req.query.nome
-        let r = await listarPocaoPorNome(nome)
+        let r = await listarUsuarioPorNome(nome)
         resp.send(r)
     } catch (error) {
         resp.status(400).send({
@@ -38,10 +38,10 @@ pocaoEndpoints.get('/pocao/buscar/', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.delete('/delete/:id', async (req, resp) => {
+usuarioEndpoints.delete('/delete/:id', async (req, resp) => {
     try {
         let id = req.params.id
-        let linhasAfetadas = await removerPocao(id)
+        let linhasAfetadas = await removerUsuario(id)
         if (linhasAfetadas == 0)
             throw new Error("Poção não encontrada")
         resp.send() 
@@ -52,4 +52,4 @@ pocaoEndpoints.delete('/delete/:id', async (req, resp) => {
     }
 })
 
-export default pocaoEndpoints;
+export default usuarioEndpoints;

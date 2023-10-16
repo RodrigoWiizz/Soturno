@@ -16,7 +16,13 @@ export async function listarPocao(){
     return linhas
 }
 
-export async function remover(id){
+export async function listarPocaoPorNome(nome){
+    const sql = `SELECT * FROM pocoes WHERE nome = ?`
+    const [linhas] = await con.query(sql, [nome])
+    return linhas
+}
+
+export async function removerPocao(id){
     const sql = `DELETE FROM pocoes WHERE idPocoes = ?`
     const [info] = await con.query(sql, [id])
     return info.affectedRows

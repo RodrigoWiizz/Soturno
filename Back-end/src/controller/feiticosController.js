@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { cadastrarFeitico, listarFeitico, listarFeiticoPorNome, removerFeitico} from "../repository/feiticoRepository.js"
+import { atualizarFeitico, cadastrarFeitico, listarFeitico, listarFeiticoPorNome, removerFeitico} from "../repository/feiticoRepository.js"
 
 const feiticoEndpoints = Router();
 
@@ -10,7 +10,19 @@ feiticoEndpoints.post('/feitico', async (req, resp) => {
         resp.status(200).send(r);
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
+        })
+    }
+})
+
+feiticoEndpoints.put('/feitico', async (req, resp) => {
+    try {
+        let feitico = req.body;
+        let r = await atualizarFeitico(feitico)
+        resp.status(200).send(r)
+    } catch (error) {
+        resp.status(400).send({
+            erro: error.message
         })
     }
 })
@@ -21,7 +33,7 @@ feiticoEndpoints.get('/feitico', async (req, resp) => {
         resp.send(r)
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
         })
     }
 })
@@ -33,12 +45,12 @@ feiticoEndpoints.get('/feitico/buscar/', async (req, resp) => {
         resp.send(r)
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
         })
     }
 })
 
-feiticoEndpoints.delete('/delete/:id', async (req, resp) => {
+feiticoEndpoints.delete('/feitico/:id', async (req, resp) => {
     try {
         let id = req.params.id
         let linhasAfetadas = await removerFeitico(id)
@@ -47,7 +59,7 @@ feiticoEndpoints.delete('/delete/:id', async (req, resp) => {
         resp.send() 
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
         })
     }
 })

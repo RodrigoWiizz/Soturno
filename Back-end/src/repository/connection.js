@@ -1,10 +1,9 @@
 import mysql2 from "mysql2/promise";
 
 const con = await mysql2.createConnection({
-    host: process.env.HOST,
-    database: process.env.DATABASE,
+    user: process.env.USER,
     password: process.env.PWS,
-    user: process.env.USERNAME
+    database: process.env.DATABASE
 })
 
 console.log("Banco conectado")

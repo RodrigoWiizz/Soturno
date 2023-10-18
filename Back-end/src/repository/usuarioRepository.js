@@ -1,6 +1,6 @@
 import { con } from "./connection.js";
 
-export async function cadastrarusuario(usuario){
+export async function cadastrarUsuario(usuario){
     const sql = `INSERT INTO usuarios (nome, senha, email, tipo)
                                     VALUES(?, ?, ?, ?)`
 
@@ -10,20 +10,29 @@ export async function cadastrarusuario(usuario){
     return usuario;
 }
 
-export async function listarusuario(){
+export async function atualizarUsuario(usuario){
+    const sql = `UPDATE usuarios SET 
+                nome = ?, senha = ?, email = ?, tipo = ?
+                WHERE idUsuario = ?`
+
+    const [info] = await con.query(sql, [usuario.nome, usuario.senha, usuario.email, usuario.tipo, usuario.idUsuario])
+    return info
+}
+
+export async function listarUsuario(){
     const sql = `SELECT * FROM usuarios`
     const [linhas] = await con.query(sql)
     return linhas
 }
 
-export async function listarusuarioPorNome(nome){
-    const sql = `SELECT * FROM usuarios WHERE nome = ?`
-    const [linhas] = await con.query(sql, [nome])
+export async function listarUsuarioPorNome(nome){
+    const sql = `SELECT * FROM usuarios WHERE nome LIKE ?`
+    const [linhas] = await con.query(sql, ['%'+nome+'%'])
     return linhas
 }
 
-export async function removerusuario(id){
-    const sql = `DELETE FROM usuarios WHERE idUsuarios = ?`
+export async function removerUsuario(id){
+    const sql = `DELETE FROM usuarios WHERE idUsuario = ?`
     const [info] = await con.query(sql, [id])
     return info.affectedRows
 }

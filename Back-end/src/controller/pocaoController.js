@@ -1,16 +1,28 @@
 import { Router } from "express";
-import { cadastrarPocao, listarPocao, listarPocaoPorNome, removerPocao} from "../repository/pocaoRepository.js"
+import { atualizarPocao, cadastrarPocao, listarPocao, listarPocaoPorNome, removerPocao} from "../repository/pocaoRepository.js"
 
 const pocaoEndpoints = Router();
 
 pocaoEndpoints.post('/pocao', async (req, resp) => {
     try {
-        let pocao = req.body;
-        let r = await cadastrarPocao(pocao);
-        resp.status(200).send(r);
+        let pocao = req.body
+        let r = await cadastrarPocao(pocao)
+        resp.status(200).send(r)
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
+        })
+    }
+})
+
+pocaoEndpoints.put('/pocao', async (req, resp) => {
+    try {
+        let pocao = req.body;
+        let r = await atualizarPocao(pocao)
+        resp.status(200).send(r)
+    } catch (error) {
+        resp.status(400).send({
+            erro: error.message
         })
     }
 })
@@ -21,7 +33,7 @@ pocaoEndpoints.get('/pocao', async (req, resp) => {
         resp.send(r)
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
         })
     }
 })
@@ -33,12 +45,12 @@ pocaoEndpoints.get('/pocao/buscar/', async (req, resp) => {
         resp.send(r)
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
         })
     }
 })
 
-pocaoEndpoints.delete('/delete/:id', async (req, resp) => {
+pocaoEndpoints.delete('/pocao/:id', async (req, resp) => {
     try {
         let id = req.params.id
         let linhasAfetadas = await removerPocao(id)
@@ -47,7 +59,7 @@ pocaoEndpoints.delete('/delete/:id', async (req, resp) => {
         resp.send() 
     } catch (error) {
         resp.status(400).send({
-            erro: err.message
+            erro: error.message
         })
     }
 })

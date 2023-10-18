@@ -1,17 +1,8 @@
 body {
-  background-image: url("../../../public/assets/images/Produtos/background-florvermelha-produtos.png");
+  background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto 100%;
-  position: relative;
-  overflow: hidden;
-}
-body .chao-produtos {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 1600px;
-  height: 20%;
+  background-position: right top, left bottom;
+  background-size: 750px 100%, 750px 70%;
 }
 
 section {
@@ -64,33 +55,28 @@ section header nav a:hover {
   text-decoration: underline;
   color: white;
 }
-section .section-img {
-  height: 75%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: none;
+section main {
+  margin-top: 8%;
+  height: auto;
+  width: 73.3%;
 }
-section .section-img a {
-  height: 90%;
-  width: 50%;
+section main p {
   display: flex;
-  align-items: end;
-}
-section .section-img a img {
-  height: 100%;
+  align-items: center;
   width: 100%;
-}
-section .section-a {
-  display: none;
+  height: 100%;
+  text-align: center;
+  color: #9e9e9e;
+  font: 3.2rem "Almendra Display";
 }
 
-@media (min-width: 1600px) {
-  body .chao-produtos {
-    width: 100%;
-  }
-}
 @media (max-width: 1000px) {
+  body {
+    background-image: url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+    background-position: left bottom;
+    background-size: 100% 100%;
+    height: 130vh;
+  }
   section header {
     flex-direction: column-reverse;
   }
@@ -113,6 +99,9 @@ section .section-a {
   }
 }
 @media (max-width: 530px) {
+  body {
+    height: 100vh;
+  }
   section header figure img {
     width: 100px;
     height: 100px;
@@ -123,28 +112,7 @@ section .section-a {
   section header nav a {
     font: 1.6rem "Almendra Display";
   }
-  section .section-img {
-    display: none;
-  }
-  section .section-a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: none;
-  }
-  section .section-a a {
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: 3.6rem "Old English";
-    color: black;
-    text-decoration: none;
-    background-color: #e8f0d5;
-    height: 15%;
-    width: 90%;
-  }
-  figure {
-    display: none;
+  section main p {
+    font: 2rem "Almendra Display";
   }
 }/*# sourceMappingURL=index.css.map */

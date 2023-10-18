@@ -7,17 +7,6 @@ body {
     background-size: 40%, 40%;
 }
 
-a {
-    text-decoration: none;
-    color: $cor-do-objetos;
-    font: $almendra-36;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: white
-}
-
 section {
     padding: 20px;
     width: 100%;
@@ -66,6 +55,17 @@ section {
             display: flex;
             gap: 50px;
 
+            a {
+                text-decoration: none;
+                color: $cor-do-objetos;
+                font: $almendra-36;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: white
+            }
+
         }
 
     }
@@ -82,6 +82,17 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $cor-do-objetos;
+            font: $almendra-36;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: white
+        }
 
         input {
             width: 48%;

@@ -1,13 +1,22 @@
 import { con } from "./connection.js";
 
 export async function cadastrarFeitico(feitico){
-    const sql = `INSERT INTO feiticos (nome, preco, criador, imagem, descricao)
-                                    VALUES(?, ?, ?, ?, ?)`
+    const sql = `INSERT INTO feiticos (nome, preco, criador, descricao)
+                                    VALUES(?, ?, ?, ?)`
 
-    const [info] = await con.query(sql, [feitico.nome, feitico.preco, feitico.criador, feitico.imagem, feitico.descricao])
+    const [info] = await con.query(sql, [feitico.nome, feitico.preco, feitico.criador, feitico.descricao])
     feitico.id = info.insertId;
 
     return feitico;
+}
+
+export async function atualizarFeitico(feitico){
+    const sql = `UPDATE feiticos SET 
+                nome = ?, preco = ?, criador = ?, descricao = ? 
+                WHERE idFeiticos = ?`
+
+    const [info] = await con.query(sql, [feitico.nome, feitico.preco, feitico.criador, feitico.descricao,  feitico.idFeiticos])
+    return info
 }
 
 export async function listarFeitico(){
@@ -17,8 +26,8 @@ export async function listarFeitico(){
 }
 
 export async function listarFeiticoPorNome(nome){
-    const sql = `SELECT * FROM feiticos WHERE nome = ?`
-    const [linhas] = await con.query(sql, [nome])
+    const sql = `SELECT * FROM feiticos WHERE nome LIKE ?`
+    const [linhas] = await con.query(sql, ['%'+nome+'%'])
     return linhas
 }
 

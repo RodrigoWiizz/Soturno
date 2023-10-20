@@ -10,6 +10,15 @@ export async function cadastrarPocao(pocao){
     return pocao;
 }
 
+export async function atualizarPocao(pocao){
+    const sql = `UPDATE pocoes SET 
+                nome = ?, preco = ?, criador = ?, imagem = ?, tipo = ?, descricao = ?, ingredientes = ?
+                WHERE idPocoes = ?`
+
+    const [info] = await con.query(sql, [pocao.nome, pocao.preco, pocao.criador, pocao.imagem, pocao.tipo, pocao.descricao, pocao.ingredientes, pocao.idPocoes])
+    return info
+}
+
 export async function listarPocao(){
     const sql = `SELECT * FROM pocoes`
     const [linhas] = await con.query(sql)
@@ -17,8 +26,8 @@ export async function listarPocao(){
 }
 
 export async function listarPocaoPorNome(nome){
-    const sql = `SELECT * FROM pocoes WHERE nome = ?`
-    const [linhas] = await con.query(sql, [nome])
+    const sql = `SELECT * FROM pocoes WHERE nome like ?`
+    const [linhas] = await con.query(sql, ['%'+nome+'%'])
     return linhas
 }
 

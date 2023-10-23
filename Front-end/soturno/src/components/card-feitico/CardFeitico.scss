@@ -1,0 +1,59 @@
+@import '../variaveis/index';
+
+.section-card-feitico {
+    width: 585px;
+    height: 730px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid $cor-do-objetos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img-card-feitico {
+        position: absolute;
+    }
+
+    .card-feitico-inferior-esquerdo {
+        left: 5px;
+        bottom: 5px;
+        transform: scale(-1, 1); // Inverter a imagem(espelhar)
+    }
+
+    .card-feitico-inferior-direito {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .card-feitico-superior-esquerdo {
+        left: 5px;
+        top: 5px;
+        transform: scale(-1);
+    }
+
+    .card-feitico-superior-direito {
+        right: 5px;
+        top: 5px;
+        transform: scale(1, -1);
+    }
+
+    .h1-card-feitico-titulo {
+        font: $almendra-64;
+        color: $cor-do-objetos;
+    }
+
+    .pre-card-feitico {
+        text-align: justify;
+        font: $almendra-28;
+        color: $cor-do-objetos;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    // A configuração do botão está em global.css
+    button {
+        font: $oldEnglish-48;
+    }
+
+
+}

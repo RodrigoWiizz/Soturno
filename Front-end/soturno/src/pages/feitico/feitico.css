@@ -1,0 +1,25 @@
+.pagina-feitico {
+  height: auto;
+  background-image: url("../../../public/assets/images/feitico/background-caveira-feitico.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+}
+.pagina-feitico .section-feitico {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pagina-feitico .section-feitico .main-feitico {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=feitico.css.map */

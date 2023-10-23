@@ -1,29 +1,29 @@
 @import '../variaveis/index';
 
-header {
+.header-header {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    figure {
+    .figure-header {
         width: 365px;
         height: auto;
         gap: 20px;
         display: flex;
         align-items: center;
 
-        a {
+        .a-header-logo {
             text-decoration: none;
         }
 
-        img {
+        .img-header {
             width: 100%;
             height: 100%;
         }
 
-        .titulo-logo {
+        .header-titulo-logo {
             display: flex;
             align-items: center;
             font: $almendra-64;
@@ -33,19 +33,19 @@ header {
 
     }
 
-    nav {
+    .nav-header {
         width: auto;
         display: flex;
         gap: 50px;
 
 
-        a {
+        .a-header {
             text-decoration: none;
             color: $cor-do-objetos;
             font: $almendra-36;
         }
 
-        a:hover {
+        .a-header:hover {
             text-decoration: underline;
             color: white
         }
@@ -56,15 +56,15 @@ header {
 
 @media (max-width: 1000px) {
 
-    header {
+    .header-header {
         flex-direction: column-reverse;
 
-        figure {
+        .figure-header {
             flex-direction: column;
             gap: 0px;
             margin-top: 20px;
 
-            img {
+            .img-header {
                 width: 135px;
                 height: 130px;
             }
@@ -74,7 +74,7 @@ header {
             }
         }
 
-        nav {
+        .nav-header {
             width: 100%;
             gap: 20px;
             justify-content: space-around;
@@ -84,25 +84,25 @@ header {
 
 @media (max-width: 530px) {
 
-    header {
+    .header-header {
 
-        figure {
+        .figure-header {
 
-            img {
+            .img-header {
                 width: 100px;
                 height: 100px;
             }
 
-            .titulo-logo {
+            .header-titulo-logo {
                 font: $almendra-30;
             }
 
         }
 
-        nav {
+        .nav-header {
 
 
-            a {
+            .a-header {
                 font: $almendra-16;
             }
 

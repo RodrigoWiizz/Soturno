@@ -26,12 +26,7 @@ html {
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-
-    padding: 20px;
+    margin: 20px;
     background-color: #101010;
     overflow-x: hidden;
 }

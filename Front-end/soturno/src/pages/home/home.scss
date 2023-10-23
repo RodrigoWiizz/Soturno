@@ -1,13 +1,14 @@
 @import '../../components/variaveis/';
 
 .pagina-home {
+    height: 100vh;
     background-color: #101010;
     background-image: url("../../../public/assets/images/home/background-menina-landingpage.png"), url("../../../public/assets/images/global/background-florazul.png");
     background-repeat: no-repeat;
     background-position: right top, left bottom;
     background-size: 750px 100%, 750px 70%; // Largura em % da primeira imagem é 55%.
 
-    section {
+    .section-home {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -16,12 +17,12 @@
         flex-direction: column;
         align-items: center;
 
-        main {
+        .main-home {
             margin-top: 8%;
             height: auto;
             width: 73.30%;
 
-            p {
+            .p-home-textomeio {
                 display: flex;
                 align-items: center;
                 width: 100%;
@@ -52,12 +53,12 @@
         height: 100vh;
     }
 
-    section {
+    .section-home {
 
-        main {
+        .main-home {
 
 
-            p {
+            .p-home-textomeio {
                 font: $almendra-20;
             }
 

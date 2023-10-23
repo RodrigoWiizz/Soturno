@@ -7,13 +7,13 @@ export default function Contato() {
 
         <body class="pagina-contato">
 
-            <section>
+            <section class="section-contato">
 
                 <Header />
 
-                <main>
+                <main class="main-contato">
 
-                    <pre> {`
+                    <pre class="pre-contato"> {`
 Entre em Contato com a Magia! 
 
 Se você está pronto para se conectar conosco na Soturno, siga as instruções abaixo e junte-se à nossa comunidade de entusiastas da magia. 
@@ -36,14 +36,14 @@ Horário de Funcionamento: Nossa loja física está aberta para visitantes das 1
 
 `}</pre>
 
-                    <h1>A sotuno é credenciada pelos cinco reinos</h1>
+                    <h1 class="h1-contato-tituloreino">A sotuno é credenciada pelos cinco reinos</h1>
 
-                    <figure>
-                        <img src="assets/images/contato/reino1-contato.png" alt="Brasão Reino 1" />
-                        <img src="/assets/images/contato/reino2-contato.png" alt="Brasão Reino 2" />
-                        <img src="/assets/images/contato/reino3-contato.png" alt="Brasão Reino 3" />
-                        <img src="/assets/images/contato/reino4-contato.png" alt="Brasão Reino 4" />
-                        <img src="/assets/images/contato/reino5-contato.png" alt="Brasão Reino 5" />
+                    <figure class="figure-contato">
+                        <img class="img-contato-brasaoreinos" src="assets/images/contato/reino1-contato.png" alt="Brasão Reino 1" />
+                        <img class="img-contato-brasaoreinos" src="/assets/images/contato/reino2-contato.png" alt="Brasão Reino 2" />
+                        <img class="img-contato-brasaoreinos" src="/assets/images/contato/reino3-contato.png" alt="Brasão Reino 3" />
+                        <img class="img-contato-brasaoreinos" src="/assets/images/contato/reino4-contato.png" alt="Brasão Reino 4" />
+                        <img class="img-contato-brasaoreinos" src="/assets/images/contato/reino5-contato.png" alt="Brasão Reino 5" />
                     </figure>
 
                 </main>

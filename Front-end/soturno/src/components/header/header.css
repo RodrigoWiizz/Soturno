@@ -1,76 +1,76 @@
-header {
+.header-header {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header figure {
+.header-header .figure-header {
   width: 365px;
   height: auto;
   gap: 20px;
   display: flex;
   align-items: center;
 }
-header figure a {
+.header-header .figure-header .a-header-logo {
   text-decoration: none;
 }
-header figure img {
+.header-header .figure-header .img-header {
   width: 100%;
   height: 100%;
 }
-header figure .titulo-logo {
+.header-header .figure-header .header-titulo-logo {
   display: flex;
   align-items: center;
   font: 6.4rem "Almendra Display";
   color: #9e9e9e;
 }
-header nav {
+.header-header .nav-header {
   width: auto;
   display: flex;
   gap: 50px;
 }
-header nav a {
+.header-header .nav-header .a-header {
   text-decoration: none;
   color: #9e9e9e;
   font: 3.6rem "Almendra Display";
 }
-header nav a:hover {
+.header-header .nav-header .a-header:hover {
   text-decoration: underline;
   color: white;
 }
 
 @media (max-width: 1000px) {
-  header {
+  .header-header {
     flex-direction: column-reverse;
   }
-  header figure {
+  .header-header .figure-header {
     flex-direction: column;
     gap: 0px;
     margin-top: 20px;
   }
-  header figure img {
+  .header-header .figure-header .img-header {
     width: 135px;
     height: 130px;
   }
-  header figure .titulo-logo {
+  .header-header .figure-header .titulo-logo {
     margin: 0px;
   }
-  header nav {
+  .header-header .nav-header {
     width: 100%;
     gap: 20px;
     justify-content: space-around;
   }
 }
 @media (max-width: 530px) {
-  header figure img {
+  .header-header .figure-header .img-header {
     width: 100px;
     height: 100px;
   }
-  header figure .titulo-logo {
+  .header-header .figure-header .header-titulo-logo {
     font: 3rem "Almendra Display";
   }
-  header nav a {
+  .header-header .nav-header .a-header {
     font: 1.6rem "Almendra Display";
   }
 }/*# sourceMappingURL=header.css.map */

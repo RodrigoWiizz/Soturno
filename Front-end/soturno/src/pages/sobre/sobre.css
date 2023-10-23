@@ -5,7 +5,7 @@
   background-size: 100% auto;
   height: auto;
 }
-.pagina-sobre section {
+.pagina-sobre .section-sobre {
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -14,12 +14,12 @@
   flex-direction: column;
   align-items: center;
 }
-.pagina-sobre section main {
+.pagina-sobre .section-sobre .main-sobre {
   margin-top: 40px;
   width: 90%;
   height: 100%;
 }
-.pagina-sobre section main pre, .pagina-sobre section main p {
+.pagina-sobre .section-sobre .main-sobre .pre-p-sobre-descricao-titulo {
   color: #9e9e9e;
   font: 3.2rem "Almendra Display";
   width: 100%;
@@ -29,7 +29,7 @@
 }
 
 @media (max-width: 530px) {
-  section main pre {
+  .section-sobre .main-sobre .pre-p-sobre-descricao-titulo {
     font: 2rem "Almendra Display";
   }
 }/*# sourceMappingURL=sobre.css.map */

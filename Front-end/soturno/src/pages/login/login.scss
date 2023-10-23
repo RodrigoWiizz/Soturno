@@ -1,0 +1,129 @@
+@import '../../components/variaveis/';
+
+.pagina-login {
+    background-image: url("../../../public/assets/images/global/background-florazul.png"), url("../../../public/assets/images/global/background-florvermelha.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 40%, 40%;
+    height: 100%;
+
+    .section-login {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .h1-login-legenda {
+            font: $oldEnglish-96;
+            color: white;
+            margin: 0px;
+        }
+
+        .main-login {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .a-login-pergunta {
+                text-decoration: none;
+                color: $cor-do-objetos;
+                font: $almendra-36;
+            }
+
+            .a-login-pergunta:hover {
+                text-decoration: underline;
+                color: white
+            }
+
+            .input-login{
+                width: 48%;
+                height: 70px;
+                font: $almendra-44;
+                color: white;
+                background: transparent;
+                border: none;
+                border-bottom: 4px solid white;
+            }
+
+            .input-login-email {
+                background-image: url("../../../public/assets/images/login/icon-mago.png");
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                padding: 0px 0px 0px 70px;
+            }
+
+            .input-login-senha {
+                background-image: url("../../../public/assets/images/login/icon-cadeado.png");
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                padding: 0px 0px 0px 70px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    button {
+        margin: 40px 0px;
+        font: $oldEnglish-48;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .pagina-home {
+        height: auto;
+
+        .section-login {
+
+            .main-login {
+
+                .input-login{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    .section-login {
+
+        .h1-login-legenda {
+            font: $oldEnglish-36;
+        }
+
+        .main-login {
+
+            .input-login {
+                font: $almendra-30;
+            }
+
+            .input-login-email {
+                background-size: auto 80%;
+                background-position: bottom left;
+            }
+
+            .input-login-senha {
+                background-size: auto 80%;
+                background-position: bottom left;
+            }
+        }
+
+        button {
+            width: 100%;
+            font: $oldEnglish-30;
+        }
+
+        .a-login-pergunta {
+            font: $almendra-20;
+        }
+    }
+
+}

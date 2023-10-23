@@ -7,7 +7,7 @@
     background-size: 100% auto;
     height: auto;
 
-    section {
+    .section-sobre {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -16,12 +16,12 @@
         flex-direction: column;
         align-items: center;
 
-        main {
+        .main-sobre {
             margin-top: 40px;
             width: 90%;
             height: 100%;
 
-            pre, p {
+            .pre-p-sobre-descricao-titulo {
                 color: $cor-do-objetos;
                 font: $almendra-32;
                 width: 100%;
@@ -37,10 +37,10 @@
 
 @media (max-width: 530px) {
 
-    section {
+    .section-sobre {
 
-        main {
-            pre {
+        .main-sobre {
+            .pre-p-sobre-descricao-titulo {
                 font: $almendra-20;
             }
         }

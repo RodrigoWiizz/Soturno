@@ -4,16 +4,16 @@ import Header from "../../components/header/Header.jsx";
 export default function Contato() {
 
     return (
-        
+
         <body class="pagina-contato">
-    
-    <section>
 
-        <Header />
+            <section>
 
-        <main>
+                <Header />
 
-            <pre>
+                <main>
+
+                    <pre> {`
 Entre em Contato com a Magia! 
 
 Se você está pronto para se conectar conosco na Soturno, siga as instruções abaixo e junte-se à nossa comunidade de entusiastas da magia. 
@@ -28,27 +28,29 @@ Um de nossos especialistas em magia abrirá a porta para você e o guiará até 
 Detalhes de Contato: Para entrar em contato conosco de forma mais direta e rápida, você pode utilizar as seguintes opções: 
 
 Telefone Mágico: Ligue para o nosso número mágico, disponível 24 horas por dia, 7 dias por semana: +XX X666-X666. 
+
 Coruja de Mensagens: Envie sua mensagem mágica através de nossa coruja de mensagens, que entregará sua correspondência diretamente aos nossos especialistas em magia. 
 Pombo-Correio Encantado: Use o nosso serviço de pombo-correio encantado para enviar perguntas, pedidos ou consultas. Nossos pombo-correios são rápidos e confiáveis. 
 
 Horário de Funcionamento: Nossa loja física está aberta para visitantes das 10h às 18h, de segunda a sábado. Durante todo o dia, nossa loja online está disponível para suas compras mágicas. Na Soturno, estamos ansiosos para fazer parte da sua jornada mágica. Entre em contato conosco e descubra um mundo de possibilidades encantadoras que aguardam por você.
-            </pre>
 
-            <h1>A sotuno é credenciada pelos cinco reinos</h1>
+`}</pre>
 
-            <figure>
-                <img src="/assets/images/contato/reino1-contato" alt="Brasão Reino 1"/>
-                <img src="/assets/images/contato/reino2-contato" alt="Brasão Reino 2"/>
-                <img src="/assets/images/contato/reino3-contato" alt="Brasão Reino 3"/>
-                <img src="/assets/images/contato/reino4-contato" alt="Brasão Reino 4"/>
-                <img src="/assets/images/contato/reino5-contato" alt="Brasão Reino 5"/>
-            </figure>
+                    <h1>A sotuno é credenciada pelos cinco reinos</h1>
 
-        </main>
+                    <figure>
+                        <img src="assets/images/contato/reino1-contato.png" alt="Brasão Reino 1" />
+                        <img src="/assets/images/contato/reino2-contato.png" alt="Brasão Reino 2" />
+                        <img src="/assets/images/contato/reino3-contato.png" alt="Brasão Reino 3" />
+                        <img src="/assets/images/contato/reino4-contato.png" alt="Brasão Reino 4" />
+                        <img src="/assets/images/contato/reino5-contato.png" alt="Brasão Reino 5" />
+                    </figure>
 
-    </section>
+                </main>
 
-</body>
+            </section>
+
+        </body>
 
     )
 

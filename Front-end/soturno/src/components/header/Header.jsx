@@ -15,7 +15,7 @@ function Header() {
 
             <nav>
                 <a href="../Produtos/index.html">Produtos</a>
-                <a href="../Contato/index.html">Contato</a>
+                <a href="../contato">Contato</a>
                 <a href="../sobre">Sobre</a>
                 <a href="../Login/index.html">Login</a>
             </nav>

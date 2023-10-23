@@ -19,7 +19,7 @@
   width: 90%;
   height: 100%;
 }
-.pagina-sobre section main p {
+.pagina-sobre section main pre, .pagina-sobre section main p {
   color: #9e9e9e;
   font: 3.2rem "Almendra Display";
   width: 100%;

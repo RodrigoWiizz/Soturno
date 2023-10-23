@@ -1,1 +1,3 @@
 Prototipo do Fronend feito! :)
+
+Para colocar imagens dentro do jsx, precisamos usar caminhos absolutos ao invez de caminhos relativos.

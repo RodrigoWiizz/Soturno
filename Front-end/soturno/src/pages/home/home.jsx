@@ -1,9 +1,6 @@
 import './home.scss';
 import Header from '../../components/header/Header.jsx';
 
-import { Link } from 'react-router-dom';
-
-
 export default function Home() {
 
     return (

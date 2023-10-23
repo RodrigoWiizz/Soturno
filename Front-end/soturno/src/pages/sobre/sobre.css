@@ -1,0 +1,35 @@
+.pagina-sobre {
+  background-image: url("../../../public/assets/images/sobre/background-guts-sobre.png"), url("../../../public/assets/images/sobre/background-florazul-sobre.png");
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  background-size: 100% auto;
+  height: auto;
+}
+.pagina-sobre section {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pagina-sobre section main {
+  margin-top: 40px;
+  width: 90%;
+  height: 100%;
+}
+.pagina-sobre section main p {
+  color: #9e9e9e;
+  font: 3.2rem "Almendra Display";
+  width: 100%;
+  height: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@media (max-width: 530px) {
+  section main pre {
+    font: 2rem "Almendra Display";
+  }
+}/*# sourceMappingURL=sobre.css.map */

@@ -1,5 +1,5 @@
 import './compra-feitico.scss'
-import Header from '../../components/header/Header';
+import Header from '../../components/header/Header.jsx';
 import CardCompraFeitico from '../../components/card-compra-feitico/CardCompraFeitico';
 
 export default function CompraFeitico() {

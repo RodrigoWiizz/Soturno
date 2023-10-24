@@ -1,0 +1,81 @@
+@import '../variaveis/index';
+
+.section-card-pocao {
+    width: 100%;
+    min-height: 350px;
+    height: auto;
+    border: 1px solid $cor-do-objetos;
+    position: relative;
+
+    .h1-card-pocao {
+        color: $cor-do-objetos;
+        font: $almendra-48;
+    }
+
+    .img-card-pocao {
+        position: absolute;
+    }
+
+    .img-card-pocao-inferior-esquerdo {
+        left: 5px;
+        bottom: 5px;
+        transform: scale(-1, 1); // Inverter a imagem(espelhar)
+    }
+
+    .img-card-pocao-inferior-direito {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .img-card-pocao-superior-esquerdo {
+        left: 5px;
+        top: 5px;
+        transform: scale(-1);
+    }
+
+    .img-card-pocao-superior-direito {
+        right: 5px;
+        top: 5px;
+        transform: scale(1, -1);
+    }
+
+    .section-card-pocao-conteudo {
+        display: flex;
+        flex-direction: row;
+        border: none;
+
+        .img-card-pocao-pocao {
+            width: 130px;
+            position: initial;
+        }
+
+        .p-card-pocao {
+            margin-left: 20px;
+            color: $cor-do-objetos;
+            font: $almendra-28;
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .section-card-pocao {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media (max-width: 530px) {
+
+    .section-card-pocao {
+
+        .section-card-pocao-conteudo {
+            flex-direction: column;
+        }
+    }
+
+}

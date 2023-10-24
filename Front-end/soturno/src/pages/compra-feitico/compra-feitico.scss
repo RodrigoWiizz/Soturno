@@ -1,0 +1,46 @@
+@import '../../components/variaveis/';
+
+.pagina-compra-feitico {
+    height: auto;
+    background-image: url("../../../public/assets/images/CompraFeitico/background-comprafeitico.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+
+
+    .section-card-feitico {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .article-card-feitico {
+            width: 90%;
+
+            .h1-card-feitico {
+                text-align: center;
+                color: $cor-do-objetos;
+                font: $almendra-64;
+                margin: 0;
+            }
+
+            .p-card-feitico {
+                text-align: center;
+                color: #F80000;
+                font: $almendra-32;
+                margin: 0;
+            }
+
+        }
+
+        .main-card-feitico {
+            margin-top: 40px;
+            width: 95%;
+            height: auto;
+            border: 1px solid $cor-do-objetos;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+@import '../variaveis/index';
+
+.section-compra-feitico-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .h1-compra-feitico-card {
+        margin: 0px;
+        text-align: center;
+        color: $cor-do-objetos;
+        font: $almendra-64;
+    }
+
+    .pre-compra-feitico-card {
+        margin: 0px;
+        text-align: center;
+        color: $cor-do-objetos;
+        font: $almendra-28;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    .img-compra-feitico-card {
+        position: absolute;
+    }
+
+    .compra-feitico-card-inferior-esquerdo {
+        left: 5px;
+        bottom: 5px;
+        transform: scale(-1, 1); // Inverter a imagem(espelhar)
+    }
+
+    .compra-feitico-card-inferior-direito {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .compra-feitico-card-superior-esquerdo {
+        left: 5px;
+        top: 5px;
+        transform: scale(-1);
+    }
+
+    .compra-feitico-card-superior-direito {
+        right: 5px;
+        top: 5px;
+        transform: scale(1, -1);
+    }
+
+    .article-compra-feitico-card-texto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .h1-compra-feitico-card-criador {
+            color: $cor-do-objetos;
+            font: $almendra-44;
+        }
+
+        .h2-compra-feitico-card-criador {
+            color: white;
+            font: $babylonica-44;
+        }
+
+    }
+
+    .article-compra-feitico-card-botao {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .div-compra-feitico-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .h1-compra-feitico-card-preco {
+                color: $cor-do-objetos;
+                font: $almendra-44;
+            }
+
+            .h2-compra-feitico-card-preco {
+                color: white;
+                font: $arbutus-36;
+            }
+
+        }
+
+        // A configuração do botão está em global.css
+        button {
+            font: $oldEnglish-48;
+            height: 70px;
+            margin-left: 60px;
+        }
+
+    }
+}
+
+@media (max-width: 1000px) {
+
+
+    .section-compra-feitico-card {
+
+        .article-compra-feitico-card-texto {
+
+            .h1-compra-feitico-card-criador {
+                font: $almendra-36;
+            }
+
+            .h2-compra-feitico-card-criador {
+                font: $babylonica-36;
+            }
+        }
+
+        .article-compra-feitico-card-botao {
+
+
+            .div-compra-feitico-card {
+
+
+                .h1-compra-feitico-card-preco {
+                    font: $almendra-36;
+                }
+
+                .h2-compra-feitico-card-preco {
+                    font: $arbutus-28;
+                }
+
+
+            }
+
+            button {
+                margin-top: 40px;
+                margin-left: 0px;
+            }
+        }
+
+    }
+
+    .article-botao {
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 530px) {
+
+
+
+    .section-compra-feitico-card {
+
+        .article-compra-feitico-card-texto {
+            flex-direction: column;
+
+            .h1-compra-feitico-card-criador {
+                font: $almendra-36;
+            }
+
+            .h2-compra-feitico-card-criador {
+                font: $babylonica-36;
+            }
+        }
+
+        .article-compra-feitico-card-botao {
+
+            .div-compra-feitico-card {
+                flex-direction: column;
+
+                .h1-compra-feitico-card-preco {
+                    font: $almendra-36;
+                }
+
+                .h2-compra-feitico-card-preco {
+                    font: $arbutus-28;
+                }
+
+            }
+
+            button {
+
+                width: 80%;
+                font: $oldEnglish-30;
+            }
+        }
+
+    }
+}

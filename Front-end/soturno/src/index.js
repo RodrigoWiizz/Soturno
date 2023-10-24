@@ -11,6 +11,7 @@ import Sobre from './pages/sobre/sobre.jsx';
 import Contato from './pages/contato/contato.jsx';
 import Login from './pages/login/login.jsx';
 import Feitico from './pages/feitico/feitico.jsx';
+import CompraFeitico from './pages/compra-feitico/compra-feitico';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -24,6 +25,7 @@ root.render(
         <Route path='/contato' element={<Contato />} />
         <Route path='/login' element={<Login />} />
         <Route path='/feitiços' element={<Feitico />} />
+        <Route path='/compra-feitiço' element={<CompraFeitico />} />
         
       </Routes>
     </BrowserRouter>

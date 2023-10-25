@@ -1,0 +1,77 @@
+.pagina-gerenciamento {
+  background-image: url("../../../public/assets/images/global/background-florvermelha.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+}
+.pagina-gerenciamento .chao-produtos {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 1600px;
+  height: 20%;
+}
+
+.section-gerenciamento {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-gerenciamento .section-img {
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+}
+.section-gerenciamento .section-img .a-gerenciamento {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  align-items: end;
+}
+.section-gerenciamento .section-img .a-gerenciamento img {
+  height: 100%;
+  width: 100%;
+}
+.section-gerenciamento .section-a {
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .pagina-gerenciamento .chao-produtos {
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .section-gerenciamento .section-img {
+    display: none;
+  }
+  .section-gerenciamento .section-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+  .section-gerenciamento .section-a .a-gerenciamento {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 3.6rem "Old English";
+    color: black;
+    text-decoration: none;
+    background-color: #e8f0d5;
+    height: 15%;
+    width: 90%;
+  }
+  .figure-chao-produtos {
+    display: none;
+  }
+}/*# sourceMappingURL=gerenciamento.css.map */

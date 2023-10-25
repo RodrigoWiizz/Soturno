@@ -14,6 +14,10 @@ import Feitico from './pages/feitico/feitico.jsx';
 import CompraFeitico from './pages/compra-feitico/compra-feitico';
 import Pocao from './pages/pocao/pocao';
 import Cadastrar from './pages/cadastro/cadastro';
+import Produtos from './pages/produtos/produtos';
+import Admin from './pages/admin/admin';
+import Consulta from './pages/consulta/consulta';
+import Gerenciamento from './pages/gerenciamento/gerenciamento';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,15 +25,19 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        
+
         <Route path='/' element={<Home />} />
+        <Route path='/admin' element={<Admin />} />
         <Route path='/sobre' element={<Sobre />} />
         <Route path='/contato' element={<Contato />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/feitiços' element={<Feitico />} />
+        <Route path='/feiticos' element={<Feitico />} />
         <Route path='/compra-feitiço' element={<CompraFeitico />} />
-        <Route path='/poções' element={<Pocao />} />
-        <Route path='/cadastro' element={<Cadastrar/>} />
+        <Route path='/pocoes' element={<Pocao />} />
+        <Route path='/cadastro' element={<Cadastrar />} />
+        <Route path='/produtos' element={<Produtos />} />
+        <Route path='/consulta' element={<Consulta />} />
+        <Route path='/gerenciamento' element={<Gerenciamento />} />
         
       </Routes>
     </BrowserRouter>

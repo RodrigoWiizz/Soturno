@@ -11,12 +11,12 @@ export default function Produtos() {
                 <Header />
                 
                 <section className="section-img">
-                    <a className="a-produtos" href="../Pocao/index.html">
+                    <a className="a-produtos" href="/poções">
                         <img className="img-produtos" src="/assets/images/Produtos/esqueleto-pocao.png"
                             alt="Mão de esqueleto segurando uma placa escrito poção" />
                     </a>
 
-                    <a className="a-produtos" href="../Feitico/index.html">
+                    <a className="a-produtos" href="/feiticos">
                         <img className="img-produtos" src="/assets/images/Produtos/esqueleto-feitico.png"
                             alt="Mão de esqueleto segurando uma placa escrito feitiço" />
                     </a>

@@ -14,7 +14,7 @@ import Feitico from './pages/feitico/feitico.jsx';
 import CompraFeitico from './pages/compra-feitico/compra-feitico';
 import Pocao from './pages/pocao/pocao';
 import Cadastrar from './pages/cadastro/cadastro';
-import Admin from './pages/gerenciamento/gerenciamento';
+import Admin from './pages/admin/admin';
 import Gerenciamento from './pages/gerenciamento/gerenciamento';
 import CompraPocao from './pages/compra-pocao/compra-pocao';
 import Consulta from './pages/consulta/consulta';

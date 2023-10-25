@@ -19,7 +19,7 @@ html {
     Desta forma fica muito mais facil de fazer as medidas relativas das letras
 */
 
-*, html {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0px;

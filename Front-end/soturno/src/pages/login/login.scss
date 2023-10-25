@@ -5,7 +5,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
     background-size: 40%, 40%;
-    height: 100%;
+    height: calc(100vh - 40px);
+    margin: 20px;
 
     .section-login {
         padding: 20px;
@@ -76,7 +77,7 @@
 
 @media (max-width: 1000px) {
 
-    .pagina-home {
+    .pagina-login {
         height: auto;
 
         .section-login {

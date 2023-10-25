@@ -1,7 +1,8 @@
 @import '../../components/variaveis/';
 
 .pagina-contato {
-    height: auto;
+    height: calc(auto - 40px);
+    margin: 20px;
     background-image: url("../../../public/assets/images/contato/background-meninaduascaras-contato.png"), url("../../../public/assets/images/contato/background-florazul-contato.png");
     background-repeat: no-repeat;
     background-position: center top, center bottom;

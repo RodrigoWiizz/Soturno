@@ -18,6 +18,7 @@ import Produtos from './pages/produtos/produtos';
 import Admin from './pages/admin/admin';
 import Consulta from './pages/consulta/consulta';
 import Gerenciamento from './pages/gerenciamento/gerenciamento';
+import CadastroPocao from './pages/cadastro-pocao/cadastro-pocao';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -38,6 +39,7 @@ root.render(
         <Route path='/produtos' element={<Produtos />} />
         <Route path='/consulta' element={<Consulta />} />
         <Route path='/gerenciamento' element={<Gerenciamento />} />
+        <Route path='/cadastro-pocao' element={<CadastroPocao />} />
         
       </Routes>
     </BrowserRouter>

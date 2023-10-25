@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-position: center top, center bottom;
   background-size: 100% auto;
-  height: auto;
+  height: calc(auto - 40px);
+  margin: 20px;
 }
 .pagina-sobre .section-sobre {
   padding: 20px;

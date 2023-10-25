@@ -1,5 +1,6 @@
 .pagina-compra-feitico {
-  height: auto;
+  height: calc(auto - 40px);
+  margin: 20px;
   background-image: url("../../../public/assets/images/CompraFeitico/background-comprafeitico.png");
   background-repeat: no-repeat;
   background-size: 60%;

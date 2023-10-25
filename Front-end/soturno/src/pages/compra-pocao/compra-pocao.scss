@@ -1,7 +1,8 @@
 @import '../../components/variaveis/';
 
 .pagina-compra-pocao {
-    height: 130vh;
+    height: calc(130vh - 40px);
+    margin: 20px;
 
 
     .section-compra-pocao {
@@ -22,14 +23,14 @@
             .figure-compra-pocao {
                 display: flex;
                 padding: 30px;
-                width: 25%;
+                width: 35%;
                 height: 100%;
                 border: 1px solid $cor-do-objetos;
             }
 
             .section-compra-pocao-titulo {
                 padding: 0px;
-                width: 70%;
+                width: 60%;
                 border: none;
 
                 .article-compra-pocao-titulo {
@@ -47,13 +48,15 @@
 
                 .section-compra-pocao-direito {
                     padding: 0px;
+                    height: 89%;
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     gap: 40px;
 
 
-                    .article-compra-pocao-efeito, .article-compra-pocao-ingredientes {
+                    .article-compra-pocao-efeito,
+                    .article-compra-pocao-ingredientes {
                         border: 1px solid $cor-do-objetos;
                         width: 50%;
                         height: 95%;
@@ -93,7 +96,7 @@
                 flex-direction: column;
                 justify-content: flex-end;
 
-                .div-compra-pocao-footer-cima{
+                .div-compra-pocao-footer-cima {
                     align-items: center;
                     display: flex;
                     width: 100%;
@@ -123,7 +126,7 @@
                         margin: 0px;
                     }
 
-                    .h3-compra-pocao-preco {
+                    .h4-compra-pocao-preco {
                         font: $arbutus-36;
                         color: $cor-do-objetos;
                         margin: 0px;
@@ -142,6 +145,41 @@
                     font: $oldEnglish-48;
                 }
 
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .pagina-compra-pocao {
+        height: auto;
+
+        .main-compra-pocao {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            .figure-compra-pocao{
+                width: 100%;
+
+                
+            }
+
+            .section-compra-pocao-titulo {
+                    width: 1000px;
+                    display: flex;
+                    flex-direction: column;
+    
+
+                .section-compra-pocao-direito {
+                    width: 100%;
+
+                    .article-compra-pocao-efeito,
+                    .article-compra-pocao-ingredientes {
+                        
+                    }
+                }
             }
         }
     }

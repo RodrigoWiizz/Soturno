@@ -6,21 +6,21 @@ export default function CompraFeitico() {
 
     return (
 
-        <body class="pagina-compra-feitico">
+        <body className="pagina-compra-feitico">
 
-            <section class="section-card-feitico">
+            <section className="section-card-feitico">
 
                 <Header />
 
-                <article class="article-card-feitico">
+                <article className="article-card-feitico">
 
-                    <h1 class="h1-card-feitico">Ativação de Feitiço</h1>
-                    <p class="p-card-feitico">Você possui os métodos de criação do Feitiço, mas ele precisa ser ativado em sua alma, assim que comprar
+                    <h1 className="h1-card-feitico">Ativação de Feitiço</h1>
+                    <p className="p-card-feitico">Você possui os métodos de criação do Feitiço, mas ele precisa ser ativado em sua alma, assim que comprar
                         o pacto será selado e você poderá realizar as instruções do feitiço.</p>
 
                 </article>
 
-                <main class="main-card-feitico">
+                <main className="main-card-feitico">
 
                     <CardCompraFeitico/>
 

@@ -1,13 +1,12 @@
-.pagina-cadastroPocao {
+.pagina-cadastro-feitico {
   background-image: url("../../../public/assets/images/global/background-florazul.png"), url("../../../public/assets/images/global/background-florvermelha.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
   background-size: 40%, 40%;
-  height: calc(110vh - 40px);
+  height: calc(100vh - 40px);
   margin: 20px;
 }
-
-.section-cadastroPocao {
+.pagina-cadastro-feitico .section-cadastro-feitico {
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -16,19 +15,19 @@
   flex-direction: column;
   align-items: center;
 }
-.section-cadastroPocao .h1-cadastroPocao {
+.pagina-cadastro-feitico .section-cadastro-feitico .h1-cadastro-feitico {
   font: 9.6rem "Old English";
   color: white;
   margin: 0px;
 }
-.section-cadastroPocao .main-cadastroPocao {
+.pagina-cadastro-feitico .section-cadastro-feitico .main-cadastro-feitico {
   width: 100%;
   height: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.section-cadastroPocao .main-cadastroPocao .input-cadastroPocao {
+.pagina-cadastro-feitico .section-cadastro-feitico .main-cadastro-feitico .input-cadastro-feitico {
   width: 48%;
   height: 70px;
   font: 4.4rem "Almendra Display";
@@ -37,28 +36,28 @@
   border: none;
   border-bottom: 4px solid white;
 }
-.section-cadastroPocao .button-cadastroPocao {
+.pagina-cadastro-feitico .section-cadastro-feitico button {
   margin-top: 40px;
   font: 4.8rem "Old English";
 }
 
 @media (max-width: 1000px) {
-  .pagina-cadastroPocao {
-    height: 150vh;
+  .pagina-cadastro-feitico {
+    height: 125vh;
   }
-  .section-cadastroPocao .main-cadastroPocao .input-cadastroPocao {
+  .section-cadastro-feitico .main-cadastro-feitico .input-cadastro-feitico {
     width: 100%;
   }
 }
 @media (max-width: 530px) {
-  .section-cadastroPocao .h1-cadastroPocao {
+  .section-cadastro-feitico .h1-cadastro-feitico {
     font: 3.6rem "Old English";
   }
-  .section-cadastroPocao .main-cadastroPocao .input-cadastroPocao {
+  .section-cadastro-feitico .main-cadastro-feitico .input-cadastro-feitico {
     font: 3rem "Almendra Display";
   }
-  .section-cadastroPocao .button-cadastroPocao {
+  .section-cadastro-feitico button {
     width: 100%;
     font: 3rem "Old English";
   }
-}/*# sourceMappingURL=cadastro-pocao.css.map */
+}/*# sourceMappingURL=cadastro-feitico.css.map */

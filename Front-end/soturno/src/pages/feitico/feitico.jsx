@@ -6,13 +6,13 @@ export default function Feitico() {
 
     return (
 
-        <body class="pagina-feitico">
+        <body className="pagina-feitico">
 
-            <section class="section-feitico">
+            <section className="section-feitico">
 
                 <Header />
 
-                <main class="main-feitico">
+                <main className="main-feitico">
 
                     <CardFeitico />
                     <CardFeitico />

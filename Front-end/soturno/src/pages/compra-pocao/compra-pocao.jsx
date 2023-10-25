@@ -21,7 +21,7 @@ export default function CompraPocao() {
 
                     <section className='section-compra-pocao-titulo'>
 
-                        <article class="article-compra-pocao-titulo">
+                        <article className="article-compra-pocao-titulo">
 
                             <h1 className='h1-compra-pocao'>Andorinha(Swallow)</h1>
 
@@ -39,8 +39,8 @@ export default function CompraPocao() {
                             <article className='article-compra-pocao-ingredientes'>
 
                                 <pre className='pre-compra-pocao'>
-                                    {`
-Ingredientes:
+                                    
+{`Ingredientes:
 2x Destilado Anão (Dwarven Spirit)
 5x Fruta de Balisa (Balisse fruit)
 6x Cáscara (Buckthorn)
@@ -58,15 +58,15 @@ Ingredientes:
 
                 <footer className='footer-compra-pocao'>
 
-                    <section class="section-compra-pocao-footer-titulo">
+                    <section className="section-compra-pocao-footer-titulo">
 
 
-                        <div class="div-compra-pocao-footer-cima">
+                        <div className="div-compra-pocao-footer-cima">
                             <h1 className='h1-compra-pocao-mago'>Mago/Bruxa Criador:</h1>
                             <h2 className='h2-compra-pocao-mago'>Ms. JOPtionPane</h2>
                         </div>
 
-                        <div class="div-compra-pocao-footer-baixo">
+                        <div className="div-compra-pocao-footer-baixo">
                             <h3 className='h3-compra-pocao-preco'>Preço:</h3>
                             <h4 className='h4-compra-pocao-preco'>R$ 200.000,00</h4>
                         </div>

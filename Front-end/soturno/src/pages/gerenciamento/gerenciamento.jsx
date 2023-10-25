@@ -9,31 +9,31 @@ export default function Gerenciamento() {
             <section className="section-gerenciamento">
 
                 <Header/>
-                <section class="section-img">
-                    <a className="a-gerenciamento" href="../CadastroPocao/index.html">
+                <section className="section-img">
+                    <a className="a-gerenciamento" href="/cadastro-poção">
                         <img src="/assets/images/Produtos/esqueleto-pocao.png"
                             alt="Mão de esqueleto segurando uma placa escrito poção"/>
                     </a>
 
-                    <a className="a-gerenciamento" href="../CadastroFeitico/index.html">
+                    <a className="a-gerenciamento" href="/cadastro-feitiço">
                         <img src="/assets/images/Produtos/esqueleto-feitico.png"
                             alt="Mão de esqueleto segurando uma placa escrito feitiço"/>
                     </a>
 
                 </section>
 
-                <section class="section-a">
+                <section className="section-a">
 
-                    <a className="a-gerenciamento" href="../CadastroPocao/index.html">Poção</a>
+                    <a className="a-gerenciamento" href="/cadastro-poção">Poção</a>
 
-                    <a className="a-gerenciamento" href="../CadastroFeitico/index.html">Feitiço</a>
+                    <a className="a-gerenciamento" href="/cadastro-feitiço">Feitiço</a>
 
                 </section>
 
             </section>
 
-            <figure class="figure-chao-produtos">
-                <img class="chao-produtos" src="/assets/images/Produtos/chaodeossos-produtos.png"
+            <figure className="figure-chao-produtos">
+                <img className="chao-produtos" src="/assets/images/Produtos/chaodeossos-produtos.png"
                     alt="Chão de Ossos"/>
             </figure>
 

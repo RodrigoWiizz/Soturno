@@ -8,25 +8,25 @@ export default function CadastroPocao() {
 
             <section className="section-cadastroPocao">
 
-                <Header/>
+                <Header />
                 <h1 className="h1-cadastroPocao">Cadastro Poção</h1>
 
                 <main className="main-cadastroPocao">
 
-                    <input className="input-cadastroPocao" type="text" placeholder="Nome"/>
-                        <input className="input-cadastroPocao" type="text" placeholder="Preço"/>
-                            <input className="input-cadastroPocao" type="text" placeholder="Criador"/>
-                                <input className="input-cadastroPocao" type="text" placeholder="Tipo"/>
-                                    <input className="input-cadastroPocao"  type="text" placeholder="Descrição"/>
-                                        <input className="input-cadastroPocao" type="text" placeholder="Ingredientes"/>
-                                            <input className="input-cadastroPocao" type="text" placeholder="Imagem"/>
+                    <input className="input-cadastroPocao" type="text" placeholder="Nome" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Preço" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Criador" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Tipo" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Descrição" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Ingredientes" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Imagem" />
 
-                                            </main>
+                </main>
 
-                                            <button className="button-cadastroPocao">Cadastrar</button>
+                <button className="button-cadastroPocao">Cadastrar</button>
 
-                                        </section>
+            </section>
 
-                                    </body>
-                                    )
+        </body>
+    )
 }

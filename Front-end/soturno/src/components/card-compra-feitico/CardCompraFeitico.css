@@ -78,7 +78,7 @@
 .section-compra-feitico-card .article-compra-feitico-card-botao button {
   font: 4.8rem "Old English";
   height: 70px;
-  margin-left: 60px;
+  margin: 0px 0px 10px 60px;
 }
 
 @media (max-width: 1000px) {

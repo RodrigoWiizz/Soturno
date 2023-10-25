@@ -1,5 +1,6 @@
 .pagina-home {
-  height: 100vh;
+  margin: 20px;
+  height: calc(100vh - 40px);
   background-color: #101010;
   background-image: url("../../../public/assets/images/home/background-menina-landingpage.png"), url("../../../public/assets/images/global/background-florazul.png");
   background-repeat: no-repeat;

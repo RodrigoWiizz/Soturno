@@ -14,6 +14,11 @@ import Feitico from './pages/feitico/feitico.jsx';
 import CompraFeitico from './pages/compra-feitico/compra-feitico';
 import Pocao from './pages/pocao/pocao';
 import Cadastrar from './pages/cadastro/cadastro';
+import Admin from './pages/gerenciamento/gerenciamento';
+import Gerenciamento from './pages/gerenciamento/gerenciamento';
+import CompraPocao from './pages/compra-pocao/compra-pocao';
+import Consulta from './pages/consulta/consulta';
+import Produtos from './pages/produtos/produtos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,6 +36,11 @@ root.render(
         <Route path='/compra-feitiço' element={<CompraFeitico />} />
         <Route path='/poções' element={<Pocao />} />
         <Route path='/cadastro' element={<Cadastrar/>} />
+        <Route path='/admin' element={<Admin/>} />
+        <Route path='/gerenciamento' element={<Gerenciamento/>} />
+        <Route path='/compra-poção' element={<CompraPocao/>} />
+        <Route path='/consulta' element={<Consulta/>} />
+        <Route path='/produtos' element={<Produtos/>} />
         
       </Routes>
     </BrowserRouter>

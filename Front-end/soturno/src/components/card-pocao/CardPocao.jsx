@@ -8,13 +8,13 @@ export default function CardPocao() {
 
 
             <img class="img-card-pocao img-card-pocao-inferior-esquerdo"
-                src="../../../public/assets/images/Feiticos/florcanto-feitico.png" alt="Flor canto Card" />
+                src="/assets/images/global/flor-canto.png" alt="Flor canto Card" />
             <img class="img-card-pocao img-card-pocao-inferior-direito"
-                src="../../../public/assets/images/Feiticos/florcanto-feitico.png" alt="Flor canto Card" />
+                src="/assets/images/global/flor-canto.png" alt="Flor canto Card" />
             <img class="img-card-pocao img-card-pocao-superior-esquerdo"
-                src="../../../public/assets/images/Feiticos/florcanto-feitico.png" alt="Flor canto Card" />
+                src="/assets/images/global/flor-canto.png" alt="Flor canto Card" />
             <img class="img-card-pocao img-card-pocao-superior-direito"
-                src="../../../public/assets/images/Feiticos/florcanto-feitico.png" alt="Flor canto Card" />
+                src="/assets/images/global/flor-canto.png" alt="Flor canto Card" />
 
             <h1 class="h1-card-pocao">Andorinha (Swallow)</h1>
 

@@ -1,6 +1,7 @@
 import './pocao.scss'
-import Header from '../../components/header/Header.jsx'
-import CardPocao from '../../components/card-pocao/card-pocao';
+import CardPocao from '../../components/card-pocao/CardPocao.jsx';
+import Header from '../../components/header/Header';
+
 
 export default function Pocao() {
 
@@ -11,7 +12,6 @@ export default function Pocao() {
             <section class="section-pocao">
 
                 <Header />
-
 
                 <h1 class="h1-pocao">Cura</h1>
 

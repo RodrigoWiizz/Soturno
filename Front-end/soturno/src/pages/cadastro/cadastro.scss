@@ -1,0 +1,105 @@
+@import '../../components/variaveis/';
+
+.pagina-cadastro {
+    height: 110vh;
+    background-image: url("../../../public/assets/images/global/background-florazul.png"), url("../../../public/assets/images/global/background-florvermelha.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 40%, 40%;
+}
+
+.section-cadastro {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $cor-do-objetos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h1-cadastro {
+        font: $oldEnglish-96;
+        color: white;
+        margin: 0px;
+    }
+
+    .main-cadastro {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .a-cadastro {
+            text-decoration: none;
+            color: $cor-do-objetos;
+            font: $almendra-36;
+        }
+        
+        .a-cadastro:hover {
+            text-decoration: underline;
+            color: white
+        }
+
+        .input-cadastro {
+            width: 48%;
+            height: 70px;
+            font: $almendra-44;
+            color: white;
+            background: transparent;
+            border: none;
+            border-bottom: 4px solid white;
+        }
+        
+    }
+
+    .button-cadastro {
+        margin: 40px 0px;
+        font: $oldEnglish-48;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .pagina-cadastro {
+        height: auto;
+    }
+
+    .section-cadastro {
+
+        .main-cadastro {
+
+            .input-cadastro {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    .section-cadastro {
+
+        .h1-cadastro{
+            font: $oldEnglish-36;
+        }
+
+        .main-cadastro {
+
+            .input-cadastro {
+                font: $almendra-30;
+            }
+        }
+
+        .button-cadastro {
+            width: 100%;
+            font: $oldEnglish-30;
+        }
+
+        .a-cadastro {
+            font: $almendra-20;
+        }
+    }
+
+}

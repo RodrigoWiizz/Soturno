@@ -21,7 +21,7 @@ export default function Login() {
 
                             <button>Login</button>
 
-                            <a class="a-login-pergunta" href="./cadastro/">Não possui uma conta? Cadastre-se</a>
+                            <a class="a-login-pergunta" href="/cadastro/">Não possui uma conta? Cadastre-se</a>
 
                         </main>
 

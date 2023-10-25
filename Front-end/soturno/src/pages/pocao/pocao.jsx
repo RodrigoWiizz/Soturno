@@ -1,5 +1,5 @@
 import './pocao.scss'
-import Header from '../../components/header/header';
+
 
 export default function Pocao() {
 
@@ -9,7 +9,7 @@ export default function Pocao() {
 
             <section class="section-pocao">
 
-                <Header />
+
 
 
                 <h1 class="h1-pocao">Cura</h1>

@@ -1,5 +1,6 @@
 import './pocao.scss'
-
+import Header from '../../components/header/Header.jsx'
+import CardPocao from '../../components/card-pocao/card-pocao';
 
 export default function Pocao() {
 
@@ -9,7 +10,7 @@ export default function Pocao() {
 
             <section class="section-pocao">
 
-
+                <Header />
 
 
                 <h1 class="h1-pocao">Cura</h1>
@@ -19,7 +20,16 @@ export default function Pocao() {
                     <main class="main-pocao">
 
 
+                        <CardPocao />
+                        <button>Comprar</button>
 
+                        <CardPocao />
+                        <button>Comprar</button>
+
+                        <CardPocao />
+                        <button>Comprar</button>
+
+                        <CardPocao />
                         <button>Comprar</button>
 
                     </main>

@@ -20,7 +20,7 @@ export default function CardPocao() {
 
             <section class="section-card-pocao-conteudo">
 
-                <img class="img-card-pocao img-card-pocao-pocao" src="../../../public/assets/images/Pocao/Andorinha(Swallow).png"
+                <img class="img-card-pocao img-card-pocao-pocao" src="/assets/images/pocao/Andorinha(Swallow).png"
                     alt="Foto Poção Andorinha (Swallow)" />
                 <p class="p-card-pocao">Efeito: Acelera a regeneração de Vitalidade por 20 segundos. A regeneração para por 2
                     segundos após receber dano. 80 pontos de Vitalidade ou 40 durante o combate.</p>

@@ -1,5 +1,5 @@
 import './pocao.scss'
-import Header from '../../components/header/header';
+
 
 export default function Pocao() {
 

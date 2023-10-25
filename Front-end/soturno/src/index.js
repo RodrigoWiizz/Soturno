@@ -13,6 +13,8 @@ import Login from './pages/login/login.jsx';
 import Feitico from './pages/feitico/feitico.jsx';
 import CompraFeitico from './pages/compra-feitico/compra-feitico';
 import Pocao from './pages/pocao/pocao';
+import Cadastrar from './pages/cadastro/cadastro';
+import CompraPocao from './pages/compra-pocao/compra-pocao';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -28,6 +30,8 @@ root.render(
         <Route path='/feitiços' element={<Feitico />} />
         <Route path='/compra-feitiço' element={<CompraFeitico />} />
         <Route path='/poções' element={<Pocao />} />
+        <Route path='/cadastro' element={<Cadastrar/>} />
+        <Route path='/compra-poção' element={<CompraPocao />} />
         
       </Routes>
     </BrowserRouter>

@@ -14,7 +14,7 @@ function Header() {
             </figure>
 
             <nav class="nav-header">
-                <a class="a-header" href="../Produtos/index.html">Produtos</a>
+                <a class="a-header" href="/produtos">Produtos</a>
                 <a class="a-header" href="../contato">Contato</a>
                 <a class="a-header" href="../sobre">Sobre</a>
                 <a class="a-header" href="../login">Login</a>

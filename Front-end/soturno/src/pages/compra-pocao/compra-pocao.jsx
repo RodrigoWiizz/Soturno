@@ -1,5 +1,5 @@
 import './compra-pocao.scss'
-import Header from '../../components/header/header';
+import Header from '../../components/header/Header.jsx';
 
 export default function CompraPocao() {
 
@@ -9,11 +9,13 @@ export default function CompraPocao() {
 
             <section className='section-compra-pocao'>
 
+                <Header/>
+
                 <main className='main-compra-pocao'>
 
                     <figure className='figure-compra-pocao'>
 
-                        <img className='img-compra-pocao' src="../../../public/assets/images/Pocao/Andorinha(Swallow).png" alt="Poção Andorinha(Swallow)" />
+                        <img className='img-compra-pocao' src="/assets/images/pocao/Andorinha(Swallow).png" alt="Poção Andorinha(Swallow)" />
 
                     </figure>
 
@@ -38,11 +40,11 @@ export default function CompraPocao() {
 
                                 <pre className='pre-compra-pocao'>
                                     {`
-                                    Ingredientes:
-                                    2x Destilado Anão (Dwarven Spirit)
-                                    5x Fruta de Balisa (Balisse fruit)
-                                    6x Cáscara (Buckthorn)
-                                    5x Língua de Afogador (Drowner tongue)
+Ingredientes:
+2x Destilado Anão (Dwarven Spirit)
+5x Fruta de Balisa (Balisse fruit)
+6x Cáscara (Buckthorn)
+5x Língua de Afogador (Drowner tongue)
                                     `}
                                 </pre>
 

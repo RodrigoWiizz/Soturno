@@ -12,12 +12,12 @@ export default function Produtos() {
                 
                 <section className="section-img">
                     <a className="a-produtos" href="/poções">
-                        <img className="img-produtos" src="/assets/images/Produtos/esqueleto-pocao.png"
+                        <img className="img-produtos" src="/assets/images/produtos/esqueleto-pocao.png"
                             alt="Mão de esqueleto segurando uma placa escrito poção" />
                     </a>
 
                     <a className="a-produtos" href="/feiticos">
-                        <img className="img-produtos" src="/assets/images/Produtos/esqueleto-feitico.png"
+                        <img className="img-produtos" src="/assets/images/produtos/esqueleto-feitico.png"
                             alt="Mão de esqueleto segurando uma placa escrito feitiço" />
                     </a>
 
@@ -34,7 +34,7 @@ export default function Produtos() {
             </section>
 
             <figure className="figure-chao-produtos">
-                <img className="chao-produtos" src="/assets/images/Produtos/chaodeossos-produtos.png"
+                <img className="chao-produtos" src="/assets/images/produtos/chaodeossos-produtos.png"
                     alt="Chão de Ossos" />
             </figure>
 

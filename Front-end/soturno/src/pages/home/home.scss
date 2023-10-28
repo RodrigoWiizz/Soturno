@@ -1,6 +1,7 @@
 @import '../../components/variaveis/';
 
 .pagina-home {
+    padding: 20px;
     height: 100vh;
     background-color: #101010;
     background-image: url("../../../public/assets/images/home/background-menina-landingpage.png"), url("../../../public/assets/images/global/background-florazul.png");
@@ -18,7 +19,7 @@
         align-items: center;
 
         .main-home {
-            margin-top: 8%;
+            margin-top: 10%;
             height: auto;
             width: 73.30%;
 
@@ -31,9 +32,7 @@
                 color: $cor-do-objetos;
                 font: $almendra-32;
             }
-
         }
-
     }
 }
 
@@ -51,18 +50,15 @@
 
     .pagina-home {
         height: 100vh;
-    }
 
-    .section-home {
+        .section-home {
 
-        .main-home {
+            .main-home {
 
-
-            .p-home-textomeio {
-                font: $almendra-20;
+                .p-home-textomeio {
+                    font: $almendra-12;
+                }
             }
-
         }
-
     }
 }

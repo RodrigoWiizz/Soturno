@@ -1,6 +1,6 @@
 .pagina-home {
-  margin: 20px;
-  height: calc(100vh - 40px);
+  padding: 20px;
+  height: 100vh;
   background-color: #101010;
   background-image: url("../../../public/assets/images/home/background-menina-landingpage.png"), url("../../../public/assets/images/global/background-florazul.png");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 .pagina-home .section-home .main-home {
-  margin-top: 8%;
+  margin-top: 10%;
   height: auto;
   width: 73.3%;
 }
@@ -43,7 +43,7 @@
   .pagina-home {
     height: 100vh;
   }
-  .section-home .main-home .p-home-textomeio {
-    font: 2rem "Almendra Display";
+  .pagina-home .section-home .main-home .p-home-textomeio {
+    font: 1.2rem "Almendra Display";
   }
 }/*# sourceMappingURL=home.css.map */

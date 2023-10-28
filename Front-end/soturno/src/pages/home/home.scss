@@ -49,6 +49,23 @@
 @media (max-width: 530px) {
 
     .pagina-home {
+        height: auto;
+
+        .section-home {
+
+            .main-home {
+
+                .p-home-textomeio {
+                    font: $almendra-24;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+
+    .pagina-home {
         height: 100vh;
 
         .section-home {
@@ -61,4 +78,5 @@
             }
         }
     }
+
 }

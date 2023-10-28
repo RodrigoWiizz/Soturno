@@ -41,6 +41,14 @@
 }
 @media (max-width: 530px) {
   .pagina-home {
+    height: auto;
+  }
+  .pagina-home .section-home .main-home .p-home-textomeio {
+    font: 2.4rem "Almendra Display";
+  }
+}
+@media (max-width: 300px) {
+  .pagina-home {
     height: 100vh;
   }
   .pagina-home .section-home .main-home .p-home-textomeio {

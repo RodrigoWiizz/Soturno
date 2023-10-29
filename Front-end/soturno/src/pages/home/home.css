@@ -5,7 +5,7 @@
   background-image: url("../../../public/assets/images/home/background-menina-landingpage.png"), url("../../../public/assets/images/global/background-florazul.png");
   background-repeat: no-repeat;
   background-position: right top, left bottom;
-  background-size: 750px 100%, 750px 70%;
+  background-size: 55% 100%, 55% 70%;
 }
 .pagina-home .section-home {
   padding: 20px;
@@ -31,26 +31,28 @@
   font: 3.2rem "Almendra Display";
 }
 
+@media (min-width: 3000px) {
+  .pagina-home {
+    height: 100vh;
+  }
+  .pagina-home .section-home .main-home .p-home-textomeio {
+    font: 6.4rem "Almendra Display";
+  }
+}
 @media (max-width: 1000px) {
   .pagina-home {
+    height: auto;
     background-image: url("../../../public/assets/images/global/background-florazul.png");
     background-position: left bottom;
     background-size: 100% 100%;
-    height: 130vh;
   }
 }
 @media (max-width: 530px) {
-  .pagina-home {
-    height: auto;
-  }
   .pagina-home .section-home .main-home .p-home-textomeio {
     font: 2.4rem "Almendra Display";
   }
 }
 @media (max-width: 300px) {
-  .pagina-home {
-    height: 100vh;
-  }
   .pagina-home .section-home .main-home .p-home-textomeio {
     font: 1.2rem "Almendra Display";
   }

@@ -5,8 +5,8 @@
     background-repeat: no-repeat;
     background-position: center top, center bottom;
     background-size: 100% auto;
-    height: calc(auto - 40px);
-    margin: 20px;
+    height: auto;
+    padding: 20px;
 
     .section-sobre {
         padding: 20px;
@@ -34,19 +34,60 @@
     }
 }
 
-@media (max-width: 1000px) {}
+@media (min-width: 3000px) {
+
+    .pagina-sobre {
+
+        .section-sobre {
+
+            .main-sobre {
+                .pre-p-sobre-descricao-titulo {
+                    font: $almendra-64;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .pagina-sobre {
+
+        .section-sobre {
+
+            .main-sobre {
+                margin-top: 0px;
+            }
+        }
+    }
+}
 
 @media (max-width: 530px) {
 
+    .pagina-sobre {
+        background-size: 100% auto, 100% 20%;
     .section-sobre {
 
         .main-sobre {
             .pre-p-sobre-descricao-titulo {
-                font: $almendra-20;
+                font: $almendra-24;
             }
         }
-
     }
+}
 
+@media (max-width: 300px) {
 
+    .pagina-sobre {
+
+        .section-sobre {
+
+            .main-sobre {
+                .pre-p-sobre-descricao-titulo {
+                    font: $almendra-12;
+                }
+            }
+        }
+    }
+}
 }

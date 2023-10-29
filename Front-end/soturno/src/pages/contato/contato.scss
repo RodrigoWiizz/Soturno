@@ -57,3 +57,102 @@
 
     }
 }
+
+@media (min-width: 3000px) {
+
+    .pagina-contato {
+        height: auto;
+
+        .section-contato {
+
+
+            .main-contato {
+
+
+                .pre-contato {
+                    font: $almendra-64;
+                }
+
+                .h1-contato-tituloreino {
+                    font: $oldEnglish-80;
+                }
+
+                .figure-contato {
+
+
+                    .img-contato-brasaoreinos {
+                        height: 416.67px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .pagina-contato {
+
+        .section-contato {
+
+
+            .main-contato {
+
+
+                .pre-contato {
+                    font: $almendra-24;
+                }
+
+                .h1-contato-tituloreino {
+                    font: $oldEnglish-40;
+                }
+
+                .figure-contato {
+
+
+                    .img-contato-brasaoreinos {
+                        height: 208.33px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .pagina-contato {
+    
+        .section-contato {
+            
+    
+            .main-contato {
+                
+    
+                .pre-contato {
+                    font: $almendra-12;
+                }
+    
+                .h1-contato-tituloreino {
+                    font: $oldEnglish-28;
+                }
+    
+                .figure-contato {
+    
+                    .img-contato-brasaoreinos {
+                        height: 145.83px;
+                    }
+    
+                }
+            }
+    
+        }
+    }
+
+}

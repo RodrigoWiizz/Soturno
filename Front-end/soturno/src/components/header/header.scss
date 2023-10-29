@@ -54,6 +54,35 @@
 
 }
 
+@media (min-width: 3000px) {
+
+    .header-header {
+
+        .figure-header {
+            width: 736px;
+
+            .img-header {
+                width: 100%;
+                height: 100%;
+            }
+
+            .header-titulo-logo {
+                font: $almendra-128;
+            }
+
+        }
+        .nav-header {
+            flex-wrap: wrap;
+
+            .a-header {
+                font: $almendra-66;
+            }
+
+        }
+    }
+
+}
+
 @media (max-width: 1000px) {
 
     .header-header {

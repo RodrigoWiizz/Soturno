@@ -16,61 +16,6 @@
     flex-direction: column;
     align-items: center;
 
-
-    header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        figure {
-            width: 365px;
-            height: auto;
-            gap: 20px;
-            display: flex;
-            align-items: center;
-
-            a {
-                text-decoration: none;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-
-            .titulo-logo {
-                display: flex;
-                align-items: center;
-                font: $almendra-64;
-                color: $cor-do-objetos;
-            }
-
-
-        }
-
-        nav {
-            width: auto;
-            display: flex;
-            gap: 50px;
-
-
-            a {
-                text-decoration: none;
-                color: $cor-do-objetos;
-                font: $almendra-36;
-            }
-
-            a:hover {
-                text-decoration: underline;
-                color: white
-            }
-
-        }
-
-    }
-
     .h1-consulta {
         font: $oldEnglish-96;
         color: white;

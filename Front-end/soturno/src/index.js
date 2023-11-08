@@ -21,6 +21,7 @@ import Consulta from './pages/consulta/consulta';
 import Produtos from './pages/produtos/produtos';
 import CadastroFeitico from './pages/cadastro-feitico/cadastro-feitico';
 import CadastroPocao from './pages/cadastro-pocao/cadastro-pocao';
+import Listagem from './pages/listagem/listagem.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -44,6 +45,7 @@ root.render(
         <Route path='/compra-poção' element={<CompraPocao />} />
         <Route path='/cadastro-feitiço' element={<CadastroFeitico />} />
         <Route path='/cadastro-poção' element={<CadastroPocao />} />
+        <Route path='/listagem' element={<Listagem />} />
         
       </Routes>
     </BrowserRouter>

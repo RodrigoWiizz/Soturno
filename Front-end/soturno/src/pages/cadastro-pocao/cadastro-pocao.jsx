@@ -1,6 +1,35 @@
+import { useState } from "react";
 import Header from "../../components/header/Header"
+import axios from "axios";
 import "./cadastro-pocao.scss"
 export default function CadastroPocao() {
+
+    const [nome, setNome] = useState("");
+    const [preco, setPreco] = useState(0);
+    const [criador, setCriador] = useState("");
+    const [tipo, setTipo] = useState("");
+    const [descricao, setDescricao] = useState("");
+    const [ingredientes, setIngredientes] = useState("");
+    const [imagem, setImagem] = useState("");
+
+    async function cadastrarPocao() {
+        let cadastro = {
+
+            nome: nome,
+            preco: preco,
+            criador: criador,
+            tipo: tipo,
+            descricao: descricao,
+            ingredientes: ingredientes,
+            imagem: imagem
+
+        }
+
+        let r = await axios.post("http://localhost:5000/pocao", cadastro);
+        let id = r.data.id;
+
+        alert("Poção cadastrada com sucesso! ID " + id);
+    }
 
     return (
 
@@ -13,17 +42,17 @@ export default function CadastroPocao() {
 
                 <main className="main-cadastroPocao">
 
-                    <input className="input-cadastroPocao" type="text" placeholder="Nome" />
-                    <input className="input-cadastroPocao" type="text" placeholder="Preço" />
-                    <input className="input-cadastroPocao" type="text" placeholder="Criador" />
-                    <input className="input-cadastroPocao" type="text" placeholder="Tipo" />
-                    <input className="input-cadastroPocao" type="text" placeholder="Descrição" />
-                    <input className="input-cadastroPocao" type="text" placeholder="Ingredientes" />
-                    <input className="input-cadastroPocao" type="text" placeholder="Imagem" />
+                    <input className="input-cadastroPocao" type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)}/>
+                    <input className="input-cadastroPocao" type="number" placeholder="Preço" value={preco} onChange={e => setPreco(e.target.value)}/>
+                    <input className="input-cadastroPocao" type="text" placeholder="Criador" value={criador} onChange={e => setCriador(e.target.value)}/>
+                    <input className="input-cadastroPocao" type="text" placeholder="Tipo" value={tipo} onChange={e => setTipo(e.target.value)}/>
+                    <input className="input-cadastroPocao" type="text" placeholder="Descrição" value={descricao} onChange={e => setDescricao(e.target.value)}/>
+                    <input className="input-cadastroPocao" type="text" placeholder="Ingredientes" value={ingredientes} onChange={e => setIngredientes(e.target.value)}/>
+                    <input className="input-cadastroPocao" type="text" placeholder="Imagem" value={imagem} onChange={e => setImagem(e.target.value)}/>
 
                 </main>
 
-                <button className="button-cadastroPocao">Cadastrar</button>
+                <button onClick={cadastrarPocao} className="button-cadastroPocao">Cadastrar</button>
 
             </section>
 

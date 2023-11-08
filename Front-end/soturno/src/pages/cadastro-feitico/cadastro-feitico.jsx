@@ -1,7 +1,30 @@
 import './cadastro-feitico.scss'
 import Header from '../../components/header/Header.jsx';
+import axios from 'axios';
+import { useState } from 'react';
 
 export default function CadastroFeitico() {
+
+    const [nome, setNome] = useState("");
+    const [preco, setPreco] = useState(0);
+    const [criador, setCriador] = useState("");
+    const [descricao, setDescricao] = useState("");
+
+    async function cadastrarPocao() {
+        let cadastro = {
+
+            nome: nome,
+            preco: preco,
+            criador: criador,
+            descricao: descricao
+
+        }
+
+        let r = await axios.post("http://localhost:5000/feitico", cadastro);
+        let id = r.data.id;
+
+        alert("Poção cadastrada com sucesso! ID " + id);
+    }
 
     return (
 
@@ -15,14 +38,14 @@ export default function CadastroFeitico() {
 
                 <main className='main-cadastro-feitico'>
 
-                    <input className='input-cadastro-feitico' type="text" placeholder="Nome" />
-                    <input className='input-cadastro-feitico' type="text" placeholder="Preço" />
-                    <input className='input-cadastro-feitico' type="text" placeholder="Criador" />
-                    <input className='input-cadastro-feitico' type="text" placeholder="Descrição" />
+                    <input className='input-cadastro-feitico' type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)}/>
+                    <input className='input-cadastro-feitico' type="number" placeholder="Preço" value={preco} onChange={e => setPreco(e.target.value)}/>
+                    <input className='input-cadastro-feitico' type="text" placeholder="Criador" value={criador} onChange={e => setCriador(e.target.value)}/>
+                    <input className='input-cadastro-feitico' type="text" placeholder="Descrição" value={descricao} onChange={e => setDescricao(e.target.value)}/>
 
                 </main>
 
-                <button>Cadastrar</button>
+                <button onClick={cadastrarPocao}>Cadastrar</button>
 
             </section>
 

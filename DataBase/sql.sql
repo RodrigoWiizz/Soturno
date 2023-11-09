@@ -14,13 +14,13 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `soturno` DEFAULT CHARACTER SET utf8 ;
+USE `soturno` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`usuarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`usuarios` (
+CREATE TABLE IF NOT EXISTS `soturno`.`usuarios` (
   `idUsuario` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `senha` VARCHAR(45) NOT NULL,
@@ -33,14 +33,14 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`pocoes`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`pocoes` (
+CREATE TABLE IF NOT EXISTS `soturno`.`pocoes` (
   `idPocoes` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `preco` DECIMAL(5,2) NOT NULL,
   `criador` VARCHAR(45) NOT NULL,
   `imagem` VARCHAR(100) NOT NULL,
   `tipo` VARCHAR(45) NOT NULL,
-  `descrição` VARCHAR(500) NOT NULL,
+  `descricao` VARCHAR(500) NOT NULL,
   `ingredientes` VARCHAR(300) NOT NULL,
   PRIMARY KEY (`idPocoes`))
 ENGINE = InnoDB;
@@ -49,7 +49,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`feiticos`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`feiticos` (
+CREATE TABLE IF NOT EXISTS `soturno`.`feiticos` (
   `idFeiticos` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `preco` DECIMAL(5,2) NOT NULL,

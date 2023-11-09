@@ -19,7 +19,7 @@ export default function Cadastrar() {
 
         }
 
-        let r = await axios.post("http://localhost:5000/usuario", cadastro);
+        let r = await axios.post("http://20.82.140.127:5000/usuario", cadastro);
         let id = r.data.id;
 
         alert("Usuário cadastrado com sucesso! ID " + id);

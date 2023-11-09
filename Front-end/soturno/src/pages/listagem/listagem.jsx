@@ -13,17 +13,17 @@ export default function Listagem() {
         let r;
 
         if (document.getElementById('usuarios').checked) {
-            r = await axios.get('http://localhost:5000/usuario');
+            r = await axios.get('http://20.82.140.127:5000/usuario');
             setLista(r.data);
             setSelectedOption('usuarios');
 
         } else if (document.getElementById('pocao').checked) {
-            r = await axios.get('http://localhost:5000/pocao');
+            r = await axios.get('http://20.82.140.127:5000/pocao');
             setLista(r.data);
             setSelectedOption('pocao');
 
         } else if (document.getElementById('feitico').checked) {
-            r = await axios.get('http://localhost:5000/feitico');
+            r = await axios.get('http://20.82.140.127:5000/feitico');
             setLista(r.data);
             setSelectedOption('feitico');
 

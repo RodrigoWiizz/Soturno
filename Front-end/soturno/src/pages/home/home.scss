@@ -7,9 +7,9 @@
     background-image: url("../../../public/assets/images/home/background-menina-landingpage.png"), url("../../../public/assets/images/global/background-florazul.png");
     background-repeat: no-repeat;
     background-position: right top, left bottom;
-    background-size: 55% 100%, 55% 70%; // Largura em % da primeira imagem é 55%.
+    background-size: 55% 100%, 55% 70%;
 
-    .section-home {
+    section.home {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -18,12 +18,12 @@
         flex-direction: column;
         align-items: center;
 
-        .main-home {
+        main.home {
             margin-top: 10%;
             height: auto;
             width: 73.30%;
 
-            .p-home-textomeio {
+            .home-textoMeio {
                 display: flex;
                 align-items: center;
                 width: 100%;
@@ -40,12 +40,12 @@
 
     .pagina-home {
         height: 100vh;
-    
-        .section-home {
 
-            .main-home {
+        section.home {
 
-                .p-home-textomeio {
+            main.home {
+
+                .home-textoMeio {
                     font: $almendra-64;
                 }
             }
@@ -53,10 +53,11 @@
     }
 }
 
-@media (max-width: 1000px) {
+//Galaxy Fold2
+@media (max-width: 900px) {
 
     .pagina-home {
-        height: auto;
+        height: 100vh;
         background-image: url("../../../public/assets/images/global/background-florazul.png");
         background-position: left bottom;
         background-size: 100% 100%;
@@ -67,11 +68,11 @@
 
     .pagina-home {
 
-        .section-home {
+        section.home {
 
-            .main-home {
+            main.home {
 
-                .p-home-textomeio {
+                .home-textoMeio {
                     font: $almendra-24;
                 }
             }
@@ -79,19 +80,27 @@
     }
 }
 
+//iPhone 13 PRO MAX
+@media (max-width: 430px) {
+
+    .pagina-home {
+        height: auto;
+    }
+}
+
 @media (max-width: 300px) {
 
     .pagina-home {
 
-        .section-home {
+        section.home {
 
-            .main-home {
+            main.home {
 
-                .p-home-textomeio {
+                .home-textoMeio {
+                    width: 95%;
                     font: $almendra-12;
                 }
             }
         }
     }
-
 }

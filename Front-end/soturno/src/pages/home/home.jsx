@@ -6,13 +6,13 @@ export default function Home() {
     return (
         <body className="pagina-home">
 
-            <section className="section-home">
+            <section className="home">
 
                 <Header/>
 
-                <main className="main-home">
+                <main className="home">
 
-                    <p className="p-home-textomeio">
+                    <p className="home-textoMeio">
                         Na Soturno, a magia ganha vida! Prepare-se para entrar em um mundo repleto de mistério,
                         maravilha e poderes sobrenaturais. Seja você um bruxo experiente ou um curioso novato,
                         a Poções e Feitiços Mágicos é o lugar perfeito para explorar o inexplicável.
@@ -21,6 +21,7 @@ export default function Home() {
                 </main>
 
             </section>
+
         </body>
     )
 

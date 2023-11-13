@@ -20,7 +20,7 @@ export default function CadastroFeitico() {
 
         }
 
-        let r = await axios.post("http://localhost:5000/feitico", cadastro);
+        let r = await axios.post("http://20.82.140.127:5000/feitico", cadastro);
         let id = r.data.id;
 
         alert("Poção cadastrada com sucesso! ID " + id);

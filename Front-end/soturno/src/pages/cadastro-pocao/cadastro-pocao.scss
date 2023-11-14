@@ -5,7 +5,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
     background-size: 40%, 40%;
-    height: 110vh;
+    height: calc(110vh - 40px);
+    margin: 20px;
 }
 
 .section-cadastroPocao {

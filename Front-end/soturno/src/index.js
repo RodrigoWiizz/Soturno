@@ -14,11 +14,14 @@ import Feitico from './pages/feitico/feitico.jsx';
 import CompraFeitico from './pages/compra-feitico/compra-feitico';
 import Pocao from './pages/pocao/pocao';
 import Cadastrar from './pages/cadastro/cadastro';
-import Produtos from './pages/produtos/produtos';
 import Admin from './pages/admin/admin';
-import Consulta from './pages/consulta/consulta';
 import Gerenciamento from './pages/gerenciamento/gerenciamento';
+import CompraPocao from './pages/compra-pocao/compra-pocao';
+import Consulta from './pages/consulta/consulta';
+import Produtos from './pages/produtos/produtos';
+import CadastroFeitico from './pages/cadastro-feitico/cadastro-feitico';
 import CadastroPocao from './pages/cadastro-pocao/cadastro-pocao';
+import Listagem from './pages/listagem/listagem.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -34,12 +37,15 @@ root.render(
         <Route path='/login' element={<Login />} />
         <Route path='/feiticos' element={<Feitico />} />
         <Route path='/compra-feitiço' element={<CompraFeitico />} />
-        <Route path='/pocoes' element={<Pocao />} />
+        <Route path='/poções' element={<Pocao />} />
         <Route path='/cadastro' element={<Cadastrar />} />
         <Route path='/produtos' element={<Produtos />} />
         <Route path='/consulta' element={<Consulta />} />
         <Route path='/gerenciamento' element={<Gerenciamento />} />
-        <Route path='/cadastro-pocao' element={<CadastroPocao />} />
+        <Route path='/compra-poção' element={<CompraPocao />} />
+        <Route path='/cadastro-feitiço' element={<CadastroFeitico />} />
+        <Route path='/cadastro-poção' element={<CadastroPocao />} />
+        <Route path='/listagem' element={<Listagem />} />
         
       </Routes>
     </BrowserRouter>

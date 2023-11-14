@@ -7,35 +7,35 @@ export default function Pocao() {
 
     return (
 
-        <body class="pagina-pocao">
+        <body className="pagina-pocao">
 
-            <section class="section-pocao">
+            <section className="section-pocao">
 
                 <Header />
 
-                <h1 class="h1-pocao">Cura</h1>
+                <h1 className="h1-pocao">Cura</h1>
 
-                <div class="div-pocao">
+                
 
-                    <main class="main-pocao">
+                    <main className="main-pocao">
 
-
-                        <CardPocao />
-                        <button>Comprar</button>
 
                         <CardPocao />
-                        <button>Comprar</button>
+                        
 
                         <CardPocao />
-                        <button>Comprar</button>
+                        
 
                         <CardPocao />
-                        <button>Comprar</button>
+                        
+
+                        <CardPocao />
+                        
 
                     </main>
 
 
-                </div>
+                
 
 
 

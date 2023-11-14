@@ -4,16 +4,16 @@ export default function CardFeitico() {
 
     return (
 
-        <section class="section-card-feitico">
+        <section className="section-card-feitico">
                 
-                <img class="img-card-feitico card-feitico-inferior-esquerdo" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
-                <img class="img-card-feitico card-feitico-inferior-direito" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
-                <img class="img-card-feitico card-feitico-superior-esquerdo" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
-                <img class="img-card-feitico card-feitico-superior-direito" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
+                <img className="img-card-feitico card-feitico-inferior-esquerdo" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
+                <img className="img-card-feitico card-feitico-inferior-direito" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
+                <img className="img-card-feitico card-feitico-superior-esquerdo" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
+                <img className="img-card-feitico card-feitico-superior-direito" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
 
-                <h1 class="h1-card-feitico-titulo">Chapolin</h1>
+                <h1 className="h1-card-feitico-titulo">Chapolin</h1>
 
-                <pre class="pre-card-feitico">
+                <pre className="pre-card-feitico">
                     {`
 • Dance por 1 hora, no topo de um prédio;
 • Assista 5 horas do programa do Chaves sem parar;

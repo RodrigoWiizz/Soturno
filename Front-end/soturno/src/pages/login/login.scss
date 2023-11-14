@@ -5,7 +5,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
     background-size: 40%, 40%;
-    height: 100%;
+    height: calc(100vh - 40px);
+    margin: 20px;
 
     .section-login {
         padding: 20px;
@@ -32,7 +33,7 @@
             .a-login-pergunta {
                 text-decoration: none;
                 color: $cor-do-objetos;
-                font: $almendra-36;
+                font: $almendra-32;
             }
 
             .a-login-pergunta:hover {
@@ -68,15 +69,56 @@
     }
 
     button {
+        width: 20%;
+        min-width: 290px;
+        height: 90px;
         margin: 40px 0px;
         font: $oldEnglish-48;
     }
 }
 
+@media (min-width: 3000px) {
+
+    .pagina-login {
+        .section-login {
+    
+            .h1-login-legenda {
+                font: $oldEnglish-128;
+            }
+    
+            .main-login {
+
+                .a-login-pergunta {
+                    font: $almendra-64;
+                }
+    
+                .input-login {
+                    font: $almendra-80;
+                }
+    
+                .input-login-email {
+                    background-size: auto 80%;
+                    background-position: bottom left;
+                }
+    
+                .input-login-senha {
+                    background-size: auto 80%;
+                    background-position: bottom left;
+                }
+            }
+    
+            button {
+                
+                font: $oldEnglish-80;
+            }
+        }
+    }
+
+}
 
 @media (max-width: 1000px) {
 
-    .pagina-home {
+    .pagina-login {
         height: auto;
 
         .section-login {
@@ -93,16 +135,21 @@
 
 @media (max-width: 530px) {
 
+    .pagina-login {
     .section-login {
 
         .h1-login-legenda {
-            font: $oldEnglish-36;
+            font: $oldEnglish-88;
         }
 
         .main-login {
 
+            .a-login-pergunta {
+                font: $almendra-24;
+            }
+
             .input-login {
-                font: $almendra-30;
+                font: $almendra-36;
             }
 
             .input-login-email {
@@ -117,12 +164,50 @@
         }
 
         button {
+            min-width: 0px;
             width: 100%;
-            font: $oldEnglish-30;
+            font: $oldEnglish-40;
         }
+    }
+}
 
-        .a-login-pergunta {
-            font: $almendra-20;
+}
+
+@media (max-width: 300px) {
+
+    .pagina-login {
+        .section-login {
+    
+            .h1-login-legenda {
+                font: $oldEnglish-76;
+            }
+    
+            .main-login {
+    
+                .a-login-pergunta {
+                    font: $almendra-12;
+                }
+    
+                .input-login {
+                    font: $almendra-24;
+                }
+    
+                .input-login-email {
+                    background-size: auto 80%;
+                    background-position: bottom left;
+                }
+    
+                .input-login-senha {
+                    background-size: auto 80%;
+                    background-position: bottom left;
+                }
+            }
+    
+            button {
+                width: 100%;
+                height: 50px;
+                font: $oldEnglish-28;
+            }
         }
     }
 

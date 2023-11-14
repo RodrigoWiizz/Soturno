@@ -4,6 +4,8 @@
 // As configurações de cor, altura , largura e padding do body estão no global.css
 
 .pagina-admin {
+    height: calc(100vh - 40px);
+    margin: 20px;
     background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
     background-repeat: no-repeat;
     background-position: right top, left bottom;

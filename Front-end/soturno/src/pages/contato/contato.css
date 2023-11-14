@@ -1,5 +1,6 @@
 .pagina-contato {
-  height: auto;
+  height: calc(auto - 40px);
+  margin: 20px;
   background-image: url("../../../public/assets/images/contato/background-meninaduascaras-contato.png"), url("../../../public/assets/images/contato/background-florazul-contato.png");
   background-repeat: no-repeat;
   background-position: center top, center bottom;
@@ -44,4 +45,41 @@
 .pagina-contato .section-contato .main-contato .figure-contato .img-contato-brasaoreinos {
   width: auto;
   height: 250px;
+}
+
+@media (min-width: 3000px) {
+  .pagina-contato {
+    height: auto;
+  }
+  .pagina-contato .section-contato .main-contato .pre-contato {
+    font: 6.4rem "Almendra Display";
+  }
+  .pagina-contato .section-contato .main-contato .h1-contato-tituloreino {
+    font: 8rem "Old English";
+  }
+  .pagina-contato .section-contato .main-contato .figure-contato .img-contato-brasaoreinos {
+    height: 416.67px;
+  }
+}
+@media (max-width: 530px) {
+  .pagina-contato .section-contato .main-contato .pre-contato {
+    font: 2.4rem "Almendra Display";
+  }
+  .pagina-contato .section-contato .main-contato .h1-contato-tituloreino {
+    font: 4rem "Old English";
+  }
+  .pagina-contato .section-contato .main-contato .figure-contato .img-contato-brasaoreinos {
+    height: 208.33px;
+  }
+}
+@media (max-width: 300px) {
+  .pagina-contato .section-contato .main-contato .pre-contato {
+    font: 1.2rem "Almendra Display";
+  }
+  .pagina-contato .section-contato .main-contato .h1-contato-tituloreino {
+    font: 2.8rem "Old English";
+  }
+  .pagina-contato .section-contato .main-contato .figure-contato .img-contato-brasaoreinos {
+    height: 145.83px;
+  }
 }/*# sourceMappingURL=contato.css.map */

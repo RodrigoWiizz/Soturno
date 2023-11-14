@@ -1,0 +1,4 @@
+//repensar o endpoint com mesmo nome de busca
+//antes de cadastrar, buscar por email no banco, garantindo a integradade
+//Gerar jwt token 
+//fazer a validação de retorno para tadas as tabelas  

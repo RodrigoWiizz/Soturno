@@ -1,13 +1,15 @@
-import "dotenv/config";
+import dotenv from 'dotenv';
 import express from "express";
 import cors from "cors";
-import pocaoEndpoints from "./src/controller/pocaoController.js";
-import usuarioEndpoints from "./src/controller/usuarioController.js";
-import feiticoEndpoints from "./src/controller/feiticosController.js";
+import pocaoEndpoints from "./controller/pocaoController.js";
+import usuarioEndpoints from "./controller/usuarioController.js";
+import feiticoEndpoints from "./controller/feiticosController.js";
 
 const servidor = express()
+dotenv.config();
 servidor.use(cors())
 servidor.use(express.json())
+
 
 servidor.use(pocaoEndpoints)
 servidor.use(usuarioEndpoints)

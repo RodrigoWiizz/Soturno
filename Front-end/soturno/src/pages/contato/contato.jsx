@@ -7,13 +7,13 @@ export default function Contato() {
 
         <body className="pagina-contato">
 
-            <section className="section-contato">
+            <section className="contato">
 
                 <Header />
 
-                <main className="main-contato">
+                <main className="contato">
 
-                    <pre className="pre-contato"> {`
+                    <pre className="contato"> {`
 Entre em Contato com a Magia! 
 
 Se você está pronto para se conectar conosco na Soturno, siga as instruções abaixo e junte-se à nossa comunidade de entusiastas da magia. 
@@ -36,14 +36,14 @@ Horário de Funcionamento: Nossa loja física está aberta para visitantes das 1
 
 `}</pre>
 
-                    <h1 className="h1-contato-tituloreino">A sotuno é credenciada pelos cinco reinos</h1>
+                    <h1 className="contato-tituloReino">A sotuno é credenciada pelos cinco reinos</h1>
 
-                    <figure className="figure-contato">
-                        <img className="img-contato-brasaoreinos" src="assets/images/contato/reino1-contato.png" alt="Brasão Reino 1" />
-                        <img className="img-contato-brasaoreinos" src="/assets/images/contato/reino2-contato.png" alt="Brasão Reino 2" />
-                        <img className="img-contato-brasaoreinos" src="/assets/images/contato/reino3-contato.png" alt="Brasão Reino 3" />
-                        <img className="img-contato-brasaoreinos" src="/assets/images/contato/reino4-contato.png" alt="Brasão Reino 4" />
-                        <img className="img-contato-brasaoreinos" src="/assets/images/contato/reino5-contato.png" alt="Brasão Reino 5" />
+                    <figure className="contato">
+                        <img className="contato-brasaoreinos" src="assets/images/contato/reino1-contato.png" alt="Brasão Reino 1" />
+                        <img className="contato-brasaoreinos" src="/assets/images/contato/reino2-contato.png" alt="Brasão Reino 2" />
+                        <img className="contato-brasaoreinos" src="/assets/images/contato/reino3-contato.png" alt="Brasão Reino 3" />
+                        <img className="contato-brasaoreinos" src="/assets/images/contato/reino4-contato.png" alt="Brasão Reino 4" />
+                        <img className="contato-brasaoreinos" src="/assets/images/contato/reino5-contato.png" alt="Brasão Reino 5" />
                     </figure>
 
                 </main>

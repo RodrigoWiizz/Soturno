@@ -7,11 +7,11 @@ export default function Sobre() {
 
         <body className="pagina-sobre">
 
-            <section className="section-sobre">
+            <section className="sobre">
 
                 <Header />
 
-                <main className="main-sobre">
+                <main className="sobre">
 
                     <pre className="pre-p-sobre-descricao-titulo"> {`
 Bem-vindo à "Soturno: A Loja dos Feitiços", o seu destino mágico para todas as suas necessidades místicas e sobrenaturais! Aqui, exploramos os segredos do oculto e oferecemos uma variedade de produtos mágicos, desde poções de cura até poções de ataque, defesa e feitiços diversos. Entre e descubra um mundo de possibilidades mágicas que irão encantar e proteger você.

@@ -41,7 +41,7 @@
                 color: white
             }
 
-            .input-login{
+            .input-login {
                 width: 48%;
                 height: 70px;
                 font: $almendra-44;
@@ -67,65 +67,53 @@
             }
         }
     }
-
-    button {
-        width: 20%;
-        min-width: 290px;
-        height: 90px;
-        margin: 40px 0px;
-        font: $oldEnglish-48;
-    }
 }
 
 @media (min-width: 3000px) {
 
     .pagina-login {
+
         .section-login {
-    
+
             .h1-login-legenda {
                 font: $oldEnglish-128;
             }
-    
+
             .main-login {
 
                 .a-login-pergunta {
                     font: $almendra-64;
                 }
-    
+
                 .input-login {
                     font: $almendra-80;
                 }
-    
+
                 .input-login-email {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
-    
+
                 .input-login-senha {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
             }
-    
-            button {
-                
-                font: $oldEnglish-80;
-            }
         }
     }
-
 }
 
-@media (max-width: 1000px) {
+//Galaxy Fold 2
+@media (max-width: 900px) {
 
     .pagina-login {
-        height: auto;
+        height: 95vh;
 
         .section-login {
 
             .main-login {
 
-                .input-login{
+                .input-login {
                     width: 100%;
                 }
             }
@@ -133,82 +121,112 @@
     }
 }
 
+
+
 @media (max-width: 530px) {
 
     .pagina-login {
-    .section-login {
+        height: auto;
 
-        .h1-login-legenda {
-            font: $oldEnglish-88;
-        }
-
-        .main-login {
-
-            .a-login-pergunta {
-                font: $almendra-24;
-            }
-
-            .input-login {
-                font: $almendra-36;
-            }
-
-            .input-login-email {
-                background-size: auto 80%;
-                background-position: bottom left;
-            }
-
-            .input-login-senha {
-                background-size: auto 80%;
-                background-position: bottom left;
-            }
-        }
-
-        button {
-            min-width: 0px;
-            width: 100%;
-            font: $oldEnglish-40;
-        }
-    }
-}
-
-}
-
-@media (max-width: 300px) {
-
-    .pagina-login {
         .section-login {
-    
+
             .h1-login-legenda {
-                font: $oldEnglish-76;
+                font: $oldEnglish-88;
             }
-    
+
             .main-login {
-    
+
                 .a-login-pergunta {
-                    font: $almendra-12;
-                }
-    
-                .input-login {
                     font: $almendra-24;
                 }
-    
+
+                .input-login {
+                    font: $almendra-36;
+                }
+
                 .input-login-email {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
-    
+
                 .input-login-senha {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
             }
-    
-            button {
-                width: 100%;
-                height: 50px;
-                font: $oldEnglish-28;
+        }
+    }
+}
+
+//iPhone 5
+@media (max-width: 330px) {
+
+    .pagina-login {
+
+        .section-login {
+
+            .h1-login-legenda {
+                font: $oldEnglish-76;
+            }
+
+            .main-login {
+
+                .a-login-pergunta {
+                    font: $almendra-20;
+                }
+
+                .input-login {
+                    font: $almendra-24;
+                }
+
+                .input-login-email {
+                    background-size: auto 80%;
+                    background-position: bottom left;
+                }
+
+                .input-login-senha {
+                    background-size: auto 80%;
+                    background-position: bottom left;
+                }
             }
         }
     }
+}
 
+//Apple Watch
+@media (max-width: 170px) {
+
+    .pagina-login {
+
+        .section-login {
+
+            .h1-login-legenda {
+                font: $oldEnglish-28;
+
+            }
+
+            .main-login {
+
+                .a-login-pergunta {
+                    font: $almendra-16;
+                }
+
+                .input-login {
+                    height: 40px;
+                    font: $almendra-16;
+                    border-bottom: 2px solid white;
+                }
+
+                .input-login-email {
+                    background-image: none;
+                    padding: 0px;
+                }
+
+                .input-login-senha {
+                    background-image: none;
+                    padding: 0px;
+                }
+            }
+        }
+    }
 }

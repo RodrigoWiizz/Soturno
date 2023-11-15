@@ -38,6 +38,10 @@ export default function Pocao() {
                                     nome={item.nome}
                                     descricao={item.descricao}
                                     imagem={item.imagem}
+                                    preco={item.preco}
+                                    criador={item.criador}
+                                    tipo={item.tipo}
+                                    ingredientes={item.ingredientes}
                                 />
                             )
                         })}

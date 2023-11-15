@@ -1,10 +1,20 @@
+import { useNavigate } from 'react-router-dom';
 import './CardPocao.scss';
 
 export default function CardPocao(props) {
 
+    const navigate = useNavigate();
+
+    function navegar() {
+
+        navigate('/compra-pocao', { state: { imagem: props.imagem, nome: props.nome, preco: props.preco, descricao: props.descricao, ingredientes: props.ingredientes,
+        tipo: props.tipo, criador: props.criador} })
+
+    }
+
     return (
 
-        <section className="section-card-pocao">
+        <section onClick={() => navegar()} className="section-card-pocao">
 
 
             <img className="img-card-pocao img-card-pocao-inferior-esquerdo"

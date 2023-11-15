@@ -56,6 +56,7 @@
 
     .button-cadastro {
         margin: 40px 0px;
+        min-width: 290px;
         font: $oldEnglish-48;
     }
 }
@@ -89,7 +90,11 @@
         .main-cadastro {
 
             .input-cadastro {
-                font: $almendra-30;
+                font: $almendra-24;
+            }
+
+            .a-cadastro {
+                font: $almendra-20;
             }
         }
 
@@ -98,8 +103,36 @@
             font: $oldEnglish-30;
         }
 
-        .a-cadastro {
-            font: $almendra-20;
+        
+
+        .button-cadastro {
+            min-width: 100px;
+        }
+    }
+
+}
+
+@media (max-width: 180px) {
+
+    .section-cadastro {
+
+        .h1-cadastro{
+            font: $oldEnglish-28;
+        }
+
+        .main-cadastro {
+
+            .input-cadastro {
+                font: $almendra-16;
+            }
+
+            .a-cadastro {
+                font: $almendra-16;
+            }
+        }
+
+        .button-cadastro {
+            font: $oldEnglish-20;
         }
     }
 

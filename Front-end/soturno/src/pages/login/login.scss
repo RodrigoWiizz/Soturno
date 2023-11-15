@@ -30,6 +30,10 @@
             flex-direction: column;
             align-items: center;
 
+            .button-login {
+                min-width: 290px;
+            }
+
             .a-login-pergunta {
                 text-decoration: none;
                 color: $cor-do-objetos;
@@ -170,6 +174,10 @@
             }
 
             .main-login {
+
+                .button-login {
+                    min-width: 150px;
+                }
 
                 .a-login-pergunta {
                     font: $almendra-20;

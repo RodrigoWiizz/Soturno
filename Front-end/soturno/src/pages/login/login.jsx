@@ -20,7 +20,7 @@ export default function Login() {
                     <input className="input-login input-login-senha" type="password" placeholder="Senha" />
 
 
-                            <button>Login</button>
+                            <button className='button-login'>Login</button>
 
                             <a className="a-login-pergunta" href="/cadastro/">Não possui uma conta? Cadastre-se</a>
 

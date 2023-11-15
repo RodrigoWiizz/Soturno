@@ -40,9 +40,13 @@
     .h1-card-feitico-titulo {
         font: $almendra-64;
         color: $cor-do-objetos;
+        margin-bottom: 20px;
     }
 
     .pre-card-feitico {
+        height: 430px;
+        display: flex;
+        align-items: center;
         text-align: justify;
         font: $almendra-28;
         color: $cor-do-objetos;
@@ -50,10 +54,60 @@
         word-wrap: break-word;
     }
 
-    // A configuração do botão está em global.css
-    button {
-        font: $oldEnglish-48;
+    .button-cardFeitico {
+        min-width: 290px;
     }
 
+}
 
+//iPhone 13 PRO MAX
+@media (max-width: 430px) {
+
+    .section-card-feitico {
+        width: 100%;
+        height: auto;
+        padding: 40px 10px;
+    
+        .h1-card-feitico-titulo {
+            font: $almendra-30;
+            color: $cor-do-objetos;
+            margin-bottom: 20px;
+        }
+    
+        .pre-card-feitico {
+            height: auto;
+            font: $almendra-20;
+        }
+    
+        .button-cardFeitico {
+            width: 100%;
+            min-width: 100px;
+        }
+    }
+
+}
+
+//Apple Watch
+@media (max-width: 170px) {
+
+    .section-card-feitico {
+        padding: 25px 5px;
+
+        .img-card-feitico {
+            width: 20px;
+        }
+
+        .h1-card-feitico-titulo {
+            font: $almendra-16;
+        }
+
+        .pre-card-feitico {
+            font: $almendra-12;
+        }
+
+        .button-cardFeitico {
+            font: $oldEnglish-20;
+        }
+    }
+    
 }

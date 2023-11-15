@@ -1,6 +1,6 @@
 import './CardFeitico.scss'
 
-export default function CardFeitico() {
+export default function CardFeitico(props) {
 
     return (
 
@@ -11,19 +11,13 @@ export default function CardFeitico() {
                 <img className="img-card-feitico card-feitico-superior-esquerdo" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
                 <img className="img-card-feitico card-feitico-superior-direito" src="/assets/images/global/flor-canto.png" alt="Flor canto Card"/>
 
-                <h1 className="h1-card-feitico-titulo">Chapolin</h1>
+                <h1 className="h1-card-feitico-titulo">{props.nome}</h1>
 
                 <pre className="pre-card-feitico">
-                    {`
-• Dance por 1 hora, no topo de um prédio;
-• Assista 5 horas do programa do Chaves sem parar;
-• Durma dentro de um barril junto de um martelo de borracha
-• Após 5 dias fale as palavras “E agora? quem poderá nos defender?”
-• Após isso o Chapolin Colorado surgira ao seu lado.
-                    `}
+                    {props.descricao}
                 </pre>
 
-                <button>Comprar</button>
+                <button className='button-cardFeitico'>Comprar</button>
 
             </section>
 

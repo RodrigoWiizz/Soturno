@@ -60,6 +60,8 @@
 
         .p-card-pocao {
             margin-left: 20px;
+            display: flex;
+            align-items: center;
             color: $cor-do-objetos;
             font: $almendra-28;
         }
@@ -70,7 +72,7 @@
 @media (max-width: 1000px) {
 
     .section-card-pocao {
-        width: 100%;
+        width: 100%; 
     }
 
 }
@@ -78,13 +80,77 @@
 
 
 
-@media (max-width: 530px) {
+@media (max-width: 568px) {
 
     .section-card-pocao {
+        height: auto;
+        padding: 40px;
 
         .section-card-pocao-conteudo {
             flex-direction: column;
+            align-items: center;
         }
     }
 
 }
+
+//iPhone 5
+@media (max-width: 330px) {
+
+    .section-card-pocao {
+
+        .h1-card-pocao {
+            font: $almendra-30;
+        }
+        
+
+        .section-card-pocao-conteudo {
+            
+            .img-card-pocao-pocao {
+                width: 100px;
+                
+            }
+
+            .p-card-pocao {
+                font: $almendra-20;
+
+            }
+        }
+    }
+    
+}
+
+//Apple Watch
+@media (max-width: 170px) {
+
+    .section-card-pocao {
+        min-height: 220px;
+        padding: 30px 0px;
+
+        .h1-card-pocao {
+            font: $almendra-16;
+        }
+
+        .img-card-pocao {
+            width: 20px;
+            height: 20px;
+            
+        }
+
+        .section-card-pocao-conteudo {
+            
+            .img-card-pocao-pocao {
+                width: 70%;
+                height: auto;
+                
+            }
+
+            .p-card-pocao {
+                display: none;
+            }
+        }
+
+    }
+    
+}
+

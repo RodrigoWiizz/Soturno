@@ -1,8 +1,20 @@
 import './feitico.scss'
 import Header from '../../components/header/Header.jsx';
 import CardFeitico from '../../components/card-feitico/CardFeitico.jsx';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 export default function Feitico() {
+
+    const [feitico, setFeitico] = useState([])
+
+    useEffect(() => {
+        const buscarFeiticos = async () => {
+            const resposta = await axios.get('http://localhost:5000/feitico')
+            setFeitico(resposta.data)
+        }
+        buscarFeiticos()
+    }, [])
 
     return (
 
@@ -14,10 +26,14 @@ export default function Feitico() {
 
                 <main className="main-feitico">
 
-                    <CardFeitico />
-                    <CardFeitico />
-                    <CardFeitico />
-                    <CardFeitico />
+                    {feitico.map((item) => {
+                        return (
+                            <CardFeitico
+                                nome={item.nome}
+                                descricao={item.descricao}
+                            />
+                        )
+                    })}
 
                 </main>
 

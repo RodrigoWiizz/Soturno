@@ -1,9 +1,21 @@
 import './pocao.scss'
 import CardPocao from '../../components/card-pocao/CardPocao.jsx';
 import Header from '../../components/header/Header';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 
 export default function Pocao() {
+
+    const [pocao , setPocao] = useState([])
+
+    useEffect(() => {
+        const buscarPocoes = async () => {
+            const resposta = await axios.get('http://localhost:5000/pocao')
+            setPocao(resposta.data)
+        }
+        buscarPocoes()
+    }, [])
 
     return (
 
@@ -20,16 +32,15 @@ export default function Pocao() {
                     <main className="main-pocao">
 
 
-                        <CardPocao />
-                        
-
-                        <CardPocao />
-                        
-
-                        <CardPocao />
-                        
-
-                        <CardPocao />
+                        {pocao.map((item) => {
+                            return (
+                                <CardPocao
+                                    nome={item.nome}
+                                    descricao={item.descricao}
+                                    imagem={item.imagem}
+                                />
+                            )
+                        })}
                         
 
                     </main>

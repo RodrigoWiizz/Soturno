@@ -3,9 +3,6 @@ import { con } from "./connection.js";
 export async function login(usuario){
     const sql = `SELECT * FROM usuarios WHERE email = ? AND senha = ?`
     const [user] = await con.query(sql, [usuario.email, usuario.senha])
-    if(!user.length){
-        return null
-    }
     return user;
 }
 
@@ -25,9 +22,6 @@ export async function atualizarUsuario(usuario){
                 WHERE idUsuario = ?`
 
     const [info] = await con.query(sql, [usuario.nome, usuario.senha, usuario.email, usuario.tipo, usuario.idUsuario])
-    if(!user.length){
-        return null
-    }
     return info
 }
 
@@ -39,7 +33,8 @@ export async function listarUsuario(){
 
 export async function listarUsuarioPorEmail(email){
     const sql = `SELECT * FROM usuarios WHERE email = ?`
-    const[user] = await con.query(sql, [])
+    const[user] = await con.query(sql, [email])
+    return user;
 }
 
 export async function listarUsuarioPorNome(nome){

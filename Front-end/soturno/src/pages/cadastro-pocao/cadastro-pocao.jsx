@@ -25,7 +25,7 @@ export default function CadastroPocao() {
 
         }
 
-        let r = await axios.post("http://191.233.24.27:5000/pocao", cadastro);
+        let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/pocao', cadastro);
         let id = r.data.id;
 
         alert("Poção cadastrada com sucesso! ID " + id);

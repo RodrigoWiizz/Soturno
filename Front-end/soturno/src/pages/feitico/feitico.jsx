@@ -10,7 +10,7 @@ export default function Feitico() {
 
     useEffect(() => {
         const buscarFeiticos = async () => {
-            const resposta = await axios.get('http://localhost:5000/feitico')
+            const resposta = await axios.get('http://191.233.24.27:5000/feitico')
             setFeitico(resposta.data)
         }
         buscarFeiticos()

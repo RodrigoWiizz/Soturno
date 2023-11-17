@@ -2,6 +2,8 @@ import { Router } from "express";
 import dotenv from 'dotenv';
 import jwt from "jsonwebtoken"; 
 import { atualizarUsuario, cadastrarUsuario, listarUsuario, listarUsuarioPorEmail, listarUsuarioPorNome, removerUsuario, login} from "../repository/usuarioRepository.js"
+import { isAdmin } from "../middleware/token/isAdmin.js";
+import { authToken } from "../middleware/token/authToken.js";
 
 dotenv.config()
 const usuarioEndpoints = Router();
@@ -14,7 +16,7 @@ usuarioEndpoints.post('/login', async(req, resp) => {
             resp.status(404).send({message: "Usuário não encontrado"})
         }
         else{
-            let token = jwt.sign({id: r.idUsuario, nome: r.nome, tipo: r.tipo}, process.env.SECRET, {expiresIn: 300})
+            let token = jwt.sign({id: r[0].idUsuario, nome: r[0].nome, tipo: r[0].tipo}, process.env.SECRET, {expiresIn: 300})
             resp.status(200).send(token);
         }
     } catch (error) {
@@ -24,7 +26,8 @@ usuarioEndpoints.post('/login', async(req, resp) => {
     }
 })
 
-usuarioEndpoints.post('/usuario', async (req, resp) => {
+usuarioEndpoints.post('/usuario', authToken, isAdmin, async (req, resp) => {
+    console.log(req.tipo)
     try {
         let usuarios = await listarUsuarioPorEmail(req.body.email)
         if(!usuarios.length){

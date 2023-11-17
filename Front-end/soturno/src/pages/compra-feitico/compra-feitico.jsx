@@ -1,12 +1,15 @@
 import './compra-feitico.scss'
 import Header from '../../components/header/Header.jsx';
 import CardCompraFeitico from '../../components/card-compra-feitico/CardCompraFeitico';
+import { useLocation } from 'react-router-dom';
 
 export default function CompraFeitico() {
 
+    const { state: { nome, preco, criador, descricao} } = useLocation();
+
     return (
 
-        <body className="pagina-compra-feitico">
+        <div className="pagina-compra-feitico">
 
             <section className="section-card-feitico">
 
@@ -22,13 +25,13 @@ export default function CompraFeitico() {
 
                 <main className="main-card-feitico">
 
-                    <CardCompraFeitico/>
+                    <CardCompraFeitico nome={nome} preco={preco} criador={criador} descricao={descricao}/>
 
                 </main>
 
             </section>
 
-        </body>
+        </div>
 
     )
 

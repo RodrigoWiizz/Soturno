@@ -1,5 +1,5 @@
 import './cadastro-feitico.scss'
-import Header from '../../components/header/Header.jsx';
+import Header from '../../components/header-adm/header-admin';
 import axios from 'axios';
 import { useState } from 'react';
 

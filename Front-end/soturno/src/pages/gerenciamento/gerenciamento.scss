@@ -10,101 +10,53 @@
     position: relative;
     overflow: hidden;
 
-    .chao-produtos {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 1600px;
-        height: 20%;
+    .section-gerenciamento {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .section-gerenciamento-botao {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            .a-gerenciamento {
+                width: 25%;
+                height: 45%;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.3);
+                font: $oldEnglish-40;
+                color: white;
+                text-decoration: none;
+            }
+
+            .a-gerenciamento:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
     }
 }
 
-
-.section-gerenciamento {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    border: 1px solid $cor-do-objetos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .section-img {
-        height: 75%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        border: none;
-
-            .a-gerenciamento {
-                height: 90%;
-                width: 50%;
-                display: flex;
-                align-items: end;
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-
-            }
-
-        }
-
-        .section-a {
-            display: none;
-        }
-    }
 
 
 
 @media (min-width: 1600px) {
 
-    .pagina-gerenciamento {
-
-
-        .chao-produtos {
-            width: 100%;
-        }
-    }
+    
 
 }
 
 
 @media (max-width: 530px) {
 
-    .section-gerenciamento {
-
-        .section-img {
-
-            display: none;
-
-        }
-
-        .section-a {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: none;
-
-            .a-gerenciamento {
-                margin: 20px 0px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font: $oldEnglish-36;
-                color: black;
-                text-decoration: none;
-                background-color: #e8f0d5;
-                height: 15%;
-                width: 90%;
-            }
-        }
-    }
-
-    .figure-chao-produtos {
-        display: none;
-    }
-
+   
 }

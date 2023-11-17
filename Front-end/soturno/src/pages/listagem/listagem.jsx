@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '../../components/header/Header';
+import Header from '../../components/header-adm/header-admin';
 import axios from 'axios';
 import './listagem.scss';
 
@@ -46,19 +46,19 @@ export default function Listagem() {
                         <tr className='tr-listagem'>Tipo</tr>
                     </thead>
                 </table>
-                <tbody className='tbody-listagem'>
+                <table className='table-listagem'>
                     {lista.map(item =>
                         
-                        <tr className='tr-listagem'>
-                            <td className='td-listagem'>{item.idUsuario}</td>
-                            <td className='td-listagem'>{item.nome}</td>
-                            <td className='td-listagem'>{item.senha}</td>
-                            <td className='td-listagem'>{item.email}</td>
-                            <td className='td-listagem'>{item.tipo}</td>
-                        </tr>
+                        <thead className='thead-listagem thead-listagem-itens'>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.idUsuario}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.nome}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.senha}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.email}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.tipo}</tr>
+                        </thead>
 
                     )}
-                </tbody>
+                </table>
             </div>
         )
     }
@@ -76,19 +76,19 @@ export default function Listagem() {
                         <tr className='tr-listagem'>Tipo</tr>
                     </thead>
                 </table>
-                <tbody className='tbody-listagem'>
+                <table className='table-listagem'>
                     {lista.map(item =>
                         
-                        <tr className='tr-listagem'>
-                            <td className='td-listagem'>{item.idPocoes}</td>
-                            <td className='td-listagem'>{item.nome}</td>
-                            <td className='td-listagem'>{item.preco}</td>
-                            <td className='td-listagem'>{item.criador}</td>
-                            <td className='td-listagem'>{item.tipo}</td>
-                        </tr>
+                        <thead className='thead-listagem thead-listagem-itens'>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.idPocoes}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.nome}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.preco}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.criador}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.tipo}</tr>
+                        </thead>
 
                     )}
-                </tbody>
+                </table>
             </div>
         )
     }
@@ -106,19 +106,19 @@ export default function Listagem() {
                         <tr className='tr-listagem'>Descrição</tr>
                     </thead>
                 </table>
-                <tbody className='tbody-listagem'>
+                <table className='table-listagem'>
                     {lista.map(item =>
                         
-                        <tr className='tr-listagem'>
-                            <td className='td-listagem'>{item.idFeiticos}</td>
-                            <td className='td-listagem'>{item.nome}</td>
-                            <td className='td-listagem'>{item.preco}</td>
-                            <td className='td-listagem'>{item.criador}</td>
-                            <td className='td-listagem'>{item.tipo}</td>
-                        </tr>
+                        <thead className='thead-listagem thead-listagem-itens'>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.idFeiticos}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.nome}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.preco}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.criador}</tr>
+                            <tr className='tr-listagem tr-listagem-itens'>{item.tipo}</tr>
+                        </thead>
 
                     )}
-                </tbody>
+                </table>
             </div>
         )
     }

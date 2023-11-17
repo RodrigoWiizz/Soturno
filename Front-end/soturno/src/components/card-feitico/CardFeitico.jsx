@@ -1,6 +1,15 @@
+import { useNavigate } from 'react-router-dom'
 import './CardFeitico.scss'
 
 export default function CardFeitico(props) {
+
+    const navigate = useNavigate()
+
+    function navegar() {
+
+        navigate('/compra-feitico', { state: { nome: props.nome, preco: props.preco, criador: props.criador, 
+        descricao: props.descricao} })
+    }
 
     return (
 
@@ -17,7 +26,7 @@ export default function CardFeitico(props) {
                     {props.descricao}
                 </pre>
 
-                <button className='button-cardFeitico'>Comprar</button>
+                <button onClick={navegar} className='button-cardFeitico'>Comprar</button>
 
             </section>
 

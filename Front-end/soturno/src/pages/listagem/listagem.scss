@@ -2,6 +2,7 @@
 
 .div-listagem-tabela {
     width: 95%;
+    height: 100%;
 
     .table-listagem {
         border-collapse: collapse;
@@ -12,28 +13,45 @@
             display: flex;
             justify-content: space-around;
             background-color: #333;
-            
+        }
+
+        .thead-listagem-itens {
+            background-color: transparent;
         }
 
         .tr-listagem {
+            width: 100%;
+            display: flex;
+            justify-content: center;
             font: $oldEnglish-28;
             color: white;
             text-decoration: none;
         }
-    }
 
-    .tbody-listagem {
-        width: 100%;
-        table-layout: fixed;
-    
-        .tr-listagem {
-            width: 1419px;
-            display: flex;
-            justify-content: space-around;
+        .tr-listagem-itens {
             font: $almendra-24;
             color: white;
         }
     }
+
+    .tbody-listagem {
+        
+    
+        .tr-listagem {
+            width: 1419.17px;
+            display: flex;
+            justify-content: space-between;
+            font: $almendra-24;
+            color: white;
+
+            .td-listagem {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
 }
 
 

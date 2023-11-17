@@ -36,14 +36,14 @@ root.render(
         <Route path='/contato' element={<Contato />} />
         <Route path='/login' element={<Login />} />
         <Route path='/feiticos' element={<Feitico />} />
-        <Route path='/compra-feitiço' element={<CompraFeitico />} />
+        <Route path='/compra-feitico' element={<CompraFeitico />} />
         <Route path='/poções' element={<Pocao />} />
         <Route path='/cadastro' element={<Cadastrar />} />
         <Route path='/produtos' element={<Produtos />} />
         <Route path='/consulta' element={<Consulta />} />
         <Route path='/gerenciamento' element={<Gerenciamento />} />
         <Route path='/compra-pocao' element={<CompraPocao />} />
-        <Route path='/cadastro-feitiço' element={<CadastroFeitico />} />
+        <Route path='/cadastro-feitico' element={<CadastroFeitico />} />
         <Route path='/cadastro-poção' element={<CadastroPocao />} />
         <Route path='/listagem' element={<Listagem />} />
         

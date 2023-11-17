@@ -1,42 +1,28 @@
-import Header from "../../components/header/Header";
+import { Link } from "react-router-dom";
+import Header from "../../components/header-adm/header-admin";
 import "./gerenciamento.scss";
 
 export default function Gerenciamento() {
 
     return (
-        <body className="pagina-gerenciamento">
-
+        <div className="pagina-gerenciamento">
+            
             <section className="section-gerenciamento">
 
                 <Header/>
-                <section className="section-img">
-                    <a className="a-gerenciamento" href="/cadastro-poção">
-                        <img src="/assets/images/produtos/esqueleto-pocao.png"
-                            alt="Mão de esqueleto segurando uma placa escrito poção"/>
-                    </a>
 
-                    <a className="a-gerenciamento" href="/cadastro-feitiço">
-                        <img src="/assets/images/produtos/esqueleto-feitico.png"
-                            alt="Mão de esqueleto segurando uma placa escrito feitiço"/>
-                    </a>
+                <section className="section-gerenciamento-botao">
 
-                </section>
-
-                <section className="section-a">
-
-                    <a className="a-gerenciamento" href="/cadastro-poção">Poção</a>
-
-                    <a className="a-gerenciamento" href="/cadastro-feitiço">Feitiço</a>
+                    <Link to="/cadastro-poção" className="a-gerenciamento">Cadastro Poção</Link>
+                    <Link to="/cadastro-feitico" className="a-gerenciamento">Cadastro Feitiço</Link>
+                    <Link to="/listagem" className="a-gerenciamento">Listagem</Link>
+                    <Link className="a-gerenciamento">Alterar</Link>
+                    <Link className="a-gerenciamento">Exclusão</Link>
 
                 </section>
 
             </section>
 
-            <figure className="figure-chao-produtos">
-                <img className="chao-produtos" src="/assets/images/produtos/chaodeossos-produtos.png"
-                    alt="Chão de Ossos"/>
-            </figure>
-
-        </body>
+        </div>
     )
 }

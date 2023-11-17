@@ -19,7 +19,7 @@ export default function Cadastrar() {
 
         }
 
-        let r = await axios.post("http://191.233.24.27:5000/usuario", cadastro);
+        let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/usuario', cadastro);
         let id = r.data.id;
 
         alert("Usuário cadastrado com sucesso! ID " + id);

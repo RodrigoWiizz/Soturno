@@ -7,8 +7,8 @@ function HeaderAdmin() {
         <header className="header-header-admin">
 
             <figure className="figure-header">
-                <a className="a-header-logo" href="./index.html"><img className="img-header" src="/assets/images/global/logo-soturno.png" alt="Logo da Loja Soturno" /></a>
-                <a className="a-header-logo" href="./index.html">
+                <a className="a-header-logo" href="./admin"><img className="img-header" src="/assets/images/global/logo-soturno.png" alt="Logo da Loja Soturno" /></a>
+                <a className="a-header-logo" href="./admin">
                     <h1 className="header-titulo-logo">Soturno</h1>
                 </a>
             </figure>

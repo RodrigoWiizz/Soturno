@@ -3,6 +3,7 @@
 .section-compra-feitico-card {
     width: 100%;
     height: 100%;
+    padding: 20px;
     position: relative;
 
     .h1-compra-feitico-card {
@@ -51,6 +52,7 @@
     .article-compra-feitico-card-texto {
         width: 100%;
         display: flex;
+        margin-top: 20px;
         justify-content: center;
         align-items: center;
         gap: 10px;
@@ -93,8 +95,9 @@
         }
 
         // A configuração do botão está em global.css
-        button {
-            font: $oldEnglish-48;
+        .button-cardCompraFeitico {
+            font: $oldEnglish-40;
+            min-width: 190px;
             height: 70px;
             margin:0px 0px 10px 60px;
         }
@@ -119,6 +122,7 @@
         }
 
         .article-compra-feitico-card-botao {
+            justify-content: space-around;
 
 
             .div-compra-feitico-card {
@@ -135,7 +139,7 @@
 
             }
 
-            button {
+            .button-cardCompraFeitico {
                 margin-top: 40px;
                 margin-left: 0px;
             }
@@ -150,43 +154,167 @@
 
 
 
-@media (max-width: 530px) {
+@media (max-width: 600px) {
 
 
 
     .section-compra-feitico-card {
 
+        .h1-compra-feitico-card {
+            font: $almendra-48;
+        }
+    
+        .pre-compra-feitico-card {
+            font: $almendra-24 ;
+        }
+
         .article-compra-feitico-card-texto {
             flex-direction: column;
 
             .h1-compra-feitico-card-criador {
-                font: $almendra-36;
+                font: $almendra-28;
             }
 
             .h2-compra-feitico-card-criador {
-                font: $babylonica-36;
+                font: $babylonica-30;
             }
         }
 
         .article-compra-feitico-card-botao {
+            flex-direction: column;
+            align-items: center;
+            
 
             .div-compra-feitico-card {
                 flex-direction: column;
+                
 
                 .h1-compra-feitico-card-preco {
-                    font: $almendra-36;
+                    font: $almendra-28;
                 }
 
                 .h2-compra-feitico-card-preco {
-                    font: $arbutus-28;
+                    font: $arbutus-20;
                 }
 
             }
 
-            button {
+            .button-cardCompraFeitico {
 
                 width: 80%;
                 font: $oldEnglish-30;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 330px) {
+
+
+
+    .section-compra-feitico-card {
+
+        .h1-compra-feitico-card {
+            font: $almendra-28;
+        }
+    
+        .pre-compra-feitico-card {
+            font: $almendra-16 ;
+        }
+
+        .article-compra-feitico-card-texto {
+            flex-direction: column;
+
+            .h1-compra-feitico-card-criador {
+                font: $almendra-20;
+            }
+
+            .h2-compra-feitico-card-criador {
+                font: $babylonica-22;
+            }
+        }
+
+        .article-compra-feitico-card-botao {
+            
+            
+
+            .div-compra-feitico-card {
+                
+                
+
+                .h1-compra-feitico-card-preco {
+                    font: $almendra-20;
+                }
+
+                .h2-compra-feitico-card-preco {
+                    font: $arbutus-15;
+                }
+
+            }
+
+            .button-cardCompraFeitico {
+
+                width: 80%;
+                min-width: 100px;
+                font: $oldEnglish-23;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 280px) {
+
+
+
+    .section-compra-feitico-card {
+        padding: 40px 10px;
+        width: 100%;
+
+        .h1-compra-feitico-card {
+            font: $almendra-24;
+        }
+    
+        .pre-compra-feitico-card {
+            font: $almendra-12 ;
+        }
+
+        .article-compra-feitico-card-texto {
+            flex-direction: column;
+
+            .h1-compra-feitico-card-criador {
+                font: $almendra-16;
+            }
+
+            .h2-compra-feitico-card-criador {
+                font: $babylonica-15;
+            }
+        }
+
+        .article-compra-feitico-card-botao {
+            
+            
+
+            .div-compra-feitico-card {
+                
+                
+
+                .h1-compra-feitico-card-preco {
+                    font: $almendra-16;
+                }
+
+                .h2-compra-feitico-card-preco {
+                    font: $arbutus-10;
+                }
+
+            }
+
+            .button-cardCompraFeitico {
+
+                width: 80%;
+                min-width: 100px;
+                font: $oldEnglish-23;
             }
         }
 

@@ -45,3 +45,81 @@
         }
     }
 }
+
+//iPhone 13 PRO MAX
+@media (max-width: 430px) {
+
+    .pagina-compra-feitico {
+        background-size: 100%;
+    
+    
+        .section-card-feitico {
+    
+            .article-card-feitico {
+    
+                .h1-card-feitico {
+                    font: $almendra-48;
+        
+                }
+    
+                .p-card-feitico {
+                    font: $almendra-24;
+                    
+                }
+    
+            }
+        }
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .pagina-compra-feitico {
+    
+    
+        .section-card-feitico {
+            padding: 0px;
+    
+            .article-card-feitico {
+    
+                .h1-card-feitico {
+                    font: $almendra-28;
+        
+                }
+    
+                .p-card-feitico {
+                    font: $almendra-16;
+                    
+                }
+    
+            }
+        }
+    }
+
+}
+
+@media (max-width: 180px) {
+
+    .pagina-compra-feitico {
+    
+    
+        .section-card-feitico {
+    
+            .article-card-feitico {
+    
+                .h1-card-feitico {
+                    font: $almendra-24;
+        
+                }
+    
+                .p-card-feitico {
+                    font: $almendra-12;
+                    
+                }
+    
+            }
+        }
+    }
+
+}

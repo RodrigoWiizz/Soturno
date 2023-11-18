@@ -5,8 +5,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
     background-size: 40%, 40%;
-    height: calc(100vh - 40px);
-    margin: 20px;
+    height: 100vh;
+    padding: 20px;
 
     .section-cadastro-feitico {
         padding: 20px;
@@ -42,8 +42,9 @@
             
         }
     
-        button {
+        .button-cadastro-feitico {
             margin-top: 40px;
+            min-width: 210px;
             font: $oldEnglish-48;
         }
     }
@@ -54,7 +55,7 @@
     
         .pagina-cadastro-feitico {
             height: 125vh;
-        }
+        
     
         .section-cadastro-feitico {
     
@@ -66,8 +67,11 @@
             }
         }
     }
+    }
     
     @media (max-width: 530px) {
+        .pagina-cadastro-feitico{
+            height: auto;
     
         .section-cadastro-feitico {
     
@@ -82,10 +86,40 @@
                 }
             }
     
-            button {
+            .button-cadastro-feitico {
                 width: 100%;
+                min-width: 120px;
                 font: $oldEnglish-30;
             }
         }
+        }
     
     }
+
+@media (max-width: 300px) {
+
+    .pagina-cadastro-feitico{
+        
+    
+        .section-cadastro-feitico {
+    
+            .h1-cadastro-feitico{
+                font: $oldEnglish-30;
+            }
+    
+            .main-cadastro-feitico {
+    
+                .input-cadastro-feitico {
+                    font: $almendra-20;
+                }
+            }
+    
+            .button-cadastro-feitico {
+                width: 100%;
+                min-width: 100px;
+                font: $oldEnglish-23;
+            }
+        }
+        }
+
+}

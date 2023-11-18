@@ -45,7 +45,7 @@ export default function CadastroFeitico() {
 
                 </main>
 
-                <button onClick={cadastrarPocao}>Cadastrar</button>
+                <button className='button-cadastro-feitico' onClick={cadastrarPocao}>Cadastrar</button>
 
             </section>
 

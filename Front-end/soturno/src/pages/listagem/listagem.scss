@@ -1,8 +1,9 @@
 @import '../../components/variaveis/';
 
+
+
 .div-listagem-tabela {
-    width: 95%;
-    min-width: 1440px;
+    width: 1419.17px;
     height: 100%;
 
     .table-listagem {
@@ -52,8 +53,9 @@
             }
         }
     }
-
 }
+
+
 
 
 .pagina-listagem {
@@ -61,6 +63,7 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
     background-size: 40%, 40%;
+    box-sizing: border-box;
 }
 
 .section-listagem {
@@ -71,6 +74,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    
 
     .h1-listagem {
         font: $oldEnglish-96;
@@ -130,6 +135,7 @@
 
     .button-listagem {
         margin-top: 40px;
+        min-width: 150px;
         font: $oldEnglish-48;
     }
 }
@@ -138,9 +144,50 @@
 @media (max-width: 1300px) {
 
     .div-listagem-tabela {
-        overflow-x: auto;
+        
     }
 
 }
 
-@media (max-width: 530px) {}
+@media (max-width: 530px) {
+
+    .pagina-listagem {
+        
+    }
+    
+    .section-listagem {
+        
+    
+        
+    
+        .h1-listagem {
+            font: $oldEnglish-40;
+            
+        }
+    
+        .main-listagem {
+            flex-direction: column;
+            margin: 20px 0px;
+    
+            .article-listagem {
+                
+    
+                .radio-listagem {
+                    
+                }
+    
+    
+                
+    
+                .label-listagem {
+                    font: $almendra-28;
+                }
+            }
+        }
+    
+        .button-listagem {
+            font: $oldEnglish-40;
+        }
+    }
+
+}

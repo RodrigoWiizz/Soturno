@@ -54,7 +54,7 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1360px) {
 
     .header-header-admin {
         flex-direction: column-reverse;
@@ -78,6 +78,7 @@
             width: 100%;
             gap: 20px;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
     }
 }

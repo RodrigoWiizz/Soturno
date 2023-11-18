@@ -5,8 +5,8 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
     background-size: 40%, 40%;
-    height: calc(120vh - 40px);
-    margin: 20px;
+    height: 120vh;
+    padding: 20px;
 }
 
 .section-cadastroPocao {
@@ -46,6 +46,7 @@
 
     .button-cadastroPocao {
         margin-top: 40px;
+        min-width: 210px;
         font: $oldEnglish-48;
     }
 }
@@ -54,7 +55,7 @@
 @media (max-width: 1000px) {
 
     .pagina-cadastroPocao {
-        height: 150vh;
+        height: auto;
     }
 
     .section-cadastroPocao {
@@ -85,7 +86,31 @@
 
         .button-cadastroPocao {
             width: 100%;
+            min-width: 150px;
             font: $oldEnglish-30;
+        }
+    }
+
+}
+
+@media (max-width: 220px) {
+
+    .section-cadastroPocao {
+
+        .h1-cadastroPocao{
+            font: $oldEnglish-30;
+        }
+
+        .main-cadastroPocao {
+
+            .input-cadastroPocao {
+                font: $almendra-20;
+            }
+        }
+
+        .button-cadastroPocao {
+            min-width: 100px;
+            font: $oldEnglish-23;
         }
     }
 

@@ -62,6 +62,8 @@ export default function Listagem() {
                 </table>
             </div>
 
+            
+
         
         )
     }
@@ -157,7 +159,7 @@ export default function Listagem() {
 
                 <button className="button-listagem" onClick={listar}>Listar</button>
 
-                
+                <section className='section-listagem-tabela'>
 
                 {selectedOption === 'usuarios' &&
                     tabelaUsuario()
@@ -170,6 +172,8 @@ export default function Listagem() {
                 {selectedOption === 'feitico' &&
                     tabelaFeitico()
                 }  
+
+</section>
 
 
             </section>

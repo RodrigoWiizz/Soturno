@@ -12,12 +12,12 @@ export default function Produtos() {
                 <Header />
                 
                 <section className="section-img">
-                    <Link className="a-produtos" href="/poções">
+                    <Link className="a-produtos" to="/pocoes">
                         <img className="img-produtos" src="/assets/images/produtos/esqueleto-pocao.png"
                             alt="Mão de esqueleto segurando uma placa escrito poção" />
                     </Link>
 
-                    <Link className="a-produtos" href="/feiticos">
+                    <Link className="a-produtos" to="/feiticos">
                         <img className="img-produtos" src="/assets/images/produtos/esqueleto-feitico.png"
                             alt="Mão de esqueleto segurando uma placa escrito feitiço" />
                     </Link>
@@ -26,9 +26,9 @@ export default function Produtos() {
 
                 <section className="section-a">
 
-                    <Link className="a-produtos" href="/pocoes">Poção</Link>
+                    <Link className="a-produtos" to="/pocoes">Poção</Link>
 
-                    <Link className="a-produtos" href="/feiticos">Feitiço</Link>
+                    <Link className="a-produtos" to="/feiticos">Feitiço</Link>
 
                 </section>
 

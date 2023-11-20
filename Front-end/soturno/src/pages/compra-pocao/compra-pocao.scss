@@ -67,7 +67,7 @@
                         font: $almendra-34;
                         color: $cor-do-objetos;
 
-                        pre {
+                        .pre-compra-pocao {
 
                             font: $almendra-34;
                             color: $cor-do-objetos;
@@ -163,7 +163,8 @@
             align-items: center;
 
             .figure-compra-pocao{
-                width: 100%;
+                min-width: 300px;
+                margin-bottom: 40px;
 
                 
             }
@@ -172,12 +173,24 @@
                     width: 1000px;
                     display: flex;
                     flex-direction: column;
+
+                    .h1-compra-pocao {
+                        min-width: 405px;
+                    }
     
 
                 .section-compra-pocao-direito {
                     width: 100%;
-                    height: 500px;
-                    flex-direction: column;
+
+                    .article-compra-pocao-efeito,
+                    .article-compra-pocao-ingredientes {
+                        width: 100%;
+                        height: 100%;
+
+                        .p-compra-pocao{
+                            
+                        }
+                    }
                 }
             }
         }
@@ -185,6 +198,8 @@
         .section-compra-pocao {
 
         .footer-compra-pocao {
+            flex-direction: column;
+            align-items: center;
 
             .section-compra-pocao-botao {
                 min-width: 150px;
@@ -199,6 +214,100 @@
         }
     }
     }
+}
+
+@media (max-width: 770px) {
+
+    .pagina-compra-pocao {
+        
+    
+        .section-compra-pocao {
+            
+    
+            .main-compra-pocao {
+                
+    
+                .figure-compra-pocao {
+                    
+                }
+    
+                .section-compra-pocao-titulo {
+                    
+    
+                    .article-compra-pocao-titulo {
+                        
+    
+                        .h1-compra-pocao {
+                            font: $almendra-36;
+                            
+                        }
+    
+                    }
+
+                    .section-compra-pocao-direito {
+                        
+    
+    
+                        .article-compra-pocao-efeito,
+                        .article-compra-pocao-ingredientes {
+                            font: $almendra-20;
+ 
+
+                            .pre-compra-pocao{
+                                font: $almendra-20;
+                            }
+                        }
+    
+                    }
+                }
+            }
+
+            
+        .footer-compra-pocao {
+                    
+        
+            .section-compra-pocao-botao {
+                
+
+                .section-compra-pocao-footer-titulo {
+                    
+    
+                    .div-compra-pocao-footer-cima {
+                        
+    
+                        .h1-compra-pocao-mago {
+                            font: $almendra-16;
+                            
+                        }
+    
+                        .h2-compra-pocao-mago {
+                            font: $babylonica-22;
+                            
+                        }
+    
+                    }
+    
+                    .div-compra-pocao-footer-baixo {
+                        
+    
+                        .h3-compra-pocao-preco {
+                            font: $almendra-44;
+                            
+                        }
+    
+                        .h4-compra-pocao-preco {
+                            font: $arbutus-36;
+                            
+                        }
+    
+                    }
+
+            }
+        }
+    
+}
+    }
+}
 }
 
 //iPhone 13 PRO MAX

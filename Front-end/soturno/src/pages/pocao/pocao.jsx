@@ -19,17 +19,15 @@ export default function Pocao() {
 
     return (
 
-        <body className="pagina-pocao">
+        <div className="pagina-pocao">
 
-            <section className="section-pocao">
+            <section className="pocao">
 
                 <Header />
 
-                <h1 className="h1-pocao">Cura</h1>
+                <h1 className="pocao">Cura</h1>
 
-                
-
-                    <main className="main-pocao">
+                    <main className="pocao">
 
 
                         {pocao.map((item) => {
@@ -49,14 +47,9 @@ export default function Pocao() {
 
                     </main>
 
-
-                
-
-
-
             </section>
 
-        </body>
+        </div>
 
     )
 

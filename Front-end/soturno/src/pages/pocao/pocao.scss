@@ -5,7 +5,7 @@
     margin: 20px;
 
 
-    .section-pocao {
+    section.pocao {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -14,23 +14,18 @@
         flex-direction: column;
         align-items: center;
 
-        .h1-pocao {
+        h1.pocao {
             color: $cor-do-objetos;
             font: $oldEnglish-128;
             margin: 0;
             text-align: center;
         }
 
-        .main-pocao {
+        main.pocao {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             width: 100%;
-
-            button {
-                margin: 20px 0px;
-                font: $oldEnglish-48;
-            }
 
         }
 
@@ -43,9 +38,9 @@
 
     .pagina-pocao {
 
-        .section-pocao {
+        section.pocao {
 
-            .h1-pocao {
+            h1.pocao {
                 font: $oldEnglish-96;
             }
 
@@ -54,29 +49,11 @@
                 flex-direction: column;
                 align-items: center;
 
-                .main-pocao {
+                main.pocao {
                     width: 100%;
                 }
             }
         }
-    }
-}
-
-@media (max-width: 530px) {
-
-    .section-pocao {
-
-        .div-pocao {
-
-            .main-pocao {
-
-                button {
-                    width: 100%;
-                    font: $oldEnglish-36;
-                }
-            }
-        }
-
     }
 }
 
@@ -84,9 +61,9 @@
 
     .pagina-pocao {
 
-        .section-pocao {
+        section.pocao {
 
-            .h1-pocao {
+            h1.pocao {
                 font: $oldEnglish-76;
             }
         }
@@ -98,9 +75,9 @@
 
     .pagina-pocao {
 
-        .section-pocao {
+        section.pocao {
 
-            .h1-pocao {
+            h1.pocao {
                 font: $oldEnglish-48;
             }
         }

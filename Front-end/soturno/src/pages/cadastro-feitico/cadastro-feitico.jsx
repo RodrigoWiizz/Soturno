@@ -28,27 +28,27 @@ export default function CadastroFeitico() {
 
     return (
 
-        <body className='pagina-cadastro-feitico'>
+        <div className='pagina-cadastroFeitico'>
 
-            <section className='section-cadastro-feitico'>
+            <section className='cadastroFeitico'>
 
                 <Header />
 
-                <h1 className='h1-cadastro-feitico'>Cadastro Feitiço</h1>
+                <h1 className='cadastroFeitico'>Cadastro Feitiço</h1>
 
-                <main className='main-cadastro-feitico'>
+                <form className='cadastroFeitico'>
 
-                    <input className='input-cadastro-feitico' type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)}/>
-                    <input className='input-cadastro-feitico' type="number" placeholder="Preço" value={preco} onChange={e => setPreco(e.target.value)}/>
-                    <input className='input-cadastro-feitico' type="text" placeholder="Criador" value={criador} onChange={e => setCriador(e.target.value)}/>
-                    <input className='input-cadastro-feitico' type="text" placeholder="Descrição" value={descricao} onChange={e => setDescricao(e.target.value)}/>
+                    <input className='cadastroFeitico' type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)} />
+                    <input className='cadastroFeitico' type="number" placeholder="Preço" value={preco} onChange={e => setPreco(e.target.value)} />
+                    <input className='cadastroFeitico' type="text" placeholder="Criador" value={criador} onChange={e => setCriador(e.target.value)} />
+                    <input className='cadastroFeitico' type="text" placeholder="Descrição" value={descricao} onChange={e => setDescricao(e.target.value)} />
 
-                </main>
+                </form>
 
-                <button className='button-cadastro-feitico' onClick={cadastrarPocao}>Cadastrar</button>
+                <button className='cadastroFeitico' onClick={cadastrarPocao}>Cadastrar</button>
 
             </section>
 
-        </body>
+        </div>
     )
 }

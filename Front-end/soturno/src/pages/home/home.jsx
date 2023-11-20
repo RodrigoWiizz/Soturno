@@ -4,7 +4,7 @@ import Header from '../../components/header/Header.jsx';
 export default function Home() {
 
     return (
-        <body className="pagina-home">
+        <div className="pagina-home">
 
             <section className="home">
 
@@ -22,7 +22,7 @@ export default function Home() {
 
             </section>
 
-        </body>
+        </div>
     )
 
 }

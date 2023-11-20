@@ -8,8 +8,7 @@
     background-size: 60%;
     background-position: center;
 
-
-    .section-card-feitico {
+    section.card-feitico {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -18,26 +17,25 @@
         flex-direction: column;
         align-items: center;
 
-        .article-card-feitico {
+        article.card-feitico {
             width: 90%;
 
-            .h1-card-feitico {
+            h1.card-feitico {
                 text-align: center;
                 color: $cor-do-objetos;
                 font: $almendra-64;
                 margin: 0;
             }
 
-            .p-card-feitico {
+            p.card-feitico {
                 text-align: center;
                 color: #F80000;
                 font: $almendra-32;
                 margin: 0;
             }
-
         }
 
-        .main-card-feitico {
+        main.card-feitico {
             margin-top: 40px;
             width: 95%;
             height: auto;
@@ -51,75 +49,67 @@
 
     .pagina-compra-feitico {
         background-size: 100%;
-    
-    
-        .section-card-feitico {
-    
-            .article-card-feitico {
-    
-                .h1-card-feitico {
+
+        section.card-feitico {
+
+            article.card-feitico {
+
+                h1.card-feitico {
                     font: $almendra-48;
-        
+
                 }
-    
-                .p-card-feitico {
+
+                p.card-feitico {
                     font: $almendra-24;
-                    
+
                 }
-    
             }
         }
     }
-
 }
 
 @media (max-width: 300px) {
 
     .pagina-compra-feitico {
-    
-    
-        .section-card-feitico {
+
+        section.card-feitico {
             padding: 0px;
-    
-            .article-card-feitico {
-    
-                .h1-card-feitico {
+
+            article.card-feitico {
+
+                h1.card-feitico {
                     font: $almendra-28;
-        
+
                 }
-    
-                .p-card-feitico {
+
+                p.card-feitico {
                     font: $almendra-16;
-                    
+
                 }
-    
+
             }
         }
     }
-
 }
 
 @media (max-width: 180px) {
 
     .pagina-compra-feitico {
-    
-    
-        .section-card-feitico {
-    
-            .article-card-feitico {
-    
-                .h1-card-feitico {
+
+        section.card-feitico {
+
+            article.card-feitico {
+
+                h1.card-feitico {
                     font: $almendra-24;
-        
+
                 }
-    
-                .p-card-feitico {
+
+                p.card-feitico {
                     font: $almendra-12;
-                    
+
                 }
-    
             }
         }
     }
-
 }

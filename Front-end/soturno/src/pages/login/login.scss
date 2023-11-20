@@ -8,7 +8,7 @@
     height: calc(100vh - 40px);
     margin: 20px;
 
-    .section-login {
+    section.login {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -17,35 +17,35 @@
         flex-direction: column;
         align-items: center;
 
-        .h1-login-legenda {
+        h1.login-legenda {
             font: $oldEnglish-96;
             color: white;
             margin: 0px;
         }
 
-        .main-login {
+        main.login {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            .button-login {
+            button.login {
                 min-width: 290px;
             }
 
-            .a-login-pergunta {
+            a.login-pergunta {
                 text-decoration: none;
                 color: $cor-do-objetos;
                 font: $almendra-32;
             }
 
-            .a-login-pergunta:hover {
+            a.login-pergunta:hover {
                 text-decoration: underline;
                 color: white
             }
 
-            .input-login {
+            input.login {
                 width: 48%;
                 height: 70px;
                 font: $almendra-44;
@@ -55,14 +55,14 @@
                 border-bottom: 4px solid white;
             }
 
-            .input-login-email {
+            input.login-email {
                 background-image: url("../../../public/assets/images/login/icon-mago.png");
                 background-repeat: no-repeat;
                 background-size: auto 100%;
                 padding: 0px 0px 0px 70px;
             }
 
-            .input-login-senha {
+            input.login-senha {
                 background-image: url("../../../public/assets/images/login/icon-cadeado.png");
                 background-repeat: no-repeat;
                 background-size: auto 100%;
@@ -77,28 +77,28 @@
 
     .pagina-login {
 
-        .section-login {
+        section.login {
 
-            .h1-login-legenda {
+            h1.login-legenda {
                 font: $oldEnglish-128;
             }
 
-            .main-login {
+            main.login {
 
-                .a-login-pergunta {
+                a.login-pergunta {
                     font: $almendra-64;
                 }
 
-                .input-login {
+                input.login {
                     font: $almendra-80;
                 }
 
-                .input-login-email {
+                input.login-email {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
 
-                .input-login-senha {
+                input.login-senha {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
@@ -113,11 +113,11 @@
     .pagina-login {
         height: 95vh;
 
-        .section-login {
+        section.login {
 
-            .main-login {
+            main.login {
 
-                .input-login {
+                input.login {
                     width: 100%;
                 }
             }
@@ -132,28 +132,28 @@
     .pagina-login {
         height: auto;
 
-        .section-login {
+        section.login {
 
-            .h1-login-legenda {
+            h1.login-legenda {
                 font: $oldEnglish-88;
             }
 
-            .main-login {
+            main.login {
 
-                .a-login-pergunta {
+                a.login-pergunta {
                     font: $almendra-24;
                 }
 
-                .input-login {
+                input.login {
                     font: $almendra-36;
                 }
 
-                .input-login-email {
+                input.login-email {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
 
-                .input-login-senha {
+                input.login-senha {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
@@ -167,32 +167,32 @@
 
     .pagina-login {
 
-        .section-login {
+        section.login {
 
-            .h1-login-legenda {
+            h1.login-legenda {
                 font: $oldEnglish-76;
             }
 
-            .main-login {
+            main.login {
 
-                .button-login {
+                button.login {
                     min-width: 150px;
                 }
 
-                .a-login-pergunta {
+                a.login-pergunta {
                     font: $almendra-20;
                 }
 
-                .input-login {
+                input.login {
                     font: $almendra-24;
                 }
 
-                .input-login-email {
+                input.login-email {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
 
-                .input-login-senha {
+                input.login-senha {
                     background-size: auto 80%;
                     background-position: bottom left;
                 }
@@ -206,35 +206,35 @@
 
     .pagina-login {
 
-        .section-login {
+        section.login {
 
-            .h1-login-legenda {
+            h1.login-legenda {
                 font: $oldEnglish-28;
 
             }
 
-            .main-login {
+            main.login {
 
-                .button-login {
+                button.login {
                     min-width: 100px;
                 }
 
-                .a-login-pergunta {
+                a.login-pergunta {
                     font: $almendra-16;
                 }
 
-                .input-login {
+                input.login {
                     height: 40px;
                     font: $almendra-16;
                     border-bottom: 2px solid white;
                 }
 
-                .input-login-email {
+                input.login-email {
                     background-image: none;
                     padding: 0px;
                 }
 
-                .input-login-senha {
+                input.login-senha {
                     background-image: none;
                     padding: 0px;
                 }

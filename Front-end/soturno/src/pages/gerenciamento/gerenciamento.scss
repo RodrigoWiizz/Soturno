@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
 
-    .section-gerenciamento {
+    section.gerenciamento {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -19,14 +19,14 @@
         flex-direction: column;
         align-items: center;
 
-        .section-gerenciamento-botao {
+        section.gerenciamento-botao {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
 
-            .a-gerenciamento {
+            a.gerenciamento {
                 width: 25%;
                 height: 45%;
                 min-width: 150px;
@@ -42,50 +42,40 @@
                 text-decoration: none;
             }
 
-            .a-gerenciamento:hover {
+            a.gerenciamento:hover {
                 background-color: rgba(0, 0, 0, 0.7);
             }
         }
     }
 }
 
-
-
-
 @media (max-width: 800px) {
 
     .pagina-gerenciamento {
         
-    
-        .section-gerenciamento {
+        section.gerenciamento {
             
-    
-            .section-gerenciamento-botao {
+            section.gerenciamento-botao {
                 
-    
-                .a-gerenciamento {
+                a.gerenciamento {
                     font: $oldEnglish-30;
                     
                 }
             }
         }
     }
-
 }
-
 
 @media (max-width: 530px) {
 
     .pagina-gerenciamento {
         height: auto;
     
-        .section-gerenciamento {
+        section.gerenciamento {
             
-    
-            .section-gerenciamento-botao {
+            section.gerenciamento-botao {
                 
-    
-                .a-gerenciamento {
+                a.gerenciamento {
                     width: 100%;
                     font: $oldEnglish-20;
                     min-width: 100px;
@@ -93,5 +83,4 @@
             }
         }
     }
-
 }

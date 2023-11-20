@@ -9,7 +9,7 @@
     background-size: 40%, 40%;
 }
 
-.section-cadastro {
+section.cadastro {
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -18,31 +18,31 @@
     flex-direction: column;
     align-items: center;
 
-    .h1-cadastro {
+    h1.cadastro {
         font: $oldEnglish-96;
         color: white;
         margin: 0px;
     }
 
-    .main-cadastro {
+    form.cadastro {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .a-cadastro {
+        a.cadastro {
             text-decoration: none;
             color: $cor-do-objetos;
             font: $almendra-36;
         }
         
-        .a-cadastro:hover {
+        a.cadastro:hover {
             text-decoration: underline;
             color: white
         }
 
-        .input-cadastro {
+        input.cadastro {
             width: 48%;
             height: 70px;
             font: $almendra-44;
@@ -51,10 +51,9 @@
             border: none;
             border-bottom: 4px solid white;
         }
-        
     }
 
-    .button-cadastro {
+    button.cadastro {
         margin: 40px 0px;
         min-width: 290px;
         font: $oldEnglish-48;
@@ -68,11 +67,11 @@
         height: auto;
     }
 
-    .section-cadastro {
+    section.cadastro {
 
-        .main-cadastro {
+        form.cadastro {
 
-            .input-cadastro {
+            input.cadastro {
                 width: 100%;
             }
         }
@@ -81,59 +80,55 @@
 
 @media (max-width: 530px) {
 
-    .section-cadastro {
+    section.cadastro {
 
-        .h1-cadastro{
+        h1.cadastro{
             font: $oldEnglish-36;
         }
 
-        .main-cadastro {
+        form.cadastro {
 
-            .input-cadastro {
+            input.cadastro {
                 font: $almendra-24;
             }
 
-            .a-cadastro {
+            a.cadastro {
                 font: $almendra-20;
             }
         }
 
-        .button-cadastro {
+        button.cadastro {
             width: 100%;
             font: $oldEnglish-30;
         }
 
-        
-
-        .button-cadastro {
+        button.cadastro {
             min-width: 100px;
         }
     }
-
 }
 
 @media (max-width: 180px) {
 
-    .section-cadastro {
+    section.cadastro {
 
-        .h1-cadastro{
+        h1.cadastro{
             font: $oldEnglish-28;
         }
 
-        .main-cadastro {
+        form.cadastro {
 
-            .input-cadastro {
+            input.cadastro {
                 font: $almendra-16;
             }
 
-            .a-cadastro {
+            a.cadastro {
                 font: $almendra-16;
             }
         }
 
-        .button-cadastro {
+        button.cadastro {
             font: $oldEnglish-20;
         }
     }
-
 }

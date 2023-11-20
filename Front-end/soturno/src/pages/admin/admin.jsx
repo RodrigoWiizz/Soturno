@@ -5,14 +5,15 @@ export default function Admin() {
 
     return (
 
-        <body className="pagina-admin">
-            <section className="section-admin">
+        <div className="pagina-admin">
+
+            <section className="admin">
 
                 <HeaderAdmin />
 
-                <main className="main-admin">
+                <main className="admin">
 
-                    <p className="p-admin">
+                    <p className="admin">
                         Na Soturno, a magia ganha vida! Prepare-se para entrar em um mundo repleto de mistério,
                         maravilha e poderes sobrenaturais. Seja você um bruxo experiente ou um curioso novato,
                         a Poções e Feitiços Mágicos é o lugar perfeito para explorar o inexplicável.
@@ -21,6 +22,7 @@ export default function Admin() {
                 </main>
 
             </section>
-        </body>
+            
+        </div>
     )
 }

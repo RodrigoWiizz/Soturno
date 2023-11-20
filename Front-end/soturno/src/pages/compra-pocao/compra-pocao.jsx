@@ -8,7 +8,7 @@ export default function CompraPocao() {
 
     return (
 
-        <body className='pagina-compra-pocao'>
+        <div className='pagina-compra-pocao'>
 
             <section className='section-compra-pocao'>
 
@@ -79,7 +79,7 @@ export default function CompraPocao() {
 
             </section>
 
-        </body>
+        </div>
 
     )
 

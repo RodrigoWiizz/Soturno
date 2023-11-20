@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Header from "../../components/header/Header"
 import "./produtos.scss"
 
@@ -11,23 +12,23 @@ export default function Produtos() {
                 <Header />
                 
                 <section className="section-img">
-                    <a className="a-produtos" href="/poções">
+                    <Link className="a-produtos" href="/poções">
                         <img className="img-produtos" src="/assets/images/produtos/esqueleto-pocao.png"
                             alt="Mão de esqueleto segurando uma placa escrito poção" />
-                    </a>
+                    </Link>
 
-                    <a className="a-produtos" href="/feiticos">
+                    <Link className="a-produtos" href="/feiticos">
                         <img className="img-produtos" src="/assets/images/produtos/esqueleto-feitico.png"
                             alt="Mão de esqueleto segurando uma placa escrito feitiço" />
-                    </a>
+                    </Link>
 
                 </section>
 
                 <section className="section-a">
 
-                    <a className="a-produtos" href="/pocoes">Poção</a>
+                    <Link className="a-produtos" href="/pocoes">Poção</Link>
 
-                    <a className="a-produtos" href="/feiticos">Feitiço</a>
+                    <Link className="a-produtos" href="/feiticos">Feitiço</Link>
 
                 </section>
 

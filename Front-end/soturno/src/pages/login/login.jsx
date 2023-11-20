@@ -1,34 +1,35 @@
 import './login.scss';
 import Header from '../../components/header/Header.jsx';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
 
     return (
 
-        <body className="pagina-login">
+        <div className="pagina-login">
             
 
-            <section className="section-login">
+            <section className="login">
 
                 <Header />
 
-                <h1 className="h1-login-legenda">Login</h1>
+                <h1 className="login-legenda">Login</h1>
 
-                <main className="main-login">
+                <main className="login">
 
-                    <input className="input-login input-login-email" type="text" placeholder="Email"/>
-                    <input className="input-login input-login-senha" type="password" placeholder="Senha" />
+                    <input className="login login-email" type="text" placeholder="Email"/>
+                    <input className="login login-senha" type="password" placeholder="Senha" />
 
 
-                            <button className='button-login'>Login</button>
+                            <button className='login'>Login</button>
 
-                            <a className="a-login-pergunta" href="/cadastro/">Não possui uma conta? Cadastre-se</a>
+                            <Link className="login-pergunta" href="/cadastro/">Não possui uma conta? Cadastre-se</Link>
 
                         </main>
 
                     </section>
 
-                </body>
+                </div>
 
             )
 

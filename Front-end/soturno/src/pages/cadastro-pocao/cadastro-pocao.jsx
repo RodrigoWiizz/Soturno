@@ -33,29 +33,30 @@ export default function CadastroPocao() {
 
     return (
 
-        <body className="pagina-cadastroPocao">
+        <div className="pagina-cadastroPocao">
 
-            <section className="section-cadastroPocao">
+            <section className="cadastroPocao">
 
                 <Header />
-                <h1 className="h1-cadastroPocao">Cadastro Poção</h1>
 
-                <main className="main-cadastroPocao">
+                <h1 className="cadastroPocao">Cadastro Poção</h1>
 
-                    <input className="input-cadastroPocao" type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)}/>
-                    <input className="input-cadastroPocao" type="number" placeholder="Preço" value={preco} onChange={e => setPreco(e.target.value)}/>
-                    <input className="input-cadastroPocao" type="text" placeholder="Criador" value={criador} onChange={e => setCriador(e.target.value)}/>
-                    <input className="input-cadastroPocao" type="text" placeholder="Tipo" value={tipo} onChange={e => setTipo(e.target.value)}/>
-                    <input className="input-cadastroPocao" type="text" placeholder="Descrição" value={descricao} onChange={e => setDescricao(e.target.value)}/>
-                    <input className="input-cadastroPocao" type="text" placeholder="Ingredientes" value={ingredientes} onChange={e => setIngredientes(e.target.value)}/>
-                    <input className="input-cadastroPocao" type="text" placeholder="Imagem" value={imagem} onChange={e => setImagem(e.target.value)}/>
+                <form className="cadastroPocao">
 
-                </main>
+                    <input className="cadastroPocao" type="text" placeholder="Nome" value={nome} onChange={e => setNome(e.target.value)} />
+                    <input className="cadastroPocao" type="number" placeholder="Preço" value={preco} onChange={e => setPreco(e.target.value)} />
+                    <input className="cadastroPocao" type="text" placeholder="Criador" value={criador} onChange={e => setCriador(e.target.value)} />
+                    <input className="cadastroPocao" type="text" placeholder="Tipo" value={tipo} onChange={e => setTipo(e.target.value)} />
+                    <input className="cadastroPocao" type="text" placeholder="Descrição" value={descricao} onChange={e => setDescricao(e.target.value)} />
+                    <input className="cadastroPocao" type="text" placeholder="Ingredientes" value={ingredientes} onChange={e => setIngredientes(e.target.value)} />
+                    <input className="cadastroPocao" type="text" placeholder="Imagem" value={imagem} onChange={e => setImagem(e.target.value)} />
 
-                <button onClick={cadastrarPocao} className="button-cadastroPocao">Cadastrar</button>
+                </form>
+
+                <button onClick={cadastrarPocao} className="cadastroPocao">Cadastrar</button>
 
             </section>
 
-        </body>
+        </div>
     )
 }

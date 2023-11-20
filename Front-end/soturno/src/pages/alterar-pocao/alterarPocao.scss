@@ -1,6 +1,6 @@
 @import '../../components/variaveis/';
 
-.pagina-cadastroPocao {
+.pagina-alterarPocao {
     background-image: url("../../../public/assets/images/global/background-florazul.png"), url("../../../public/assets/images/global/background-florvermelha.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left bottom, right bottom;
@@ -9,7 +9,7 @@
     padding: 20px;
 }
 
-section.cadastroPocao {
+section.alterarPocao {
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -18,20 +18,37 @@ section.cadastroPocao {
     flex-direction: column;
     align-items: center;
 
-    h1.cadastroPocao {
+    h1.alterarPocao {
         font: $oldEnglish-96;
         color: white;
         margin: 0px;
     }
 
-    form.cadastroPocao {
+    form.alterarPocao {
         width: 100%;
         height: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
-        input.cadastroPocao {
+        div.alterarPocao {
+            width: 48%;
+            height: 70px;
+            display: flex;
+
+            button.alterarPocao-ok {
+                width: 15%;
+                min-width: 100px;
+                height: 100%;
+                margin: 0px;
+            }
+
+            input.alterarPocao {
+                width: 85%;
+            }
+        }
+
+        input.alterarPocao {
             width: 48%;
             height: 70px;
             font: $almendra-44;
@@ -42,24 +59,30 @@ section.cadastroPocao {
         }
     }
 
-    button.cadastroPocao {
+    button.alterarPocao {
         margin-top: 40px;
         min-width: 210px;
         font: $oldEnglish-48;
     }
 }
 
+
 @media (max-width: 1000px) {
 
-    .pagina-cadastroPocao {
+    .pagina-alterarPocao {
         height: auto;
     }
 
-    section.cadastroPocao {
+    section.alterarPocao {
 
-        form.cadastroPocao {
+        form.alterarPocao {
 
-            input.cadastroPocao {
+            div.alterarPocao {
+                width: 100%;
+
+            }
+
+            input.alterarPocao {
                 width: 100%;
             }
         }
@@ -68,43 +91,66 @@ section.cadastroPocao {
 
 @media (max-width: 530px) {
 
-    section.cadastroPocao {
+    section.alterarPocao {
 
-        h1.cadastroPocao {
+        h1.alterarPocao {
             font: $oldEnglish-36;
         }
 
-        form.cadastroPocao {
+        form.alterarPocao {
 
-            input.cadastroPocao {
+            input.alterarPocao {
                 font: $almendra-30;
+            }
+
+            div.alterarPocao {
+
+                button.alterarPocao-ok {
+                    min-width: 50px;
+                    font: $oldEnglish-30;
+                }
             }
         }
 
-        button.cadastroPocao {
+        button.alterarPocao {
             width: 100%;
             min-width: 150px;
             font: $oldEnglish-30;
         }
     }
+
 }
 
 @media (max-width: 220px) {
 
-    section.cadastroPocao {
+    section.alterarPocao {
 
-        h1.cadastroPocao {
+        h1.alterarPocao {
             font: $oldEnglish-30;
         }
 
-        form.cadastroPocao {
+        form.alterarPocao {
 
-            input.cadastroPocao {
+            input.alterarPocao {
                 font: $almendra-20;
+            }
+
+            div.alterarPocao {
+                flex-direction: column;
+                height: 100px;
+
+                button.alterarPocao-ok {
+                    height: 50px;
+                    font: $oldEnglish-23;
+                }
+
+                input.alterarPocao {
+                    width: 85%;
+                }
             }
         }
 
-        button.cadastroPocao {
+        button.alterarPocao {
             min-width: 100px;
             font: $oldEnglish-23;
         }

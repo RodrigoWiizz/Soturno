@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import Header from "../../components/header/Header";
 import axios from "axios";
 import "./cadastro.scss"
@@ -27,28 +28,28 @@ export default function Cadastrar() {
 
     return (
 
-        <body className="pagina-cadastro">
+        <div className="pagina-cadastro">
 
-            <section className="section-cadastro">
+            <section className="cadastro">
 
                 <Header/>
 
-                <h1 className="h1-cadastro">Cadastro</h1>
+                <h1 className="cadastro">Cadastro</h1>
 
-                <main className="main-cadastro">
+                <form className="cadastro">
 
-                    <input className="input-cadastro" type="text" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
-                    <input className="input-cadastro" type="password" placeholder="Senha" value={senha} onChange={e => setSenha(e.target.value)}/>
-                    <input className="input-cadastro" type="text" placeholder="Nome de Usuário" value={nome} onChange={e => setNome(e.target.value)} />
+                    <input className="cadastro" type="text" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
+                    <input className="cadastro" type="password" placeholder="Senha" value={senha} onChange={e => setSenha(e.target.value)}/>
+                    <input className="cadastro" type="text" placeholder="Nome de Usuário" value={nome} onChange={e => setNome(e.target.value)} />
 
-                    <button onClick={cadastrarUsuario} className="button-cadastro">Cadastro</button>
+                    <button onClick={cadastrarUsuario} className="cadastro">Cadastro</button>
 
-                    <a className="a-cadastro" href="/login/">Já possui uma conta? Faça o login</a>
+                    <Link className="cadastro" href="/login/">Já possui uma conta? Faça o login</Link>
 
-                </main>
+                </form>
 
             </section>
 
-        </body>
+        </div>
     )
 }

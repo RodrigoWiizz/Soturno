@@ -5,7 +5,7 @@ export default function Contato() {
 
     return (
 
-        <body className="pagina-contato">
+        <div className="pagina-contato">
 
             <section className="contato">
 
@@ -50,7 +50,7 @@ Horário de Funcionamento: Nossa loja física está aberta para visitantes das 1
 
             </section>
 
-        </body>
+        </div>
 
     )
 

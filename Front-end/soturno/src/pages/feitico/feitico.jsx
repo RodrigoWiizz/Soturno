@@ -18,13 +18,13 @@ export default function Feitico() {
 
     return (
 
-        <body className="pagina-feitico">
+        <div className="pagina-feitico">
 
-            <section className="section-feitico">
+            <section className="feitico">
 
                 <Header />
 
-                <main className="main-feitico">
+                <main className="feitico">
 
                     {feitico.map((item) => {
                         return (
@@ -39,8 +39,7 @@ export default function Feitico() {
 
             </section>
 
-        </body>
+        </div>
 
     )
-
 }

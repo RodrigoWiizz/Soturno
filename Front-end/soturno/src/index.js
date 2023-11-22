@@ -25,35 +25,38 @@ import AlterarPocao from './pages/alterar-pocao/alterarPocao.jsx';
 import AlterarFeitico from './pages/alterar-feitico/alterarFeitico.jsx';
 import Erro from './pages/erro/erro.jsx';
 import Deletar from './pages/excluir/deletar.jsx';
+import AuthProvider from './pages/context/AuthContext.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
 
-        <Route path='/' element={<Home />} />
-        <Route path='/admin' element={<Admin />} />
-        <Route path='/sobre' element={<Sobre />} />
-        <Route path='/contato' element={<Contato />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/feiticos' element={<Feitico />} />
-        <Route path='/compra-feitico' element={<CompraFeitico />} />
-        <Route path='/pocoes' element={<Pocao />} />
-        <Route path='/cadastro' element={<Cadastrar />} />
-        <Route path='/produtos' element={<Produtos />} />
-        <Route path='/gerenciamento' element={<Gerenciamento />} />
-        <Route path='/compra-pocao' element={<CompraPocao />} />
-        <Route path='/cadastro-feitico' element={<CadastroFeitico />} />
-        <Route path='/cadastro-poção' element={<CadastroPocao />} />
-        <Route path='/alterar-feitico' element={<AlterarFeitico />} />
-        <Route path='/listagem' element={<Listagem />} />
-        <Route path='/alterar-pocao' element={<AlterarPocao />} />
-        <Route path='/*' element={<Erro />} />
-        <Route path='/deletar' element={<Deletar />} />
-        
-      </Routes>
-    </BrowserRouter>
+          <Route path='/' element={<Home />} />
+          <Route path='/admin' element={<Admin />} />
+          <Route path='/sobre' element={<Sobre />} />
+          <Route path='/contato' element={<Contato />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/feiticos' element={<Feitico />} />
+          <Route path='/compra-feitico' element={<CompraFeitico />} />
+          <Route path='/pocoes' element={<Pocao />} />
+          <Route path='/cadastro' element={<Cadastrar />} />
+          <Route path='/produtos' element={<Produtos />} />
+          <Route path='/gerenciamento' element={<Gerenciamento />} />
+          <Route path='/compra-pocao' element={<CompraPocao />} />
+          <Route path='/cadastro-feitico' element={<CadastroFeitico />} />
+          <Route path='/cadastro-poção' element={<CadastroPocao />} />
+          <Route path='/alterar-feitico' element={<AlterarFeitico />} />
+          <Route path='/listagem' element={<Listagem />} />
+          <Route path='/alterar-pocao' element={<AlterarPocao />} />
+          <Route path='/*' element={<Erro />} />
+          <Route path='/deletar' element={<Deletar />} />
+          
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   </React.StrictMode>
 );

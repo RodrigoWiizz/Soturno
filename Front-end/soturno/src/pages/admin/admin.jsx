@@ -1,7 +1,20 @@
+import { useContext, useEffect } from "react";
 import HeaderAdmin from "../../components/header-adm/header-admin";
 import "./admin.scss";
+import { Context } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Admin() {
+
+    const {logado, isAdmin} = useContext(Context)
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(!logado && !isAdmin){
+            navigate("/")
+            alert("Só administradores podem acessar essa página")
+        }
+    }, [])
 
     return (
 

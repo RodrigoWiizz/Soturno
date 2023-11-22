@@ -1,5 +1,7 @@
 import { Router } from "express";
 import { atualizarPocao, cadastrarPocao, listarPocao, listarPocaoPorNome, removerPocao} from "../repository/pocaoRepository.js"
+import { authToken } from "../middleware/token/authToken.js";
+import { isAdmin } from "../middleware/token/isAdmin.js";
 
 const pocaoEndpoints = Router();
 
@@ -27,7 +29,7 @@ pocaoEndpoints.put('/pocao', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.get('/pocao', async (req, resp) => {
+pocaoEndpoints.get('/pocao',  async (req, resp) => {
     try {
         let r = await listarPocao()
         resp.send(r)

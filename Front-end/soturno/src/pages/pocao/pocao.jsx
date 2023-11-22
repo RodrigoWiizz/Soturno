@@ -11,8 +11,13 @@ export default function Pocao() {
 
     useEffect(() => {
         const buscarPocoes = async () => {
-            const resposta = await axios.get(process.env.REACT_APP_BACKEND_URL + '/pocao')
-            setPocao(resposta.data)
+            try {
+                const resposta = await axios.get(process.env.REACT_APP_BACKEND_URL + '/pocao')
+                setPocao(resposta.data)
+            } catch (error) {
+                console.log(error)
+            }
+            
         }
         buscarPocoes()
     }, [])

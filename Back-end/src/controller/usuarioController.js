@@ -17,7 +17,7 @@ usuarioEndpoints.post('/login', async(req, resp) => {
         }
         else{
             let token = jwt.sign({id: r[0].idUsuario, nome: r[0].nome, tipo: r[0].tipo}, process.env.SECRET, {expiresIn: 300})
-            resp.status(200).send(token);
+            resp.status(200).send({jwt: token, tipo: r[0].tipo});
         }
     } catch (error) {
         resp.status(500).send({
@@ -32,7 +32,7 @@ usuarioEndpoints.post('/usuario', authToken, isAdmin, async (req, resp) => {
         let usuarios = await listarUsuarioPorEmail(req.body.email)
         if(!usuarios.length){
             let usuario = req.body;
-            let r = await cadastrarUsuario(usuario);
+            let r = await cadastrarUsuario(usuario); 
             resp.status(200).send(r);
         }else{
             resp.status(409).send({mensagem: 'Usuário já cadastrado.'})
@@ -45,7 +45,7 @@ usuarioEndpoints.post('/usuario', authToken, isAdmin, async (req, resp) => {
     }
 })
 
-usuarioEndpoints.put('/usuario', async (req, resp) => {
+usuarioEndpoints.put('/usuario', authToken, isAdmin, async (req, resp) => {
     try {
         let usuario = req.body;
         let r = await atualizarUsuario(usuario)
@@ -62,7 +62,7 @@ usuarioEndpoints.put('/usuario', async (req, resp) => {
     }
 })
 
-usuarioEndpoints.get('/usuario', async (req, resp) => {
+usuarioEndpoints.get('/usuario',  async (req, resp) => {
     try {
         let r = await listarUsuario()
         resp.send(r)
@@ -73,7 +73,7 @@ usuarioEndpoints.get('/usuario', async (req, resp) => {
     }
 })
 
-usuarioEndpoints.get('/usuario/email/:email', async (req, resp) => {
+usuarioEndpoints.get('/usuario/email/:email', authToken, isAdmin, async (req, resp) => {
     try {
         let email = req.params.email
         let r = await listarUsuarioPorEmail(email)
@@ -85,7 +85,7 @@ usuarioEndpoints.get('/usuario/email/:email', async (req, resp) => {
     }
 })
 
-usuarioEndpoints.get('/usuario/nome/:nome', async (req, resp) => {
+usuarioEndpoints.get('/usuario/nome/:nome', authToken, isAdmin, async (req, resp) => {
     try {
         let nome = req.params.nome
         let r = await listarUsuarioPorNome(nome)
@@ -97,7 +97,7 @@ usuarioEndpoints.get('/usuario/nome/:nome', async (req, resp) => {
     }
 })
 
-usuarioEndpoints.delete('/usuario/:id', async (req, resp) => {
+usuarioEndpoints.delete('/usuario/:id', authToken, isAdmin, async (req, resp) => {
     try {
         let id = req.params.id
         let linhasAfetadas = await removerUsuario(id)

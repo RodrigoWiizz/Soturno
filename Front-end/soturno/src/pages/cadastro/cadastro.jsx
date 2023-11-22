@@ -20,10 +20,14 @@ export default function Cadastrar() {
 
         }
 
-        let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/usuario', cadastro);
-        let id = r.data.id;
+        try {
+            let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/usuario', cadastro);
+            let id = r.data.id;
 
-        alert("Usuário cadastrado com sucesso! ID " + id);
+            alert("Usuário cadastrado com sucesso! ID " + id);
+        } catch (error) {
+            alert("Ocorreu um erro ao cadastrar o usuário: " + error.message);
+        }
     }
 
     return (

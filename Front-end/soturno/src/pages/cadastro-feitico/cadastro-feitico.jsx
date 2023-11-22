@@ -1,9 +1,21 @@
 import './cadastro-feitico.scss'
 import Header from '../../components/header-adm/header-admin';
 import axios from 'axios';
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Context } from '../context/AuthContext';
 
 export default function CadastroFeitico() {
+
+    const {logado, isAdmin} = useContext(Context)
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(!logado && !isAdmin){
+            navigate("/")
+            alert("Só administradores podem acessar essa página")
+        }
+    }, [])
 
     const [nome, setNome] = useState("");
     const [preco, setPreco] = useState(0);

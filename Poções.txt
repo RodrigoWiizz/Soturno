@@ -1,0 +1,152 @@
+Poções Cadastrar Agora
+
+
+{--------------------------------
+Andorinha (Swallow)
+
+Efeito: Acelera a regeneração de Vitalidade por 20 segundos. A regeneração para por 2 segundos após receber dano. 80 pontos de Vitalidade ou 40 durante o combate.
+
+https://i.imgur.com/TcqraZq.png
+
+Cura
+
+1x Uma moeda de 1 real
+3x Dentes de leite
+1x Pena de pavão
+2x Folhas de louro
+5x Grãos de arroz
+1x Colar de pérolas
+1x Copo de vinho tinto
+
+Zara Zim
+}----------------------------------
+
+{----------------------------------
+Lua Cheia (Full Moon)
+
+Efeito: Aumenta a vitalidade máxima em 300 pontos por 60 segundos. (No NewGame+ aumenta para 600).
+
+https://i.imgur.com/dczBbp8.png
+
+Cura
+
+1x Uma concha do mar
+3x Pétalas de girassol
+1x Asa de borboleta
+2x Sementes de abóbora
+5x Gotas de limão
+1x Anel de prata
+1x Copo de água de coco
+
+Rui Rex
+}-----------------------------------
+
+{-----------------------------------
+Elixir de Raffard
+
+Restaura 35% da Vitalidade
+
+https://i.imgur.com/Lb1GJZz.png
+
+Cura
+
+1x Uma pedra de quartzo
+3x Penas de corvo
+1x Olho de gato
+2x Velas pretas
+5x Pimentas vermelhas
+1x Cordão de couro
+1x Copo de café
+
+Tornelios
+}------------------------------------
+
+
+
+{------------------------------------
+Trovoada (Thunderbolt)
+
+Aumenta o poder de ataque em 30% por 30 segundos.
+
+https://i.imgur.com/lbhdH2t.png
+
+Ataque
+
+1x Uma pena de fênix
+3x Escamas de dragão
+1x Chifre de unicórnio
+2x Estrelas cadentes
+5x Gotas de orvalho
+1x Medalhão de ouro
+1x Copo de néctar
+
+Nicolito
+}-------------------------------------
+
+{-------------------------------------
+Sangue Preto 
+
+O sangue do Bruxo causa 15% do dano causado por vampiros e necrófagos por 30 segundos.
+
+https://i.imgur.com/8Vg3ZIz.png
+
+Ataque
+
+1x Uma folha de trevo
+3x Cogumelos mágicos
+1x Rabo de rato
+2x Ovos de galinha
+5x Colheres de mel
+1x Pulseira de couro
+1x Copo de leite
+
+Asweger
+}
+
+-----------------------------------------------------------------------------------------------------
+
+---Defesa
+
+{
+Papafigo (Golden Oriole)
+
+Efeito: Imuniza contra venenos depois de utilizado e neutraliza os efeitos dos já em ação por 60 segundos.
+
+https://i.imgur.com/LDJ7zdr.png
+}
+
+--------------------------------------------------------------------------------------------------------
+
+---Outros
+
+{
+Baleia Assassina
+
+Efeito: Aumenta a capacidade de respiração debaixo d’água em 50%, além de melhorar em 50% a visibilidade ao mergulhar por 180
+
+https://i.imgur.com/CfYUNaz.png
+}
+
+{
+Gato (Cat)
+
+Efeito: Aumenta a visão de Geralt na escuridão por 60 segundos. Alcance de 25.
+
+https://i.imgur.com/ORPehPN.png
+}
+
+{
+Nevasca(Blizzard)
+
+Efeito: Assim que um inimigo é derrotado, o tempo diminui por 15 segundos. 50% de redução temporal.
+
+https://i.imgur.com/NbkeaI5.png
+}
+
+{
+Papafigo (Golden Oriole)
+
+Efeito: Imuniza contra venenos depois de utilizado e neutraliza os efeitos dos já em ação por 60 segundos.
+
+https://i.imgur.com/mrRudzL.png
+}

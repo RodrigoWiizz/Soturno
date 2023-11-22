@@ -1,9 +1,0 @@
-Relatorio 08/11/2023
-
-1° Tive alguns problemas na conexão com o banco de dados, onde colocando os dados pelo arquivo .ENV não estava funcionando, ou seja, tive que colocar tudo na raiz
-no connection está todos os dados de conexão, eu sei que não é seguro, mas é o que eu consegui fazer funcionar.
-
-2° E tive que trocar o index.js de lugar pois, não estava reconhecendo a porta do .ENV
-
-3° No banco de dados na tabela de poções tinha uma coluna que se chamava descrição com "ç" e "ã" e isso estava dando problemas no post então mudei para
-descricao;

@@ -10,7 +10,7 @@ export default function CadastroFeitico() {
     const [criador, setCriador] = useState("");
     const [descricao, setDescricao] = useState("");
 
-    async function cadastrarPocao() {
+    async function cadastrarFeitico() {
         let cadastro = {
 
             nome: nome,
@@ -20,10 +20,16 @@ export default function CadastroFeitico() {
 
         }
 
-        let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/feitico', cadastro);
-        let id = r.data.id;
+        try {
+            let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/feitico', cadastro);
+            let id = r.data.id;
 
-        alert("Poção cadastrada com sucesso! ID " + id);
+            alert("Feitiço cadastrado com sucesso! ID " + id);
+        } catch (error) {
+            // aqui você pode tratar o erro como quiser
+            // por exemplo, mostrar uma mensagem de erro para o usuário
+            alert("Ocorreu um erro ao cadastrar o feitiço: " + error.message);
+        }
     }
 
     return (
@@ -45,7 +51,7 @@ export default function CadastroFeitico() {
 
                 </form>
 
-                <button className='cadastroFeitico' onClick={cadastrarPocao}>Cadastrar</button>
+                <button className='cadastroFeitico' onClick={cadastrarFeitico}>Cadastrar</button>
 
             </section>
 

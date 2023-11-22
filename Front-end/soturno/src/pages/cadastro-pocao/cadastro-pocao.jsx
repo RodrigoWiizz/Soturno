@@ -25,10 +25,14 @@ export default function CadastroPocao() {
 
         }
 
-        let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/pocao', cadastro);
-        let id = r.data.id;
+        try {
+            let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/pocao', cadastro);
+            let id = r.data.id;
 
-        alert("Poção cadastrada com sucesso! ID " + id);
+            alert("Poção cadastrada com sucesso! ID " + id);
+        } catch (error) {
+            alert("Ocorreu um erro ao cadastrar a poção: " + error.message);
+        }
     }
 
     return (

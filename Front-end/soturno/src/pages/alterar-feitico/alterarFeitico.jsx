@@ -3,6 +3,7 @@ import Header from '../../components/header-adm/header-admin';
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from '../context/AuthContext';
+import axios from 'axios';
 
 export default function CadastroFeitico() {
 
@@ -14,12 +15,61 @@ export default function CadastroFeitico() {
 
     const navigate = useNavigate();
 
+
     useEffect(() => {
         if(!(logado && isAdmin)){
             navigate("/Erro")
             
         }
     }, [])
+
+    async function autoComplete(event){
+        event.preventDefault()
+        try {
+            let response = await axios.get(`process.env.REACT_APP_BACKEND_URL/buscar/?nome=${nome}`)
+            if(!response.data){
+                alert("Esse Feitiço não existe")
+                setNome("")
+                setDescricao("")
+                setPreco("")
+                setCriador("")                
+            }
+            else{
+                setNome(response.data.nome)
+                setDescricao(response.data.descricao)
+                setPreco(response.data.preco)
+                setCriador(response.data.criador)   
+            }
+        } catch (error) {
+            alert(`Erro ao tentar buscar`)
+        }
+    }
+
+    async function update(event){
+        event.preventDefault()
+        if(preco < 0){
+            alert("não é permitido id ou preco negativo")
+        }
+        else{
+            let body = {
+                nome: nome,
+                preco: preco,
+                criador: criador,
+                descricao: descricao,
+            }
+            try {
+                let response = await axios.put(`process.env.REACT_APP_BACKEND_URL/${nome}`, body)
+                if(response.data == null){
+                    alert("Esse feitiço não existe")
+                }
+                else{
+                    alert(`Feitiço alterado com sucesso`)
+                }
+            } catch (error) {
+                alert(error.response.data.message)
+            }
+        }
+    }
 
     return (
 
@@ -35,7 +85,7 @@ export default function CadastroFeitico() {
 
                     <div className='alterarFeitico'>
                         <input value={nome} onChange={e => {setNome(e.target.value)}} className="alterarFeitico alterarFeitico-ok" type="text" placeholder="Nome" />
-                        <button className='alterarFeitico-ok'>Ok</button>
+                        <button onClick={autoComplete} className='alterarFeitico-ok'>Ok</button>
                     </div>
                     <input value={preco} onChange={e => {setPreco(e.target.value)}} className='alterarFeitico' type="number" placeholder="Preço" />
                     <input value={criador} onChange={e => {setCriador(e.target.value)}}className='alterarFeitico' type="text" placeholder="Criador" />
@@ -43,7 +93,7 @@ export default function CadastroFeitico() {
 
                 </form>
 
-                <button className='alterarFeitico'>Alterar</button>
+                <button onClick={update} className='alterarFeitico'>Alterar</button>
 
             </section>
 

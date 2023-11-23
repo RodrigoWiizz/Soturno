@@ -18,7 +18,6 @@ function HeaderAdmin() {
                 <a className="a-header" href="../produtos-admin">Produtos</a>
                 <a className="a-header" href="../contato">Contato</a>
                 <a className="a-header" href="../sobre">Sobre</a>
-                <a className="a-header" href="../login">Username</a>
             </nav>
 
         </header>

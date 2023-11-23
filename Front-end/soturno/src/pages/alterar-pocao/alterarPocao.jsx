@@ -82,6 +82,11 @@ export default function AlterarPocao() {
         }
     }
 
+    function cancelar() {
+        // volta para a página anterior
+        navigate(-1);
+    }
+
     return (
 
         <div className="pagina-alterarPocao">
@@ -107,7 +112,10 @@ export default function AlterarPocao() {
 
                 </form>
 
-                <button onClick={update} className="alterarPocao">Alterar</button>
+                <div className="botoes">
+                    <button onClick={update} className="botao botao1">Alterar</button>
+                    <button onClick={cancelar} className='botao botao2'>Cancelar</button>
+                </div>
 
             </section>
 

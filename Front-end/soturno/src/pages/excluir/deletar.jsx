@@ -1,39 +1,30 @@
-import './deletar.scss';
+import { useState } from "react";
 import Header from '../../components/header-adm/header-admin';
-import { useContext, useEffect, useState } from 'react';
+import axios from "axios";
+import './deletar.scss';
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
-import { Context } from '../context/AuthContext';
 
 export default function Deletar() {
 
-    const {logado, isAdmin} = useContext(Context)
+    const [id, setId] = useState("");
+    const [selecao, setSelecao] = useState("usuarios");
+
     const navigate = useNavigate();
 
-    useEffect(() => {
-        if(!(logado && isAdmin)){
-            navigate("/Erro")
+    async function deletarItem() {
+        // exclui o item do banco de dados de acordo com o id e a seleção do usuário
+        let rota = process.env.REACT_APP_BACKEND_URL + '/' + selecao + '/' + id;
+        try {
+            let r = await axios.delete(rota);
+            alert("Item excluído com sucesso!");
+        } catch (error) {
+            alert("Ocorreu um erro ao excluir o item: " + error.message);
         }
-    }, [])
+    }
 
-    const [tipo, setTipo] = useState("usuarios")
-    const [id, setId] = useState("")
-
-    async function deletar(event){
-        event.preventDefault()
-        if(id < 0){
-            alert("não é permitido id negativo")
-        }
-        else{
-            try {
-                let response = await axios.delete(`process.env.REACT_APP_BACKEND_URL/${tipo}/${id}`)
-                // let response = await axios.delete(`http://localhost:5000/${tipo}/${id}`)
-                alert(`Delete do tipo ${tipo} realizado com sucesso`)
-            } catch (error) {
-                alert(`Erro ao tentar buscar`)
-            }
-        }
-        
+    function cancelar() {
+        // volta para a página anterior
+        navigate(-1);
     }
 
     return (
@@ -48,12 +39,15 @@ export default function Deletar() {
 
                     <h1 className='deletar'>Excluir</h1>
                     <input className='deletar' placeholder='Id' type="text" value={id} onChange={event => setId(event.target.value)}/>
-                    <select className='deletar' id="selecao" value={tipo} onChange={event => setTipo(event.target.value)}>
-                        <option value="usuarios">Usuarios</option>
-                        <option value="pocoes">Poções</option>
-                        <option value="feiticos">Feitiços</option>
+                    <select className='deletar' id="selecao" value={selecao} onChange={event => setSelecao(event.target.value)}>
+                        <option value="usuario">Usuarios</option>
+                        <option value="pocao">Poções</option>
+                        <option value="feitico">Feitiços</option>
                     </select>
-                    <button onClick={deletar} className='deletar'>Deletar</button>
+                    <div className="deletar">
+                        <button onClick={deletarItem} className='deletar'>Deletar</button>
+                        <button onClick={cancelar} className='deletar'>Cancelar</button>
+                    </div>
 
                 </section>
 

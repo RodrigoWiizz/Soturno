@@ -26,8 +26,8 @@ export default function CadastroFeitico() {
     async function autoComplete(event){
         event.preventDefault()
         try {
-            let response = await axios.get(`process.env.REACT_APP_BACKEND_URL/buscar/?nome=${nome}`)
-            if(!response.data){
+            let response = await axios.get(process.env.REACT_APP_BACKEND_URL + '/feitico/buscar/?nome=' + nome)
+            if(!response.data || response.data.length === 0){
                 alert("Esse Feitiço não existe")
                 setNome("")
                 setDescricao("")
@@ -35,10 +35,11 @@ export default function CadastroFeitico() {
                 setCriador("")                
             }
             else{
-                setNome(response.data.nome)
-                setDescricao(response.data.descricao)
-                setPreco(response.data.preco)
-                setCriador(response.data.criador)   
+                setNome(response.data[0].nome)
+                setDescricao(response.data[0].descricao)
+                setPreco(response.data[0].preco)
+                setCriador(response.data[0].criador)
+                console.log(response.data) 
             }
         } catch (error) {
             alert(`Erro ao tentar buscar`)
@@ -58,7 +59,7 @@ export default function CadastroFeitico() {
                 descricao: descricao,
             }
             try {
-                let response = await axios.put(`process.env.REACT_APP_BACKEND_URL/${nome}`, body)
+                let response = await axios.put(process.env.REACT_APP_BACKEND_URL + '/feitico/' + nome, body)
                 if(response.data == null){
                     alert("Esse feitiço não existe")
                 }

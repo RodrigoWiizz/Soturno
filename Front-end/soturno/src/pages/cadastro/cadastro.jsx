@@ -10,7 +10,10 @@ export default function Cadastrar() {
     const [senha, setSenha] = useState("");
     const [nome, setNome] = useState("");
 
-    async function cadastrarUsuario() {
+    async function cadastrarUsuario(evento) {
+
+        evento.preventDefault();
+
         let cadastro = {
 
             nome: nome,

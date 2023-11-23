@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Listagem() {
 
+    
+
     const {logado, isAdmin} = useContext(Context)
     const navigate = useNavigate();
 
@@ -42,6 +44,11 @@ export default function Listagem() {
             alert('Selecione uma opção');
         }
 
+    }
+
+    function cancelar() {
+        // volta para a página anterior
+        navigate(-1);
     }
 
     function tabelaUsuario() {
@@ -119,7 +126,6 @@ export default function Listagem() {
                         <tr className='tr-listagem'>Nome</tr>
                         <tr className='tr-listagem'>Preço</tr>
                         <tr className='tr-listagem'>Criador</tr>
-                        <tr className='tr-listagem'>Descrição</tr>
                     </thead>
                 </table>
                 <table className='table-listagem'>
@@ -130,7 +136,6 @@ export default function Listagem() {
                             <tr className='tr-listagem tr-listagem-itens'>{item.nome}</tr>
                             <tr className='tr-listagem tr-listagem-itens'>{item.preco}</tr>
                             <tr className='tr-listagem tr-listagem-itens'>{item.criador}</tr>
-                            <tr className='tr-listagem tr-listagem-itens'>{item.tipo}</tr>
                         </thead>
 
                     )}
@@ -168,7 +173,10 @@ export default function Listagem() {
 
                 </main>
 
-                <button className="button-listagem" onClick={listar}>Listar</button>
+                <div className="botoes">
+                    <button onClick={listar} className="botao botao1">Listar</button>
+                    <button onClick={cancelar} className='botao botao2'>Cancelar</button>
+                </div>
 
                 <section className='section-listagem-tabela'>
 

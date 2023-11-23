@@ -43,6 +43,8 @@ export default function CadastroFeitico() {
         }
     }
 
+    
+
     return (
 
         <div className='pagina-cadastroFeitico'>

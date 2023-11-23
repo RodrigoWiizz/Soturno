@@ -54,12 +54,39 @@ button:hover {
     cursor: pointer;
 }
 
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    .botao {
+        margin: 20px;
+        min-width: 220px;
+        font: $oldEnglish-48;
+    }
+}
+
 
 @media (min-width: 3000px) {
 
     button {
         font: $oldEnglish-80;
     }
+}
+
+@media (max-width: 530px) {
+
+    .botoes {
+        flex-direction: column;
+    
+        .botao {
+            margin: 20px;
+            min-width: 150px;
+            font: $oldEnglish-30;
+        }
+    }
+
 }
 
 @media (max-width: 330px) {

@@ -8,10 +8,10 @@ import axios from 'axios';
 export default function CadastroFeitico() {
 
     const {logado, isAdmin} = useContext(Context)
-    const {nome,  setNome} = useState("")
-    const {preco,  setPreco} = useState("")
-    const {descricao,  setDescricao} = useState("")
-    const {criador,  setCriador} = useState("")
+    const [nome, setNome] = useState("")
+    const [preco, setPreco] = useState("")
+    const [descricao, setDescricao] = useState("")
+    const [criador, setCriador] = useState("")
 
     const navigate = useNavigate();
 

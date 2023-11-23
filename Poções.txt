@@ -105,48 +105,104 @@ Asweger
 
 -----------------------------------------------------------------------------------------------------
 
----Defesa
 
-{
+{__________________________________________________________________________________________________
 Papafigo (Golden Oriole)
 
 Efeito: Imuniza contra venenos depois de utilizado e neutraliza os efeitos dos já em ação por 60 segundos.
 
-https://i.imgur.com/LDJ7zdr.png
-}
+https://i.imgur.com/LDJ7zdr.png[
 
---------------------------------------------------------------------------------------------------------
+Defesa
 
----Outros
+1x Uma moeda de chocolate
+3x Balas de menta
+1x Casca de banana
+2x Bolachas de água e sal
+5x Cubos de gelo
+1x Colar de miçangas
+1x Copo de refrigerante
 
-{
+Hayulo
+
+} __________________________________________________________________________________________________
+
+
+
+{__________________________________________________________________________________________________
 Baleia Assassina
 
 Efeito: Aumenta a capacidade de respiração debaixo d’água em 50%, além de melhorar em 50% a visibilidade ao mergulhar por 180
 
 https://i.imgur.com/CfYUNaz.png
-}
 
-{
+1x Uma flor de lótus
+3x Pétalas de jasmim
+1x Sândalo
+2x Incensos
+5x Contas de rosário
+1x Anel de jade
+1x Copo de chá verde
+
+Outros
+
+Ticia
+}__________________________________________________________________________________________________
+
+{__________________________________________________________________________________________________
 Gato (Cat)
 
 Efeito: Aumenta a visão de Geralt na escuridão por 60 segundos. Alcance de 25.
 
 https://i.imgur.com/ORPehPN.png
-}
 
-{
+1x Uma pena de coruja
+3x Olhos de aranha
+1x Asa de morcego
+2x Dentes de vampiro
+5x Gotas de sangue
+1x Relógio de bolso
+1x Copo de vinho branco
+
+CatMan
+
+Outros
+}__________________________________________________________________________________________________
+
+{__________________________________________________________________________________________________
 Nevasca(Blizzard)
 
 Efeito: Assim que um inimigo é derrotado, o tempo diminui por 15 segundos. 50% de redução temporal.
 
 https://i.imgur.com/NbkeaI5.png
-}
 
-{
+1x Uma concha de ostra
+3x Pérolas
+1x Dente de tubarão
+2x Algas marinhas
+5x Escamas de peixe
+1x Brinco de coral
+1x Copo de água salgada
+
+Yullarety
+
+Outros
+}__________________________________________________________________________________________________
+
+{__________________________________________________________________________________________________
 Papafigo (Golden Oriole)
 
 Efeito: Imuniza contra venenos depois de utilizado e neutraliza os efeitos dos já em ação por 60 segundos.
 
 https://i.imgur.com/mrRudzL.png
-}
+
+1x Uma pedra de âmbar
+3x Folhas de eucalipto
+1x Pelo de coala
+2x Frutas silvestres
+5x Nozes
+1x Chapéu de palha
+1x Copo de suco de maçã
+
+Outros
+}__________________________________________________________________________________________________

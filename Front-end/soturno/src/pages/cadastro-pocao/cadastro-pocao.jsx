@@ -53,6 +53,11 @@ export default function CadastroPocao() {
         
     }
 
+    function cancelar() {
+        // volta para a página anterior
+        navigate(-1);
+    }
+
     return (
 
         <div className="pagina-cadastroPocao">
@@ -75,7 +80,10 @@ export default function CadastroPocao() {
 
                 </form>
 
-                <button onClick={cadastrarPocao} className="cadastroPocao">Cadastrar</button>
+                <div className="botoes">
+                    <button onClick={cadastrarPocao} className="botao botao1">Cadastrar</button>
+                    <button onClick={cancelar} className='botao botao2'>Cancelar</button>
+                </div>
 
             </section>
 

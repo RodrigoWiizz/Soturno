@@ -26,13 +26,13 @@ export default function CardCompraFeitico(props) {
 
             <article className="article-compra-feitico-card-texto">
                 <h1 className="h1-compra-feitico-card-criador">Mago/Bruxa Criador:</h1>
-                <h2 className="h2-compra-feitico-card-criador">Ms.JOPtionPanesss</h2>
+                <h2 className="h2-compra-feitico-card-criador">{props.criador}</h2>
             </article>
 
             <article className="article-compra-feitico-card-botao">
                 <div className="div-compra-feitico-card">
                     <h1 className="h1-compra-feitico-card-preco">Preço:</h1>
-                    <h2 className="h2-compra-feitico-card-preco">100% da sua alma</h2>
+                    <h2 className="h2-compra-feitico-card-preco">{props.preco}% da sua alma</h2>
                 </div>
                 <button className='button-cardCompraFeitico'>Comprar</button>
             </article>

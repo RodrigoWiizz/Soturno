@@ -26,6 +26,7 @@ import AlterarFeitico from './pages/alterar-feitico/alterarFeitico.jsx';
 import Erro from './pages/erro/erro.jsx';
 import Deletar from './pages/excluir/deletar.jsx';
 import AuthProvider from './pages/context/AuthContext.jsx';
+import ProdutosAdmin from './pages/produtos-admin/produtosAdmin.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -45,6 +46,7 @@ root.render(
           <Route path='/pocoes' element={<Pocao />} />
           <Route path='/cadastro' element={<Cadastrar />} />
           <Route path='/produtos' element={<Produtos />} />
+          <Route path='/produtos-admin' element={<ProdutosAdmin />} />
           <Route path='/gerenciamento' element={<Gerenciamento />} />
           <Route path='/compra-pocao' element={<CompraPocao />} />
           <Route path='/cadastro-feitico' element={<CadastroFeitico />} />

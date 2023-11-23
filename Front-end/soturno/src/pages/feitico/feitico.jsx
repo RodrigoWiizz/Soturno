@@ -31,6 +31,8 @@ export default function Feitico() {
                             <CardFeitico
                                 nome={item.nome}
                                 descricao={item.descricao}
+                                criador={item.criador}
+                                preco={item.preco}
                             />
                         )
                     })}

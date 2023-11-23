@@ -22,25 +22,31 @@ export default function CadastroFeitico() {
     const [descricao, setDescricao] = useState("");
 
     async function cadastrarFeitico() {
-        let cadastro = {
-
-            nome: nome,
-            preco: preco,
-            criador: criador,
-            descricao: descricao
-
+        if(preco < 0){
+            alert("não é permitido id ou preco negativo")
         }
+        else{
+            let cadastro = {
 
-        try {
-            let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/feitico', cadastro);
-            let id = r.data.id;
-
-            alert("Feitiço cadastrado com sucesso! ID " + id);
-        } catch (error) {
-            // aqui você pode tratar o erro como quiser
-            // por exemplo, mostrar uma mensagem de erro para o usuário
-            alert("Ocorreu um erro ao cadastrar o feitiço: " + error.message);
+                nome: nome,
+                preco: preco,
+                criador: criador,
+                descricao: descricao
+    
+            }
+    
+            try {
+                let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/feitico', cadastro);
+                let id = r.data.id;
+    
+                alert("Feitiço cadastrado com sucesso! ID " + id);
+            } catch (error) {
+                // aqui você pode tratar o erro como quiser
+                // por exemplo, mostrar uma mensagem de erro para o usuário
+                alert("Ocorreu um erro ao cadastrar o feitiço: " + error.message);
+            }
         }
+        
     }
 
     

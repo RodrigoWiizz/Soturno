@@ -62,7 +62,7 @@ usuarioEndpoints.put('/usuario', authToken, isAdmin, async (req, resp) => {
     }
 })
 
-usuarioEndpoints.get('/usuario',  async (req, resp) => {
+usuarioEndpoints.get('/usuario', authToken, isAdmin,  async (req, resp) => {
     try {
         let r = await listarUsuario()
         resp.send(r)

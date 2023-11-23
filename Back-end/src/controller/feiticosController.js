@@ -1,9 +1,11 @@
 import { Router } from "express";
 import { atualizarFeitico, cadastrarFeitico, listarFeitico, listarFeiticoPorNome, removerFeitico} from "../repository/feiticoRepository.js"
+import { authToken } from "../middleware/token/authToken.js";
+import { isAdmin } from "../middleware/token/isAdmin.js";
 
 const feiticoEndpoints = Router();
 
-feiticoEndpoints.post('/feitico', async (req, resp) => {
+feiticoEndpoints.post('/feitico', authToken, isAdmin, async (req, resp) => {
     try {
         let feitico = req.body;
         let r = await cadastrarFeitico(feitico);
@@ -15,7 +17,7 @@ feiticoEndpoints.post('/feitico', async (req, resp) => {
     }
 })
 
-feiticoEndpoints.put('/feitico', async (req, resp) => {
+feiticoEndpoints.put('/feitico', authToken, isAdmin, async (req, resp) => {
     try {
         let feitico = req.body;
         let r = await atualizarFeitico(feitico)
@@ -27,7 +29,7 @@ feiticoEndpoints.put('/feitico', async (req, resp) => {
     }
 })
 
-feiticoEndpoints.get('/feitico', async (req, resp) => {
+feiticoEndpoints.get('/feitico', authToken, async (req, resp) => {
     try {
         let r = await listarFeitico()
         resp.send(r)
@@ -38,7 +40,7 @@ feiticoEndpoints.get('/feitico', async (req, resp) => {
     }
 })
 
-feiticoEndpoints.get('/feitico/buscar/', async (req, resp) => {
+feiticoEndpoints.get('/feitico/buscar/', authToken, async (req, resp) => {
     try {
         let nome = req.query.nome
         let r = await listarFeiticoPorNome(nome)
@@ -50,7 +52,7 @@ feiticoEndpoints.get('/feitico/buscar/', async (req, resp) => {
     }
 })
 
-feiticoEndpoints.delete('/feitico/:id', async (req, resp) => {
+feiticoEndpoints.delete('/feitico/:id', authToken, isAdmin, async (req, resp) => {
     try {
         let id = req.params.id
         let linhasAfetadas = await removerFeitico(id)

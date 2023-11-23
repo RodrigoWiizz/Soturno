@@ -4,6 +4,7 @@ import axios from "axios";
 import "./cadastro-pocao.scss"
 import { Context } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+
 export default function CadastroPocao() {
 
     const {logado, isAdmin} = useContext(Context)
@@ -24,26 +25,32 @@ export default function CadastroPocao() {
     const [imagem, setImagem] = useState("");
 
     async function cadastrarPocao() {
-        let cadastro = {
-
-            nome: nome,
-            preco: preco,
-            criador: criador,
-            tipo: tipo,
-            descricao: descricao,
-            ingredientes: ingredientes,
-            imagem: imagem
-
+        if(preco < 0){
+            alert("não é permitido id ou preco negativo")
         }
+        else{
+            let cadastro = {
 
-        try {
-            let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/pocao', cadastro);
-            let id = r.data.id;
-
-            alert("Poção cadastrada com sucesso! ID " + id);
-        } catch (error) {
-            alert("Ocorreu um erro ao cadastrar a poção: " + error.message);
+                nome: nome,
+                preco: preco,
+                criador: criador,
+                tipo: tipo,
+                descricao: descricao,
+                ingredientes: ingredientes,
+                imagem: imagem
+    
+            }
+    
+            try {
+                let r = await axios.post(process.env.REACT_APP_BACKEND_URL + '/pocao', cadastro);
+                let id = r.data.id;
+    
+                alert("Poção cadastrada com sucesso! ID " + id);
+            } catch (error) {
+                alert("Ocorreu um erro ao cadastrar a poção: " + error.message);
+            }
         }
+        
     }
 
     return (

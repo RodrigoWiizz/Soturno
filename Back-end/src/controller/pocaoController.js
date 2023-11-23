@@ -5,7 +5,7 @@ import { isAdmin } from "../middleware/token/isAdmin.js";
 
 const pocaoEndpoints = Router();
 
-pocaoEndpoints.post('/pocao', async (req, resp) => {
+pocaoEndpoints.post('/pocao', authToken, isAdmin, async (req, resp) => {
     try {
         let pocao = req.body
         let r = await cadastrarPocao(pocao)
@@ -17,19 +17,7 @@ pocaoEndpoints.post('/pocao', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.put('/pocao', async (req, resp) => {
-    try {
-        let pocao = req.body;
-        let r = await atualizarPocao(pocao)
-        resp.status(200).send(r)
-    } catch (error) {
-        resp.status(400).send({
-            erro: error.message
-        })
-    }
-})
-
-pocaoEndpoints.put('/pocao/', async (req, resp) => {
+pocaoEndpoints.put('/pocao', authToken, isAdmin, async (req, resp) => {
     try {
         let pocao = req.body;
         let r = await atualizarPocao(pocao)
@@ -42,7 +30,7 @@ pocaoEndpoints.put('/pocao/', async (req, resp) => {
 })
 
 
-pocaoEndpoints.get('/pocao',  async (req, resp) => {
+pocaoEndpoints.get('/pocao',  authToken, async (req, resp) => {
     try {
         let r = await listarPocao()
         resp.send(r)
@@ -53,7 +41,7 @@ pocaoEndpoints.get('/pocao',  async (req, resp) => {
     }
 })
 
-pocaoEndpoints.get('/pocao/buscar/', async (req, resp) => {
+pocaoEndpoints.get('/pocao/buscar/', authToken, async (req, resp) => {
     try {
         let nome = req.query.nome
         let r = await listarPocaoPorNome(nome)
@@ -65,7 +53,7 @@ pocaoEndpoints.get('/pocao/buscar/', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.delete('/pocao/:id', async (req, resp) => {
+pocaoEndpoints.delete('/pocao/:id', authToken, isAdmin, async (req, resp) => {
     try {
         let id = req.params.id
         let linhasAfetadas = await removerPocao(id)

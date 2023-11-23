@@ -84,12 +84,12 @@ export default function CadastroFeitico() {
                 <form className='alterarFeitico'>
 
                     <div className='alterarFeitico'>
-                        <input value={nome} onChange={e => {setNome(e.target.value)}} className="alterarFeitico alterarFeitico-ok" type="text" placeholder="Nome" />
+                        <input value={nome} onChange={e => setNome(e.target.value)} className="alterarFeitico alterarFeitico-ok" type="text" placeholder="Nome" />
                         <button onClick={autoComplete} className='alterarFeitico-ok'>Ok</button>
                     </div>
-                    <input value={preco} onChange={e => {setPreco(e.target.value)}} className='alterarFeitico' type="number" placeholder="Preço" />
-                    <input value={criador} onChange={e => {setCriador(e.target.value)}}className='alterarFeitico' type="text" placeholder="Criador" />
-                    <input value={descricao} onChange={e => {setDescricao(e.target.value)}}className='alterarFeitico' type="text" placeholder="Descrição" />
+                    <input value={preco} onChange={e => setPreco(e.target.value)} className='alterarFeitico' type="number" placeholder="Preço" />
+                    <input value={criador} onChange={e => setCriador(e.target.value)} className='alterarFeitico' type="text" placeholder="Criador" />
+                    <input value={descricao} onChange={e => setDescricao(e.target.value)} className='alterarFeitico' type="text" placeholder="Descrição" />
 
                 </form>
 

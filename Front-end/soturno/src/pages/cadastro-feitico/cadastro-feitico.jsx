@@ -43,7 +43,10 @@ export default function CadastroFeitico() {
         }
     }
 
-    
+    function cancelar() {
+        // volta para a página anterior
+        navigate(-1);
+    }
 
     return (
 
@@ -64,7 +67,10 @@ export default function CadastroFeitico() {
 
                 </form>
 
-                <button className='cadastroFeitico' onClick={cadastrarFeitico}>Cadastrar</button>
+                <div className="botoes">
+                    <button onClick={cadastrarFeitico} className="botao botao1">Cadastrar</button>
+                    <button onClick={cancelar} className='botao botao2'>Cancelar</button>
+                </div>
 
             </section>
 

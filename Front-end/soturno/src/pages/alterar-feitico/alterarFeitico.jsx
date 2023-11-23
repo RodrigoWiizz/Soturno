@@ -1,8 +1,20 @@
 import './alterarFeitico.scss'
 import Header from '../../components/header-adm/header-admin';
+import { useContext, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Context } from '../context/AuthContext';
 
 export default function CadastroFeitico() {
 
+    const {logado, isAdmin} = useContext(Context)
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(!(logado && isAdmin)){
+            navigate("/Erro")
+            
+        }
+    }, [])
 
     return (
 

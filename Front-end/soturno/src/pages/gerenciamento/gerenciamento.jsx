@@ -10,9 +10,8 @@ export default function Gerenciamento() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if(!logado && !isAdmin){
-            navigate("/")
-            alert("Só administradores podem acessar essa página")
+        if(!(logado && isAdmin)){
+            navigate("/Erro")
         }
     }, [])
 

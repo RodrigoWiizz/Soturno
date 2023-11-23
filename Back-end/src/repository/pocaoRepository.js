@@ -13,9 +13,9 @@ export async function cadastrarPocao(pocao){
 export async function atualizarPocao(pocao){
     const sql = `UPDATE pocoes SET 
                 nome = ?, preco = ?, criador = ?, imagem = ?, tipo = ?, descricao = ?, ingredientes = ?
-                WHERE idPocoes = ?`
+                WHERE nome = ?`
 
-    const [info] = await con.query(sql, [pocao.nome, pocao.preco, pocao.criador, pocao.imagem, pocao.tipo, pocao.descricao, pocao.ingredientes, pocao.idPocoes])
+    const [info] = await con.query(sql, [pocao.nome, pocao.preco, pocao.criador, pocao.imagem, pocao.tipo, pocao.descricao, pocao.ingredientes, pocao.nome])
     return info
 }
 

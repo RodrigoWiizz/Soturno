@@ -59,7 +59,7 @@ export default function CadastroFeitico() {
                 descricao: descricao,
             }
             try {
-                let response = await axios.put(process.env.REACT_APP_BACKEND_URL + '/feitico/' + nome, body)
+                let response = await axios.put(process.env.REACT_APP_BACKEND_URL + '/feitico/', body)
                 if(response.data == null){
                     alert("Esse feitiço não existe")
                 }

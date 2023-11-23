@@ -13,9 +13,9 @@ export async function cadastrarFeitico(feitico){
 export async function atualizarFeitico(feitico){
     const sql = `UPDATE feiticos SET 
                 nome = ?, preco = ?, criador = ?, descricao = ? 
-                WHERE idFeiticos = ?`
+                WHERE nome = ?`
 
-    const [info] = await con.query(sql, [feitico.nome, feitico.preco, feitico.criador, feitico.descricao,  feitico.idFeiticos])
+    const [info] = await con.query(sql, [feitico.nome, feitico.preco, feitico.criador, feitico.descricao,  feitico.nome])
     return info
 }
 

@@ -69,7 +69,7 @@ export default function AlterarPocao() {
                 imagem: imagem
             }
             try {
-                let response = await axios.put(process.env.REACT_APP_BACKEND_URL + '/pocao/' + nome, body)
+                let response = await axios.put(process.env.REACT_APP_BACKEND_URL + '/pocao/', body)
                 if(response.data == null){
                     alert("Essa poção não existe")
                 }

@@ -29,11 +29,10 @@ pocaoEndpoints.put('/pocao', async (req, resp) => {
     }
 })
 
-pocaoEndpoints.put('/pocao/:nome', async (req, resp) => {
+pocaoEndpoints.put('/pocao/', async (req, resp) => {
     try {
         let pocao = req.body;
-        let nome = req.params.nome;
-        let r = await atualizarPocao(nome, pocao)
+        let r = await atualizarPocao(pocao)
         resp.status(200).send(r)
     } catch (error) {
         resp.status(400).send({

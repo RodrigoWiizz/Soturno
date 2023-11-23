@@ -10,8 +10,12 @@ export default function Feitico() {
 
     useEffect(() => {
         const buscarFeiticos = async () => {
-            const resposta = await axios.get(process.env.REACT_APP_BACKEND_URL + '/feitico')
-            setFeitico(resposta.data)
+            try {
+                const resposta = await axios.get(process.env.REACT_APP_BACKEND_URL + '/feitico')
+                setFeitico(resposta.data)
+            } catch (error) {
+                console.log(error)
+            }
         }
         buscarFeiticos()
     }, [])

@@ -16,7 +16,7 @@ usuarioEndpoints.post('/login', async(req, resp) => {
             resp.status(404).send({message: "Usuário não encontrado"})
         }
         else{
-            let token = jwt.sign({id: r[0].idUsuario, nome: r[0].nome, tipo: r[0].tipo}, process.env.SECRET, {expiresIn: 300})
+            let token = jwt.sign({id: r[0].idUsuario, nome: r[0].nome, tipo: r[0].tipo}, process.env.SECRET, {expiresIn: 3600})
             resp.status(200).send({jwt: token, tipo: r[0].tipo});
         }
     } catch (error) {

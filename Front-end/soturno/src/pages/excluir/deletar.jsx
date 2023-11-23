@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function Deletar() {
 
     const [id, setId] = useState("");
-    const [selecao, setSelecao] = useState("usuarios");
+    const [selecao, setSelecao] = useState("usuario");
 
     const navigate = useNavigate();
 

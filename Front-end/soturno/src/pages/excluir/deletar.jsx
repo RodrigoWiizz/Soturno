@@ -1,20 +1,17 @@
 import './deletar.scss';
 import Header from '../../components/header-adm/header-admin';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { Context } from '../context/AuthContext';
 
 export default function Deletar() {
 
-    const isAdmin = JSON.parse(localStorage.getItem('admin')) || false;
+    const {logado, isAdmin} = useContext(Context)
     const navigate = useNavigate();
 
-    function navegar() {
-        navigate('/')
-    }
-
     useEffect(() => {
-        if(isAdmin === false){
+        if(!(logado && isAdmin)){
             navigate("/Erro")
         }
     }, [])

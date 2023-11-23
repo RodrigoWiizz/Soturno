@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Header from "../../components/header-adm/header-admin"
 import axios from "axios";
 import "./cadastro-pocao.scss"
+import { Context } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 export default function CadastroPocao() {
+
+    const {logado, isAdmin} = useContext(Context)
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(!(logado && isAdmin)){
+            navigate("/Erro")
+        }
+    }, [])
 
     const [nome, setNome] = useState("");
     const [preco, setPreco] = useState(0);

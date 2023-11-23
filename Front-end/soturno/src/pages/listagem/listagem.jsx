@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Header from '../../components/header-adm/header-admin';
 import axios from 'axios';
 import './listagem.scss';
+import { Context } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function Listagem() {
+
+    const {logado, isAdmin} = useContext(Context)
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if(!(logado && isAdmin)){
+            navigate("/Erro")
+        }
+    }, [])
 
     const [lista, setLista] = useState([]);
     const [selectedOption, setSelectedOption] = useState(null);

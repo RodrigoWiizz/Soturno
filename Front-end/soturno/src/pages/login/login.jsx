@@ -20,7 +20,7 @@ export default function Login() {
         }
 
         try {
-            let response = await axios.post(`http://localhost:5000/login`, body)
+            let response = await axios.post(process.env.REACT_APP_BACKEND_URL + "/login", body)
             await Promise.all([
                 localStorage.setItem("token", response.data.jwt),
                 localStorage.setItem("tipo", response.data.tipo)

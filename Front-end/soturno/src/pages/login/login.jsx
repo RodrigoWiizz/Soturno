@@ -21,9 +21,12 @@ export default function Login() {
 
         try {
             let response = await axios.post(`http://localhost:5000/login`, body)
-            localStorage.setItem("token", response.data.jwt)
-            localStorage.setItem("tipo", response.data.tipo)
-            response.data.tipo == "admin" ? navigate("/admin") : navigate("/")
+            await Promise.all([
+                localStorage.setItem("token", response.data.jwt),
+                localStorage.setItem("tipo", response.data.tipo)
+            ]).then(e =>{
+                response.data.tipo == "admin" ? navigate("/admin") : navigate("/")
+            });
         } catch (error) {   
             console.log(error)
             alert(error.response.data.message)

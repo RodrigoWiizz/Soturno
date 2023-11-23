@@ -26,7 +26,7 @@ usuarioEndpoints.post('/login', async(req, resp) => {
     }
 })
 
-usuarioEndpoints.post('/usuario', authToken, isAdmin, async (req, resp) => {
+usuarioEndpoints.post('/usuario', async (req, resp) => {
     console.log(req.tipo)
     try {
         let usuarios = await listarUsuarioPorEmail(req.body.email)

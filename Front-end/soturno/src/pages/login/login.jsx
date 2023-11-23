@@ -51,7 +51,7 @@ export default function Login() {
 
                             <button className='login' onClick={login}>Login</button>
 
-                            <Link className="login-pergunta" href="/cadastro/">Não possui uma conta? Cadastre-se</Link>
+                            <Link className="login-pergunta" to="/cadastro">Não possui uma conta? Cadastre-se</Link>
 
                         </main>
 

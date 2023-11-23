@@ -48,7 +48,7 @@ export default function Cadastrar() {
 
                     <button onClick={cadastrarUsuario} className="cadastro">Cadastro</button>
 
-                    <Link className="cadastro" href="/login/">Já possui uma conta? Faça o login</Link>
+                    <Link className="cadastro" to="/login">Já possui uma conta? Faça o login</Link>
 
                 </form>
 

@@ -21,5 +21,5 @@ O Soturno é um projeto desenvolvido por mim [Raguinata](https://github.com/Ragu
   ## Banco de Dados
   - <h3><img width="60" alt="Logo Sass" src="https://i.imgur.com/SZ9t17a.png" align="alt"/> MySQL</h3>
 
-
+<h1>Dependências</h1>
 

@@ -2,6 +2,27 @@
   <img src="https://i.imgur.com/oUb55AW.png" alt="Imagem Soturno" />
 </div>
 
+# Índice
+
+- [Soturno](#soturno)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+  * [FrontEnd](#frontend)
+  * [BackEnd](#backend)
+  * [Estilização](#estiliza-o)
+  * [Banco de Dados](#banco-de-dados)
+- [Como Executar o Projeto](#como-executar-o-projeto)
+    + [Siga os passos abaixo:](#siga-os-passos-abaixo)
+    + [Informações adicionais](#informa-es-adicionais)
+    + [Video Demosntrativo Ensinando a Executar o Projeto](#video-demosntrativo-ensinando-a-executar-o-projeto)
+- [Testes](#testes)
+    + [Testes de Usabilidade](#testes-de-usabilidade)
+    + [Testes de Responsividade](#testes-de-responsividade)
+- [Problemas e Upgrades Futuros](#problemas-e-upgrades-futuros)
+    + [Problemas](#problemas)
+    + [Upgrades](#upgrades)
+- [Conclusão](#conclus-o)
+    + [Aproveite o projeto!](#aproveite-o-projeto)
+
 # Soturno
 
 O Soturno é um projeto desenvolvido por mim [Raguinata](https://github.com/Raguinata) e pelo meu amigo [RodrigoWiizz](https://github.com/RodrigoWiizz) para a disciplina de Desenvolvimento Web na faculdade Senac. Trata-se de um E-commerce especializado na venda de poções e feitiços.

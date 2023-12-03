@@ -142,4 +142,26 @@ Escolhemos 3 páginas para a demosntração: Home, Login, Feitiços. Os testes s
 </div>
 ⠀
 
-### Testes de Usabilidade
+### Testes de Responsividade
+
+Utilizamos a extensão [Mobile Simulator](https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk) nos navegadores que possuem o motor V8 (Chromium) em sua engine.
+Escolhemos 3 páginas para a demosntração: Home, Login, Feitiços. Os testes serão feitos nos seguintes aparelhos iPad Air 4, iPhone 13 MAX PRO, iPhone 5, Apple Watch Serie 6.
+
+1. Página Home
+
+<div align="left">
+  <img height="400" src="https://i.imgur.com/DqSu8fw.png" alt="Imagem Home iPad Air 4" />
+  <img height="400" src="https://i.imgur.com/vbxFQef.png" alt="Imagem Home iPhone 13" />
+  <img height="400" src="https://i.imgur.com/sTm6yWI.png" alt="Imagem Home iPhone 5" />
+  <img height="400" src="https://i.imgur.com/32DEBbk.png" alt="Imagem Home Apple Watch" />
+</div> 
+⠀
+
+2. Página Login
+
+<div align="left">
+  <img height="400" src="https://i.imgur.com/tLw0Zz3.png" alt="Imagem Login iPad Air 4" />
+  <img height="400" src="https://i.imgur.com/F4LQbPB.png" alt="Imagem Login iPhone 13" />
+  <img height="400" src="https://i.imgur.com/CCj34VR.png" alt="Imagem Login iPhone 5" />
+  <img height="400" src="https://i.imgur.com/Z2n9JZ9.png" alt="Imagem Login Apple Watch" />
+</div> 

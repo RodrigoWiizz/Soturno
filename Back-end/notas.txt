@@ -1,4 +1,0 @@
-//Gerar jwt token
-//Criar tipos de token diferentes
-//middleware 
-//fazer a validação de retorno para todas as tabelas 

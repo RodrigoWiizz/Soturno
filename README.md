@@ -82,11 +82,14 @@ cd .\Soturno\Front-end\soturno\
 ```
 npm start
 ```
-### Aproveite o projeto!
 
 ### Informações adicionais
 Se você quiser fazer um usuário com o poder de admin, cadastre um novo usuário na página /cadastro, entre na tabela usuarios do MySQL Workbench e altere o tipo de “normal” para “admin”.
 Se você quiser cadastrar alguns feitiços e poções, temos alguns exemplos no arquivo poções.txt e Feitiçõs.txt na pasta raiz do projeto.
+
+### Video Demosntrativo Ensinando a Executar o Projeto
+
+Caso tenha ficado alguma dúvida, pode consultar este [vídeo](https://www.youtube.com/watch?v=4GoPgLAlYlE&t=928s), onde são feitos passo a passo para executar o projeto.
 
 ---
 
@@ -165,3 +168,45 @@ Escolhemos 3 páginas para a demosntração: Home, Login, Feitiços. Os testes s
   <img height="400" src="https://i.imgur.com/CCj34VR.png" alt="Imagem Login iPhone 5" />
   <img height="400" src="https://i.imgur.com/Z2n9JZ9.png" alt="Imagem Login Apple Watch" />
 </div> 
+
+⠀
+
+3. Página Feitiço
+
+<div align="left">
+  <img height="400" src="https://i.imgur.com/g2v1N7Y.png" alt="Imagem Feitiço iPad Air 4" />
+  <img height="400" src="https://i.imgur.com/5k87TtO.png" alt="Imagem Feitiço iPhone 13" />
+  <img height="400" src="https://i.imgur.com/oWdEQMD.png" alt="Imagem Feitiço iPhone 5" />
+  <img height="400" src="https://i.imgur.com/1QJgz2g.png" alt="Imagem Feitiço Apple Watch" />
+</div>
+
+---
+
+# Problemas e Upgrades Futuros
+
+### Problemas
+
+* Ao logar na conta de Administrador, ele redireciona para a página de erro e deveria ser para a /admin.
+
+### Upgrades
+
+* Após cadastrar um novo produto, a página deve ser atualizada.
+* Implementar novos métodos de autenticação e verificação.
+
+---
+
+# Conclusão
+
+O projeto Soturno, concebido por [Raguinata](https://github.com/Raguinata) e [RodrigoWiizz](https://github.com/RodrigoWiizz) para a disciplina de Desenvolvimento Web no Senac, é um E-commerce especializado na comercialização de poções e feitiços. Utilizando tecnologias como React.js no FrontEnd, Node.js e Express.js no BackEnd, Sass para estilização, e MySQL como banco de dados, o Soturno oferece uma experiência única para os usuários.
+
+Ao seguir os passos detalhados no guia de execução do projeto, é possível colocar o sistema em funcionamento. A inclusão de funcionalidades administrativas permite a criação de usuários com privilégios de administrador, proporcionando controle e gestão avançados.
+
+Os testes realizados, tanto de usabilidade quanto de responsividade, demonstram a preocupação com a experiência do usuário em diferentes dispositivos, garantindo uma navegação fluída e agradável. A utilização de ferramentas como o Lighthouse e o Mobile Simulator fortalecem a confiabilidade e desempenho do projeto.
+
+Entretanto, como em qualquer desenvolvimento, alguns problemas foram identificados, como o redirecionamento incorreto ao logar como administrador. Além disso, há planos para futuros upgrades, como a atualização automática da página após cadastrar um novo produto, e a implementação de novos métodos de autenticação e verificação.
+
+Em síntese, o projeto Soturno é uma aplicação robusta e bem desenvolvida, com um design atraente e preocupação com a experiência do usuário. Com melhorias planejadas para o futuro, o Soturno promete continuar evoluindo e oferecendo uma plataforma eficiente e cativante para os amantes de poções e feitiços.
+
+### Aproveite o projeto!
+
+

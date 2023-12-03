@@ -12,7 +12,7 @@
   * [Banco de Dados](#banco-de-dados)
 - [Como Executar o Projeto](#como-executar-o-projeto)
     + [Siga os passos abaixo:](#siga-os-passos-abaixo)
-    + [Informações adicionais](#informaçoes-adicionais)
+    + [Informações adicionais](#informações-adicionais)
     + [Video Demosntrativo Ensinando a Executar o Projeto](#video-demosntrativo-ensinando-a-executar-o-projeto)
 - [Testes](#testes)
     + [Testes de Usabilidade](#testes-de-usabilidade)

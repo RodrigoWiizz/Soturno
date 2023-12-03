@@ -110,7 +110,7 @@ Se você quiser cadastrar alguns feitiços e poções, temos alguns exemplos no 
 
 ### Video Demosntrativo Ensinando a Executar o Projeto
 
-Caso tenha ficado alguma dúvida, pode consultar este [vídeo](https://www.youtube.com/watch?v=4GoPgLAlYlE&t=928s), onde são feitos passo a passo para executar o projeto.
+Caso tenha ficado alguma dúvida, pode consultar este [vídeo](https://youtu.be/o5GgrO8pYwA), onde são feitos passo a passo para executar o projeto.
 
 ---
 

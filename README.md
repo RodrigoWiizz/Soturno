@@ -20,8 +20,8 @@
 - [Problemas e Upgrades Futuros](#problemas-e-upgrades-futuros)
     + [Problemas](#problemas)
     + [Upgrades](#upgrades)
-- [Conclusão](#conclus-o)
-    + [Aproveite o projeto!](#aproveite-o-projeto)
+- [Conclusão](#conclusão)
+  
 
 # Soturno
 
